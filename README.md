@@ -43,6 +43,12 @@ Note that due to my limited compute resources, I evaluated only two algorithms: 
 | TD3 | 5,000,000 | 3e-4 | 3e-4 | 3 | 256 | 1,000,000 | 10,000 | 0.992 | 0.005 | 2 | Gaussian, σ = 0.1 |
 
 
+## Environment reference and first research project
+
+See the [local TORCSRL guide](docs/torcsrl-guide/README.md) for observation and
+action spaces, rewards, dashboard indicators, setup examples, capability limits,
+and a scoped reward-design experiment for autonomous racing.
+
 ## Usage
 
 ```python
@@ -50,16 +56,16 @@ import gymnasium as gym
 import gym_torcs
 
 from torcsrl import NStepTD3
-from torcsrl.wrappers import TimedTrackSelectionWrapper, TrackSpec, HistoryWrapper
+from gym_torcs.wrappers import TimedTrackSelectionWrapper, TrackSpec, HistoryWrapper
 
 
 train_tracks = [
-    TrackSpec("alpine-1", "road", "alpine_1_tita_expert.csv"),
-    TrackSpec("aalborg", "road", "aalborg_tita_expert.csv"),
-    TrackSpec("street-1", "road", "street_1_tita_expert.csv"),
-    TrackSpec("forza", "road", "forza_tita_expert.csv"),
-    TrackSpec("wheel-1", "road", "wheel_1_tita_expert.csv"),
-    TrackSpec("wheel-2", "road", "wheel_2_tita_expert.csv"),
+    TrackSpec("alpine-1", "road"),
+    TrackSpec("aalborg", "road"),
+    TrackSpec("street-1", "road"),
+    TrackSpec("forza", "road"),
+    TrackSpec("wheel-1", "road"),
+    TrackSpec("wheel-2", "road"),
 ]
 
 val_tracks = [
@@ -68,8 +74,8 @@ val_tracks = [
     TrackSpec("aalborg", "road"),
     TrackSpec("street-1", "road"),
     TrackSpec("forza", "road"),
-    TrackSpec("wheel-1", "road", "wheel_1_tita_expert.csv"),
-    TrackSpec("wheel-2", "road", "wheel_2_tita_expert.csv"),
+    TrackSpec("wheel-1", "road"),
+    TrackSpec("wheel-2", "road"),
 
     # Validation tracks
     TrackSpec("g-track-1", "road"),
@@ -92,7 +98,7 @@ train_env = gym.make(
     track_name="alpine-1",
     track_category="road",
     reset_strategy="relaunch",
-    racing_line_csv="alpine_1_tita_expert.csv",
+    telemetry_mode="standard",
 )
 train_env = TimedTrackSelectionWrapper(
     train_env, tracks=train_tracks, switch_every_steps=SWITCH_TRACK_EVERY,
@@ -108,7 +114,7 @@ val_env = gym.make(
     track_name="alpine-2",
     track_category="road",
     reset_strategy="relaunch",
-    racing_line_csv="alpine_2_tita_expert.csv",
+    telemetry_mode="standard",
 )
 val_env = HistoryWrapper(val_env, HORIZON_OBS, HORIZON_ACT)
 val_env = TimedTrackSelectionWrapper(
@@ -118,6 +124,7 @@ val_env = TimedTrackSelectionWrapper(
 alg = NStepTD3(
     train_env,
     val_env,
+    ac_kwargs={},
     n_steps=3,
     lr_actor=3e-4,
     lr_critic=3e-4,
@@ -127,14 +134,159 @@ alg = NStepTD3(
     tau_polyak=0.005,
     save_every=10_000,
     eval_every=10_000,
-    device="cuda",
-    seed=seed,
+    device="cpu",  # use "mps" for native macOS Python, "cuda" for NVIDIA
+    seed=SEED,
 )
 
 alg.train(5_000_000)
 ```
 
 ## Install
+
+### macOS (Apple Silicon)
+
+The Python library runs natively on Apple Silicon with Python 3.12, including
+PyTorch's Metal (`mps`) backend. The SCR-patched TORCS simulator is a separate
+dependency: its build uses X11/GLX, PLIB, and Linux launch scripts. A native macOS
+simulator build is not currently verified.
+
+For a complete headless setup, run Python and the simulator together in a Linux
+container. The Dockerfile builds the exact SCR fork required by this environment,
+pinned to commit `8134c27be99bc2039f51fd821129e1ddf7514f64`. On Apple Silicon,
+Docker selects Linux ARM64 automatically; do not force `linux/amd64`.
+
+Install [Docker Desktop](https://docs.docker.com/desktop/setup/install/mac-install/)
+or use Homebrew with Colima:
+
+```bash
+brew install docker colima
+colima start --cpu 4 --memory 6
+```
+
+From this repository:
+
+```bash
+sh scripts/container.sh build
+sh scripts/container.sh smoke --steps 100
+sh scripts/container.sh train --steps 10000
+```
+
+The smoke test checks package imports, a TD3 action and gradient update, then
+starts a real SCR race and checks observations for 100 steps. Training defaults
+to Alpine-1, uses CPU inside the container, and writes models and evaluation
+statistics to the host's `checkpoints/` folder. Customize a run with:
+
+```bash
+sh scripts/container.sh train --track alpine-2 --steps 100000 --seed 1
+```
+
+**Telemetry compatibility:** the documented simulator fork sends base SCR
+telemetry, but this Python fork originally required additional expert-driver,
+acceleration, and curvature fields that the simulator does not provide. The new
+launchers explicitly use `telemetry_mode="standard"`: missing acceleration and
+lookahead channels are zero before observation noise, the reward uses the track
+center as its reference, and `info["action_tita"]` is `None` when no expert action
+is available. Observations retain their 45-element layout. This enables basic
+training but does not reproduce the enhanced observations/reward used in the
+published experiments. Existing callers retain the default `"enhanced"` mode,
+which now reports missing telemetry clearly. With an appropriately patched
+simulator, use `--telemetry-mode enhanced` for training. Optional racing-line CSVs
+can supply lookahead curvature in either mode.
+
+The initial image build downloads and compiles the simulator and can take several
+minutes. Headless container training needs no published network ports. Stop
+Colima when finished with `colima stop` (this also stops other containers in that
+VM). Intel Macs are not part of the verified macOS setup.
+
+To use just the Python library on macOS:
+
+```bash
+python3.12 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python -m pip install -e .
+python -m scripts.smoke_test --python-only --device mps
+```
+
+Use `--device cpu` if Metal is unavailable. The Python-only test does not need
+TORCS.
+Use `scripts/train.py` for the current API; the older `scripts/main.py` launcher
+is outdated. Racing-line CSVs are optional and are not included in this repo;
+standard mode uses zero curvature when neither CSV nor simulator curvature is
+available.
+
+#### Native MPS training and a browser race view
+
+Build the image above, install the native Python dependencies, then start the
+simulator gateway and virtual desktop once:
+
+```bash
+sh scripts/container.sh desktop
+```
+
+Running `desktop` again reuses the existing running container, or starts it if
+stopped. After rebuilding the image, run `desktop-stop` followed by `desktop`
+to replace the existing container and use the new image.
+
+Open [the race viewer](http://127.0.0.1:8000/).
+Press **Start demo** to watch a simple driving controller, and **Stop demo** to
+end it. The demo continues until stopped. The viewer shows a clear idle message
+when no race is running. **Full screen** enlarges the race to your browser's full
+screen; press Escape to return. TORCS renders at 1280 x 800, fills the virtual
+display, and scales to fit the browser window.
+
+The viewer uses noVNC, a browser client for the Linux simulator's display. It
+does not change where training runs: MPS training still runs on your Mac.
+
+Stop the demo before training. This command trains on the
+Mac's Metal GPU and shows its training race in the viewer:
+
+```bash
+.venv/bin/python -m scripts.train --device mps \
+  --simulator-url http://127.0.0.1:8000 --render --steps 10000
+```
+
+Omit `--render` for faster headless simulator operation while keeping MPS
+training. Evaluation uses a separate headless simulator on SCR port 3002. The
+gateway forwards telemetry/actions over local HTTP; SCR's UDP traffic stays
+inside Linux. This works without UDP port forwarding in Colima. Rendering uses
+Mesa software OpenGL inside Linux; MPS accelerates the native neural networks.
+The simulator and browser desktop do not use Metal.
+
+To verify the complete split setup without a long run:
+
+```bash
+.venv/bin/python -m scripts.smoke_test --device mps \
+  --simulator-url http://127.0.0.1:8000 --render --steps 100
+```
+
+To watch a simple driving demo instead of training:
+
+```bash
+.venv/bin/python -m scripts.watch --seconds 120
+```
+
+Without `--seconds`, the command-line demo runs until Ctrl+C. The demo follows
+the track center with a basic controller, not a trained agent.
+Run one training/demo command at a time; session ownership prevents a second run
+from interrupting an active race. A GUI race closes when its command finishes;
+the desktop stays available. The container patches TORCS to start graphical
+races directly from their generated configuration, avoiding menu-key timing
+failures on reset. Graphical resets still relaunch TORCS and are slower than
+headless resets. Keyboard and mouse
+input in the viewer controls TORCS menus/cameras, not the agent's driving actions.
+
+Stop the desktop and gateway with:
+
+```bash
+sh scripts/container.sh desktop-stop
+```
+
+Ports 6080 (display transport) and 8000 (viewer and gateway) are published only on `127.0.0.1`. The
+viewer has no password and is intended for local use. Do not expose those ports
+on a public interface. For gateway diagnostics, run
+`sh scripts/container.sh desktop-logs`. If a learner is forcibly killed before
+cleanup, restart the desktop to release its session before beginning another run.
 
 ### Ubuntu 26.04
 

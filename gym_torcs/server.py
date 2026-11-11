@@ -266,7 +266,7 @@ class TorcsServer:
             start_new_session=True,
         )
         time.sleep(self.startup_sleep)
-        if self.render_mode == "human" and self.gui_auto_start:
+        if self.render_mode == "human" and self.gui_auto_start and not env.get("TORCSRL_DIRECT_GUI"):
             self._auto_start_gui_race()
 
     def restart(self, race_config: RaceConfig | None = None) -> None:
@@ -312,6 +312,8 @@ class TorcsServer:
 
     def _env(self) -> dict[str, str]:
         env = os.environ.copy()
+        if self.render_mode == "human" and env.get("TORCSRL_DIRECT_GUI"):
+            env["TORCSRL_GUI_RACE"] = str(self.race_file)
         if self.render_mode is None:
             env["HOME"] = str(self.home)
         return env

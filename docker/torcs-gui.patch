@@ -1,0 +1,101 @@
+--- a/src/libs/client/entry.cpp
++++ b/src/libs/client/entry.cpp
+@@ -18,6 +18,9 @@
+  ***************************************************************************/
+ 
+ 
++#include <stdlib.h>
++#include <raceman.h>
++#include <raceinit.h>
+ #include <client.h>
+ #include <tgfclient.h>
+ #include <plib/ssg.h>
+@@ -49,6 +52,12 @@
+ 
+ 	GfInitClient();
+ 
++	const char *race = getenv("TORCSRL_GUI_RACE");
++	if (race && race[0]) {
++		ReRunRaceOnScreen(race);
++		return;
++	}
++
+ 	TorcsMainMenuInit();
+ 
+ 	SplashScreen();
+--- a/src/libs/raceengineclient/raceinit.h
++++ b/src/libs/raceengineclient/raceinit.h
+@@ -39,6 +39,7 @@
+ extern const char *ReGetCurrentRaceName(void);
+ extern const char *ReGetPrevRaceName(void);
+ extern void ReRunRaceOnConsole(const char* raceconfig);
++extern void ReRunRaceOnScreen(const char* raceconfig);
+ 
+ extern tModList *ReRaceModList;
+ 
+--- a/src/libs/raceengineclient/raceinit.cpp
++++ b/src/libs/raceengineclient/raceinit.cpp
+@@ -155,6 +155,26 @@
+ 	ReStateApply(RE_STATE_CONFIG);
+ }
+ 
++
++// Start a configured graphical race without timing-dependent menu key presses.
++void ReRunRaceOnScreen(const char* raceconfig)
++{
++    ReInit();
++    ReInfo->_reMenuScreen = GfuiScreenCreate();
++    ReStateInit(ReInfo->_reMenuScreen);
++    ReInfo->params = GfParmReadFile(raceconfig, GFPARM_RMODE_STD);
++    if (!ReInfo->params) {
++        GfError("Could not open graphical race: %s\n", raceconfig);
++        exit(1);
++    }
++    const char *name = strrchr(raceconfig, '/');
++    name = name ? name + 1 : raceconfig;
++    const char *extension = strrchr(name, '.');
++    ReInfo->_reFilename = strndup(name, extension ? extension - name : strlen(name));
++    ReInfo->_reName = GfParmGetStr(ReInfo->params, RM_SECT_HEADER, RM_ATTR_NAME, "Practice");
++    ReInitResults();
++    ReStateApply((void *) RE_STATE_EVENT_INIT);
++}
+ 
+ void ReRunRaceOnConsole(const char* raceconfig)
+ {
+--- a/src/libs/tgfclient/screen.cpp
++++ b/src/libs/tgfclient/screen.cpp
+@@ -407,6 +407,8 @@
+ 
+     GfParmReleaseHandle(handle);
+ 
++    // Direct race startup needs dimensions before the first event-loop reshape.
++    Reshape(glutGet(GLUT_WINDOW_WIDTH), glutGet(GLUT_WINDOW_HEIGHT));
+     glutReshapeFunc( Reshape );
+ 
+ 	checkGLFeatures();
+--- a/src/modules/graphic/ssggraph/grtrackmap.cpp
++++ b/src/modules/graphic/ssggraph/grtrackmap.cpp
+@@ -226,6 +226,15 @@
+ 		bool firstvert = true;
+ 		float xf1, yf1 , xf2, yf2;
+ 		xf1 = yf1 = xf2 = yf2 = 0.0;
++		// Map geometry is an unlit 2D mask, independent of scene render state.
++		glPushAttrib(GL_ENABLE_BIT | GL_CURRENT_BIT);
++		glDisable(GL_LIGHTING);
++		glDisable(GL_CULL_FACE);
++		glDisable(GL_ALPHA_TEST);
++		glDisable(GL_DEPTH_TEST);
++		glDisable(GL_TEXTURE_2D);
++		glDisable(GL_SCISSOR_TEST);
++		glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
+ 		glBegin(GL_QUAD_STRIP);
+ 		seg = first;
+ 		do {
+@@ -323,6 +332,7 @@
+ 			glVertex2f(xf2, yf2);
+ 		}
+ 		glEnd();
++		glPopAttrib();
+ 
+ 		// Read track picture into memory to be able to generate mipmaps. I read back an RGBA
+ 		// image because I don't know yet what people want to add to the map, so RGBA is most

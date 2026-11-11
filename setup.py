@@ -9,6 +9,8 @@ setup(
     install_requires=[
         "gymnasium==1.3.0",
         "numpy>=2.2,<2.5",
+        "pandas>=2.2,<3.1",
+        "torch>=2.11,<2.12",
     ],
     python_requires=">=3.11",
     include_package_data=True,

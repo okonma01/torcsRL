@@ -39,6 +39,7 @@ class TorcsEnv(gym.Env[np.ndarray, np.ndarray]):
         render_mode: str | None = None,
         port: int = 3001,
         host: str = "127.0.0.1",
+        simulator_url: str | None = None,
         client_id: str = "SCR",
         executable: str = DEFAULT_TORCS_EXECUTABLE,
         race_type: str = "practice",
@@ -50,6 +51,7 @@ class TorcsEnv(gym.Env[np.ndarray, np.ndarray]):
         torcs_max_episode_steps: int = 25_000,
         reset_strategy: str = "relaunch",
         observation_noise : bool = True,
+        telemetry_mode: str = "enhanced",
         auto_start_server: bool = True,
         startup_sleep: float = 1.0,
         truncate_on_successful_lap: bool = True,
@@ -150,6 +152,12 @@ class TorcsEnv(gym.Env[np.ndarray, np.ndarray]):
                 The env only connects to an already running TORCS/SCR server.
                 Useful if you start TORCS manually.
 
+        simulator_url : str | None, default=None
+            Local HTTP gateway for a simulator in Linux, e.g.
+            "http://127.0.0.1:8000". Python and PyTorch remain on this host.
+            The gateway owns race processes and SCR UDP connections. GUI
+            races appear on its browser desktop when render_mode="human".
+
         startup_sleep : float, default=1.0
             Seconds to wait after launching TORCS before attempting the SCR
             client connection.
@@ -218,9 +226,13 @@ class TorcsEnv(gym.Env[np.ndarray, np.ndarray]):
         self.port = int(port)
         self.scr_idx = scr_idx_from_port(self.port)
         self.host = host
+        self.simulator_url = simulator_url
         self.client_id = client_id
         self.torcs_max_episode_steps = torcs_max_episode_steps
         self.observation_noise = observation_noise 
+        if telemetry_mode not in {"enhanced", "standard"}:
+            raise ValueError("telemetry_mode must be 'enhanced' or 'standard'")
+        self.telemetry_mode = telemetry_mode
         if reset_strategy not in {"relaunch", "meta"}:
             raise ValueError("reset_strategy must be 'relaunch' or 'meta'.")
         self.reset_strategy = reset_strategy
@@ -258,19 +270,26 @@ class TorcsEnv(gym.Env[np.ndarray, np.ndarray]):
             laps=laps,
             scr_idx=self.scr_idx,
         )
-        self.server = TorcsServer(
-            port=self.port,
-            render_mode=render_mode,
-            executable=executable,
-            template_xml=template_xml,
-            race_config=self.race_config,
-            startup_sleep=startup_sleep,
-            debug=debug,
-            gui_auto_start=gui_auto_start,
-            gui_start_delay=gui_start_delay,
-            gui_key_delay=gui_key_delay,
-            gui_auto_start_keys=gui_auto_start_keys,
-        )
+        if simulator_url is None:
+            self.server = TorcsServer(
+                port=self.port,
+                render_mode=render_mode,
+                executable=executable,
+                template_xml=template_xml,
+                race_config=self.race_config,
+                startup_sleep=startup_sleep,
+                debug=debug,
+                gui_auto_start=gui_auto_start,
+                gui_start_delay=gui_start_delay,
+                gui_key_delay=gui_key_delay,
+                gui_auto_start_keys=gui_auto_start_keys,
+            )
+        else:
+            from gym_torcs.remote import RemoteTorcsServer
+            self.server = RemoteTorcsServer(
+                url=simulator_url, port=self.port, render_mode=render_mode,
+                race_config=self.race_config,
+            )
         self.client: TorcsClient | None = None
         self._started_once = False
 
@@ -339,26 +358,30 @@ class TorcsEnv(gym.Env[np.ndarray, np.ndarray]):
         if attempts is None:
             attempts = 600 if self.render_mode == "human" else 60
 
-        self.client = TorcsClient(
+        client_class = TorcsClient
+        client_kwargs = {}
+        if self.simulator_url is not None:
+            from gym_torcs.remote import RemoteTorcsClient
+            client_class = RemoteTorcsClient
+            client_kwargs["url"] = self.simulator_url
+            client_kwargs["session_id"] = self.server.session_id
+        self.client = client_class(
             host=self.host,
             port=self.port,
             client_id=self.client_id,
             connect_attempts=attempts,
+            **client_kwargs,
         )
 
         self.client.connect()
 
         startup_wait = 60.0 if self.render_mode == "human" else 15.0
-        raw = self.client.receive(max_wait=startup_wait, keepalive=True)
+        raw = self._adapt_telemetry(self.client.receive(max_wait=startup_wait, keepalive=True))
 
         self.time_step = 0
         self.prev_action = np.zeros(self.action_space.shape, dtype=np.float32)
 
-        tita_steer = float(raw["titaSteer"])
-        tita_gas = float(raw["titaGas"])
-        tita_brake = float(raw["titaBrake"])
-        tita_throttle = tita_gas - tita_brake
-        action_tita = np.array([tita_steer, tita_throttle], dtype=np.float32)
+        action_tita = self._expert_action(raw)
 
         return self._obs(raw), {
             "race_type": self.race_config.race_type,
@@ -371,6 +394,7 @@ class TorcsEnv(gym.Env[np.ndarray, np.ndarray]):
             "scr_idx": self.scr_idx,
             "full_restart": True,
             "action_tita": action_tita,
+            "telemetry_mode": self.telemetry_mode,
             "distFromStart": raw.get("distFromStart", 0.0),
         }
 
@@ -387,7 +411,7 @@ class TorcsEnv(gym.Env[np.ndarray, np.ndarray]):
         self.client.send()
         # raw = self.client.receive(max_wait=10.0)
         try:
-            raw = self.client.receive(max_wait=10.0)
+            raw = self._adapt_telemetry(self.client.receive(max_wait=10.0))
         except TimeoutError as e:
             print(
                 "[TORCS TIMEOUT] no telemetry received. "
@@ -421,7 +445,7 @@ class TorcsEnv(gym.Env[np.ndarray, np.ndarray]):
                 "timeAlive": np.nan,
                 "speedX": np.nan,
                 "lastLapTime": 0.0,
-                "action_tita": np.zeros(3, dtype=np.float32),
+                "action_tita": None,
                 "globalX": np.nan,
                 "globalY": np.nan,
                 "distFromStart": np.nan,
@@ -462,6 +486,36 @@ class TorcsEnv(gym.Env[np.ndarray, np.ndarray]):
         cmd.brake = max(-throttle, 0.0)
         cmd.gear = self._gear(int(state["gear"]), float(state["rpm"]))
 
+    def _adapt_telemetry(self, raw: dict[str, Any]) -> dict[str, Any]:
+        """Keep legacy enhanced telemetry strict; allow an explicit base SCR mode.
+
+        Standard mode keeps the 45-element observation layout, zeroes unavailable
+        acceleration/curvature channels, and uses the track center as the reward
+        reference. A configured CSV can still supply lookahead curvature.
+        """
+        extra = ["accelX", "accelY", "accelZ", "titaLineTrackPos"]
+        extra += [f"curv{distance}" for distance in range(0, 300, 25)]
+        required = extra + ["titaSteer", "titaGas", "titaBrake"]
+        missing = [key for key in required if key not in raw]
+        if self.telemetry_mode == "enhanced" and missing:
+            raise RuntimeError(
+                f"Simulator lacks enhanced telemetry: {', '.join(missing)}. "
+                "Use telemetry_mode='standard' for the documented SCR simulator; "
+                "expert telemetry requires an additional simulator patch."
+            )
+        if self.telemetry_mode == "standard":
+            raw = dict(raw)
+            for key in extra:
+                raw.setdefault(key, 0.0)
+        return raw
+
+    @staticmethod
+    def _expert_action(raw: dict[str, Any]) -> np.ndarray | None:
+        if not all(key in raw for key in ("titaSteer", "titaGas", "titaBrake")):
+            return None
+        return np.array([float(raw["titaSteer"]),
+                         float(raw["titaGas"]) - float(raw["titaBrake"])], dtype=np.float32)
+
     def _obs(self, raw: dict[str, Any]) -> np.ndarray:
         speed = np.asarray([
             raw["speedX"] / MAX_SPEED,
@@ -498,7 +552,6 @@ class TorcsEnv(gym.Env[np.ndarray, np.ndarray]):
             # lac = np.clip(lac, -1.0, 1.0)
 
         else: 
-            print("Wrong LAC...")
             lac = np.asarray([
                 raw["curv0"],
                 raw["curv25"],
@@ -607,11 +660,7 @@ class TorcsEnv(gym.Env[np.ndarray, np.ndarray]):
         off_track = track.min() < 0.0 or abs(float(obs["trackPos"])) > 1.0
         crashed = damage_delta > 0.0
 
-        tita_steer = float(obs["titaSteer"])
-        tita_gas = float(obs["titaGas"])
-        tita_brake = float(obs["titaBrake"])
-        tita_throttle = tita_gas - tita_brake
-        action_tita = np.array([tita_steer, tita_throttle], dtype=np.float32)
+        action_tita = self._expert_action(obs)
 
         return {
             "successfulLap": bool(float(obs["lastLapTime"]) > 0.0),
@@ -625,6 +674,7 @@ class TorcsEnv(gym.Env[np.ndarray, np.ndarray]):
             "done_td": crashed or off_track,
             "lastLapTime" : float(obs["lastLapTime"]),
             "action_tita" : action_tita,     # The action tita bot might take (nearly expert an action :D)
+            "telemetry_mode": self.telemetry_mode,
             "globalX" : obs["x"],
             "globalY" : obs["y"],
             "distFromStart" : float(obs["distFromStart"])
