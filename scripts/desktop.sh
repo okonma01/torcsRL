@@ -1,6 +1,5 @@
 #!/bin/sh
 set -eu
-export DISPLAY=:99
 export LIBGL_ALWAYS_SOFTWARE=1
 export ALSOFT_DRIVERS=null
 python - <<'PY'
@@ -15,9 +14,21 @@ for name, value in [('x', '1280'), ('y', '800')]:
 props.find("attstr[@name='fullscreen']").set('val', 'yes')
 tree.write(target, encoding='UTF-8', xml_declaration=True)
 PY
-Xvfb "$DISPLAY" -screen 0 1280x800x24 +extension GLX -nolisten tcp &
+# Let Xvfb choose a free display, including after an unclean VM shutdown.
+display_file=$(mktemp)
+Xvfb -displayfd 3 -screen 0 1280x800x24 +extension GLX -nolisten tcp 3>"$display_file" &
 xvfb_pid=$!
-trap 'kill "$xvfb_pid"; exit' INT TERM EXIT
+trap 'rm -f "$display_file"; kill "$xvfb_pid"; exit' INT TERM EXIT
+attempt=0
+until [ -s "$display_file" ]; do
+    attempt=$((attempt + 1))
+    if ! kill -0 "$xvfb_pid" 2>/dev/null; then echo "X display stopped during startup" >&2; exit 1; fi
+    if [ "$attempt" -gt 50 ]; then echo "X display failed to start" >&2; exit 1; fi
+    sleep 0.1
+done
+DISPLAY=:$(cat "$display_file")
+export DISPLAY
+rm -f "$display_file"
 attempt=0
 until xdpyinfo -display "$DISPLAY" >/dev/null 2>&1; do
     attempt=$((attempt + 1))
