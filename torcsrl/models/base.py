@@ -56,5 +56,5 @@ class Critic(nn.Module, ABC):
                     nn.init.zeros_(m.bias)
 
     @abstractmethod
-    def forward(self, obs: torch.Tensor, actoin: torch.Tensor):
+    def forward(self, obs: torch.Tensor, action: torch.Tensor):
         raise NotImplementedError
