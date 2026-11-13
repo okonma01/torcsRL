@@ -9,12 +9,20 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     python3 python3-venv \
     && rm -rf /var/lib/apt/lists/*
 
-# Pin the SCR-patched simulator; stock distro TORCS lacks this protocol.
-ARG TORCS_REV=8134c27be99bc2039f51fd821129e1ddf7514f64
+# Pin SCR with the Tita teacher action and lookahead telemetry.
+ARG TORCS_REV=6c451cb779b24dcb42f8f1a20be57dd1d47a8f91
 COPY docker/torcs-gui.patch /tmp/torcs-gui.patch
-RUN git clone https://github.com/raphaelsenn/torcs-1.3.7 /opt/torcs-src \
-    && cd /opt/torcs-src && git checkout "$TORCS_REV" \
+RUN git init /opt/torcs-src && cd /opt/torcs-src \
+    && git remote add origin https://github.com/raphaelsenn/torcs-1.3.7 \
+    && git fetch --depth 1 origin "$TORCS_REV" && git checkout --detach FETCH_HEAD \
     && git apply /tmp/torcs-gui.patch \
+    # Upstream includes machine-specific dependencies and omits this helper.
+    && find . -name .depend -delete \
+    && cp /usr/share/automake-*/compile . \
+    # Dependency generation needs local paths for the shared Tita sources.
+    && for source in berniw.h mycar.cpp mycar.h pathfinder.cpp pathfinder.h spline.cpp spline.h trackdesc.cpp trackdesc.h; do \
+        ln -s "../tita/$source" "src/drivers/scr_server/$source"; \
+    done \
     && CFLAGS=-fPIC CPPFLAGS=-fPIC CXXFLAGS=-fPIC ./configure --prefix=/usr/local \
     && make -j1 && make install && make datainstall \
     && test -x /usr/local/lib/torcs/torcs-bin \

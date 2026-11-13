@@ -152,7 +152,7 @@ simulator build is not currently verified.
 
 For a complete headless setup, run Python and the simulator together in a Linux
 container. The Dockerfile builds the exact SCR fork required by this environment,
-pinned to commit `8134c27be99bc2039f51fd821129e1ddf7514f64`. On Apple Silicon,
+pinned to commit `6c451cb779b24dcb42f8f1a20be57dd1d47a8f91`. On Apple Silicon,
 Docker selects Linux ARM64 automatically; do not force `linux/amd64`.
 
 Install [Docker Desktop](https://docs.docker.com/desktop/setup/install/mac-install/)
@@ -180,18 +180,25 @@ statistics to the host's `checkpoints/` folder. Customize a run with:
 sh scripts/container.sh train --track alpine-2 --steps 100000 --seed 1
 ```
 
-**Telemetry compatibility:** the documented simulator fork sends base SCR
-telemetry, but this Python fork originally required additional expert-driver,
-acceleration, and curvature fields that the simulator does not provide. The new
-launchers explicitly use `telemetry_mode="standard"`: missing acceleration and
-lookahead channels are zero before observation noise, the reward uses the track
-center as its reference, and `info["action_tita"]` is `None` when no expert action
-is available. Observations retain their 45-element layout. This enables basic
-training but does not reproduce the enhanced observations/reward used in the
-published experiments. Existing callers retain the default `"enhanced"` mode,
-which now reports missing telemetry clearly. With an appropriately patched
-simulator, use `--telemetry-mode enhanced` for training. Optional racing-line CSVs
-can supply lookahead curvature in either mode.
+**Telemetry compatibility:** the pinned simulator now includes Tita teacher
+steering, accelerator, and brake fields, plus acceleration and lookahead
+curvature. `info["action_tita"]` exposes the teacher action as
+`[titaSteer, titaGas - titaBrake]`; the Python environment still chooses gears.
+These values use Tita's planner and adapted driving logic, rather than recording
+the complete native Tita controller. Use `--telemetry-mode enhanced` for training
+that requires these fields. This does not establish equivalence to the enhanced
+observations/reward used in the published experiments.
+
+The launchers continue to select `telemetry_mode="standard"` for compatibility
+with older simulators. Standard mode preserves teacher fields when supplied,
+zeroes unavailable acceleration/lookahead channels, and uses the track center
+when no teacher line is supplied. `info["action_tita"]` is `None` if any teacher
+action field is missing. Both modes retain the 45-element observation layout;
+optional racing-line CSVs can supply lookahead curvature in either mode.
+
+After rebuilding, replace an existing desktop container with
+`sh scripts/container.sh desktop-stop` followed by
+`sh scripts/container.sh desktop` to load the new simulator.
 
 The initial image build downloads and compiles the simulator and can take several
 minutes. Headless container training needs no published network ports. Stop
