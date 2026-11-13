@@ -3,7 +3,9 @@ import time
 import gymnasium as gym
 import numpy as np
 import gym_torcs  # Registers TorcsSCR-v0 with Gymnasium.
-
+import csv
+from datetime import datetime, timezone
+from pathlib import Path
 
 env = gym.make(
     "TorcsSCR-v0",
@@ -25,7 +27,7 @@ try:
     for step in range(10000):
         # [steering, throttle]: steer straight and apply 30% throttle.
         # Both values range from -1 to 1. Negative throttle means braking.
-        action = np.array([0.015, 0.7], dtype=np.float32)
+        action = np.array([0.0001, 0.7], dtype=np.float32)
         obs, reward, terminated, truncated, info = env.step(action)
         total_reward += float(reward)
 
@@ -53,3 +55,37 @@ try:
     print(f"Total reward: {total_reward:.3f}")
 finally:
     env.close()
+result = {
+    "timestamp_utc": datetime.now(timezone.utc).isoformat(),
+    "track": env.unwrapped.race_config.track_name,
+    "steps": step + 1,
+    "total_reward": total_reward,
+    "terminated": bool(terminated),
+    "truncated": bool(truncated),
+    "script_limit_reached": not (terminated or truncated),
+    "successful_lap": info["successfulLap"],
+    "lap_time_s": info["lastLapTime"] if info["successfulLap"] else None,
+    "sim_time_s": info["timeAlive"],
+    "distance_m": info["distRaced"],
+    "damage": info["damage"],
+    "crashed": info["crashed"],
+    "off_track": info["offTrack"],
+    "telemetry_timeout": info.get("torcs_timeout", False),
+    "steering": float(action[0]),
+    "throttle": float(action[1]),
+}
+results_path = Path(__file__).with_name("runs.csv")
+write_header = (
+    not results_path.exists()
+    or results_path.stat().st_size == 0
+)
+
+with results_path.open("a", newline="", encoding="utf-8") as file:
+    writer = csv.DictWriter(file, fieldnames=result.keys())
+
+    if write_header:
+        writer.writeheader()
+
+    writer.writerow(result)
+
+print(f"Run saved to {results_path}")
