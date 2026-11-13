@@ -25,9 +25,9 @@ try:
     total_reward = 0.0
 
     for step in range(10000):
-        # [steering, throttle]: steer straight and apply 30% throttle.
-        # Both values range from -1 to 1. Negative throttle means braking.
-        action = np.array([0.0001, 0.7], dtype=np.float32)
+        # [steering, accelerator, brake]: nearly straight, 70% gas, no brake.
+        # Steering ranges from -1 to 1; each pedal ranges from 0 to 1.
+        action = np.array([0.0001, 0.7, 0.0], dtype=np.float32)
         obs, reward, terminated, truncated, info = env.step(action)
         total_reward += float(reward)
 
@@ -72,9 +72,11 @@ result = {
     "off_track": info["offTrack"],
     "telemetry_timeout": info.get("torcs_timeout", False),
     "steering": float(action[0]),
-    "throttle": float(action[1]),
+    "accelerator": float(action[1]),
+    "brake": float(action[2]),
 }
-results_path = Path(__file__).with_name("runs.csv")
+# Keep the earlier two-action CSV separate because its columns differ.
+results_path = Path(__file__).with_name("runs_three_actions.csv")
 write_header = (
     not results_path.exists()
     or results_path.stat().st_size == 0

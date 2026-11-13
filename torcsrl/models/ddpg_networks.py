@@ -36,7 +36,7 @@ class ActorMLP(Actor):
         )
 
     def forward(self, obs: torch.Tensor) -> torch.Tensor:
-        return self.mlp(obs)
+        return self.mlp(obs) * self.action_scale + self.action_bias
 
     def act(self, obs: torch.Tensor) -> torch.Tensor:
         return self(obs)

@@ -247,13 +247,9 @@ class TorcsEnv(gym.Env[np.ndarray, np.ndarray]):
         # Read more here: 
         # Deep Reinforcement Learning for Local Path Following of an Autonomous Formula SAE Vehicle, Merton et al., 2024
         # https://arxiv.org/abs/2401.02903v1
-        # action_dim = 2  # [steering, throttle]
-        #self.act_low = np.array([steer_min, throttle_min], dtype=np.float32)
-        #self.act_high = np.array([steer_max, throttle_max], dtype=np.float32)
-
-        action_dim = 2  # [steering, throttle]
-        self.act_low = np.array([-1.0, -1.0], dtype=np.float32)
-        self.act_high = np.array([1.0, 1.0], dtype=np.float32)
+        action_dim = 3  # [steering, accelerator, brake]
+        self.act_low = np.array([-1.0, 0.0, 0.0], dtype=np.float32)
+        self.act_high = np.array([1.0, 1.0, 1.0], dtype=np.float32)
         self.action_space = spaces.Box(self.act_low, self.act_high, shape=(action_dim,), dtype=np.float32)
 
         # Old TORCS features 29 features, this version adds 16 new features (12 LAC values, racing line diff, accel xyz)
@@ -403,8 +399,14 @@ class TorcsEnv(gym.Env[np.ndarray, np.ndarray]):
             raise RuntimeError("Call reset() before step().")
 
         action = np.asarray(action, dtype=np.float32)
-        # action = np.clip(action, self.act_low, self.act_high)
-        action = np.clip(action, -1.0, 1.0)
+        if action.shape != self.action_space.shape:
+            raise ValueError(
+                f"Expected action shape {self.action_space.shape} for "
+                f"[steering, accelerator, brake], got {action.shape}."
+            )
+        if not np.isfinite(action).all():
+            raise ValueError("Action values must be finite.")
+        action = np.clip(action, self.act_low, self.act_high)
 
         prev = dict(self.client.state.data)
         self._apply_action(action)
@@ -478,12 +480,9 @@ class TorcsEnv(gym.Env[np.ndarray, np.ndarray]):
         cmd = self.client.action
         state = self.client.state.data
 
-        steer = float(action[0])
-        throttle = float(action[1])
-
-        cmd.steer = steer
-        cmd.accel = max(throttle, 0.0)
-        cmd.brake = max(-throttle, 0.0)
+        cmd.steer = float(action[0])
+        cmd.accel = float(action[1])
+        cmd.brake = float(action[2])
         cmd.gear = self._gear(int(state["gear"]), float(state["rpm"]))
 
     def _adapt_telemetry(self, raw: dict[str, Any]) -> dict[str, Any]:
@@ -513,8 +512,10 @@ class TorcsEnv(gym.Env[np.ndarray, np.ndarray]):
     def _expert_action(raw: dict[str, Any]) -> np.ndarray | None:
         if not all(key in raw for key in ("titaSteer", "titaGas", "titaBrake")):
             return None
-        return np.array([float(raw["titaSteer"]),
-                         float(raw["titaGas"]) - float(raw["titaBrake"])], dtype=np.float32)
+        if raw.get("titaValid", 1.0) != 1.0:
+            return None
+        return np.array([float(raw["titaSteer"]), float(raw["titaGas"]),
+                         float(raw["titaBrake"])], dtype=np.float32)
 
     def _obs(self, raw: dict[str, Any]) -> np.ndarray:
         speed = np.asarray([

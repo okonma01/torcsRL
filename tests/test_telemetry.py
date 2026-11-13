@@ -21,7 +21,7 @@ def test_standard_scr_observation_and_centerline_reward():
         np.testing.assert_array_equal(obs[3:6], 0.0)
         np.testing.assert_array_equal(obs[-12:], 0.0)
         assert env._expert_action(adapted) is None
-        assert env._reward(adapted, state, np.zeros(2)) == pytest.approx(0.16)
+        assert env._reward(adapted, state, np.zeros(3)) == pytest.approx(0.16)
         assert "accelX" not in state
     finally:
         env.close()
@@ -44,6 +44,6 @@ def test_existing_enhanced_fields_are_preserved():
         adapted = env._adapt_telemetry(state)
         assert adapted["accelX"] == 2.0
         assert adapted["curv25"] == 0.1
-        np.testing.assert_allclose(env._expert_action(adapted), [0.2, 0.6])
+        np.testing.assert_allclose(env._expert_action(adapted), [0.2, 0.7, 0.1])
     finally:
         env.close()

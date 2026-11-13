@@ -42,7 +42,7 @@ def main():
         obs, _ = train.reset(seed=0)
         for _ in range(args.steps):
             obs, reward, terminated, truncated, info = train.step(
-                np.array([0.0, 0.3], dtype=np.float32))
+                np.array([0.0, 0.3, 0.0], dtype=np.float32))
             if info.get("torcs_timeout"):
                 raise RuntimeError("SCR timed out during smoke test")
             if not np.isfinite(obs).all() or not np.isfinite(reward):

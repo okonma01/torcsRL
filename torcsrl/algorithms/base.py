@@ -321,8 +321,14 @@ class OffPolicyAlgorithm(RLAlgorithm, ABC):
         obs, info = env.reset(seed=self.seed)
 
         for _ in range(self.buffer_start_size):
-            # Use expert tita action 
-            action = np.asarray(info["action_tita"], dtype=np.float32)
+            # Use the teacher action for the current observation.
+            expert_action = info.get("action_tita")
+            if expert_action is None:
+                raise RuntimeError(
+                    "Expert collection requires a valid Tita teacher action. "
+                    "Use a simulator with teacher telemetry enabled."
+                )
+            action = np.asarray(expert_action, dtype=np.float32)
             obs_next, reward, terminated, truncated, info = env.step(action)
             
             # Save in replay memory.

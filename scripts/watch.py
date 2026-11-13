@@ -36,7 +36,8 @@ def main():
             speed = float(obs[0]) * 250.0
             steer = np.clip(angle / 0.7854 - 0.5 * track_pos, -1.0, 1.0)
             throttle = np.clip((65.0 - speed) / 50.0, -0.3, 0.5)
-            obs, _, terminated, truncated, info = env.step(np.array([steer, throttle], dtype=np.float32))
+            action = np.array([steer, max(throttle, 0.0), max(-throttle, 0.0)], dtype=np.float32)
+            obs, _, terminated, truncated, info = env.step(action)
             if info.get("torcs_timeout"):
                 raise RuntimeError("Simulator stopped responding")
             if terminated or truncated:
