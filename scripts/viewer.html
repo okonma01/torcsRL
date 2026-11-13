@@ -6,14 +6,16 @@
   <title>TORCS race viewer</title>
   <style>
     * { box-sizing: border-box; }
-    body { margin: 0; background: #10151c; color: #edf1f6; font: 15px system-ui, sans-serif; }
+    body { margin: 0; height: 100dvh; display: flex; flex-direction: column; background: #10151c; color: #edf1f6; font: 15px system-ui, sans-serif; }
     header { display: flex; align-items: center; gap: 12px; padding: 12px 20px; border-bottom: 1px solid #354052; flex-wrap: wrap; }
     h1 { margin: 0 16px 0 0; font-size: 18px; }
+    select, input { max-width: 260px; padding: 8px; background: #182332; color: white; border: 1px solid #566780; border-radius: 4px; font: inherit; }
+    label { display: flex; align-items: center; gap: 6px; }
     button { padding: 9px 15px; border: 1px solid #566780; border-radius: 6px; background: #253348; color: white; font: inherit; cursor: pointer; }
     button:hover { background: #354b69; }
     button:disabled { opacity: .5; cursor: wait; }
     #state { margin-left: auto; color: #c0ccdb; }
-    #stage { position: relative; height: calc(100dvh - 120px); min-height: 280px; background: #000; }
+    #stage { position: relative; flex: 1; min-height: 280px; background: #000; }
     #stage:fullscreen { height: 100dvh; }
     #screen { width: 100%; height: 100%; }
     #empty { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; padding: 30px; background: #111820; }
@@ -22,16 +24,38 @@
     #empty p { max-width: 580px; line-height: 1.6; color: #bfcad9; margin: 0; }
     footer { padding: 10px 20px; font-size: 13px; color: #bfcad9; }
     #message { color: #ffbda5; }
+    aside { padding: 10px 20px; background: #18212d; }
+    aside p { margin: 0 0 8px; line-height: 1.5; }
+    details { max-height: 30dvh; overflow: auto; }
+    summary { cursor: pointer; color: #c0ccdb; }
+    table { border-collapse: collapse; margin: 10px 0; font-size: 14px; }
+    th, td { padding: 6px 16px 6px 0; text-align: left; }
+    th { border-bottom: 1px solid #566780; }
   </style>
 </head>
 <body>
   <header>
     <h1>TORCS race viewer</h1>
-    <button id="start">Start demo</button>
-    <button id="stop">Stop demo</button>
+    <span>Driver: Tita</span>
+    <label>Car <select id="bot" aria-label="Car"></select></label>
+    <label>Track <select id="track" aria-label="Track"></select></label>
+    <label>Laps <input id="laps" type="number" min="1" max="100" value="5" style="width:70px"></label>
+    <label>View <select id="camera"><option value="follow">Follow car</option><option value="bonnet">Bonnet</option><option value="overhead">Overhead</option></select></label>
+    <button id="start" disabled>Start race</button>
+    <button id="stop" disabled>Stop race</button>
     <button id="full">Full screen</button>
     <span id="state" role="status">Connecting to the simulator...</span>
   </header>
+  <aside>
+    <p id="recommendation" role="status">Loading Tita car results...</p>
+    <details>
+      <summary>Four-car baseline: five-lap test results</summary>
+      <p>Average of laps 2 to 5, in seconds. Lower is faster. The first lap starts from rest.
+        * means damage appeared in the recorded lap results. Tita ran each car alone. Different cars have different capabilities; this table does not rank driving algorithms.</p>
+      <table><thead><tr><th>Car</th><th>Alpine-2</th><th>Forza</th><th>Michigan</th><th>Dirt-4</th></tr></thead><tbody id="results"></tbody></table>
+      <p>All four cars are from the TRB1 racing class, using their original Tita entries and setups. They are rear-wheel drive. There are no open-wheel or 4WD choices.</p>
+    </details>
+  </aside>
   <main id="stage">
     <div id="screen"></div>
     <div id="empty">
@@ -40,7 +64,7 @@
     </div>
   </main>
   <footer>
-    Demo: a simple driving controller, running until you press Stop demo. To watch MPS training, stop the demo and run training with <code>--render</code>.
+    Tita drives all four cars. Keep the car and track the same when comparing it with your RL agent. Press 1 inside the race to change the lap-time display. Stop the race before running Python training.
     <span id="message" role="alert"></span>
   </footer>
   <script type="module">
@@ -52,6 +76,19 @@
     rfb.resizeSession = false;
     rfb.viewOnly = false;
     let connected = false;
+    let loaded = false;
+    let busy = false;
+    let comparison;
+    function recommend() {
+      const run = comparison.runs.find(r => r.track.id === byId('track').value && r.bot.id === byId('bot').value);
+      if (!run) {
+        byId('recommendation').textContent = 'This car and track pair has not been tested yet.';
+        return;
+      }
+      byId('recommendation').textContent = run.completed
+        ? `Tita | ${run.bot.car}: five laps completed; ${run.warm_mean_s.toFixed(2)} s average for laps 2 to 5; highest recorded lap-end damage ${run.peak_lap_damage ?? run.damage}.`
+        : `Tita | ${run.bot.car}: did not finish the five-lap check on this track.`;
+    }
     rfb.addEventListener('connect', () => { connected = true; });
     rfb.addEventListener('disconnect', () => {
       connected = false;
@@ -65,14 +102,16 @@
         if (!response.ok) throw new Error('Simulator status is unavailable');
         const status = await response.json();
         const race = status.races.find(r => r.visible && r.running);
-        byId('state').textContent = race ? `Live race: ${race.track}` : status.demo_running ? 'Starting demo...' : 'No race running';
-        byId('empty').hidden = connected && Boolean(race);
-        if (!race) {
+        const native = status.native?.running ? status.native : null;
+        const live = race || native;
+        byId('state').textContent = native ? `${native.bot} | ${native.car} | ${native.track}` : race ? `Live race: ${race.track}` : status.demo_running ? 'Starting demo...' : 'No race running';
+        byId('empty').hidden = connected && Boolean(live);
+        if (!live) {
           byId('empty-title').textContent = status.demo_running ? 'Starting the race' : 'Ready to race';
-          byId('empty-text').textContent = status.error || 'Press Start demo to watch the car and track. The demo keeps running until you stop it.';
+          byId('empty-text').textContent = status.error || 'Choose a car, track, and camera, then press Start race.';
         }
-        byId('start').disabled = status.demo_running || Boolean(race);
-        byId('stop').disabled = !status.demo_running;
+        byId('start').disabled = busy || !loaded || status.demo_running || Boolean(race);
+        byId('stop').disabled = busy || !(status.demo_running || native);
       } catch (error) {
         byId('state').textContent = 'Simulator unavailable';
         byId('message').textContent = error.message;
@@ -80,19 +119,21 @@
     }
     async function control(operation) {
       byId('message').textContent = '';
+      busy = true;
       byId('start').disabled = true;
       byId('stop').disabled = true;
       try {
-        const response = await fetch(`/${operation}`, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: '{}'});
+        const response = await fetch(`/${operation}`, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(operation === 'native-start' ? {bot: byId('bot').value, track: byId('track').value, laps: Number(byId('laps').value), camera: byId('camera').value} : {})});
         const result = await response.json();
         if (!response.ok) throw new Error(result.error);
       } catch (error) {
         byId('message').textContent = error.message;
       }
+      busy = false;
       await refresh();
     }
-    byId('start').onclick = () => control('demo-start');
-    byId('stop').onclick = () => control('demo-stop');
+    byId('start').onclick = () => control('native-start');
+    byId('stop').onclick = async () => { await control('native-stop'); await control('demo-stop'); };
     byId('full').onclick = async () => {
       try {
         await byId('stage').requestFullscreen();
@@ -100,6 +141,44 @@
         byId('message').textContent = `Could not enter full screen: ${error.message}`;
       }
     };
+    try {
+      const response = await fetch('/catalog');
+      if (!response.ok) throw new Error('Could not load installed bots and tracks');
+      const choices = await response.json();
+      comparison = choices.baseline;
+      const shortlist = comparison.profiles.map(profile => {
+        const bot = choices.bots.find(b => b.id === profile.id && b.car === profile.car);
+        if (!bot) throw new Error(`Car profile is not installed: ${profile.car}`);
+        return {...bot, label: profile.label};
+      });
+      for (const bot of shortlist) {
+        byId('bot').add(new Option(`${bot.car} | ${bot.label}`, bot.id));
+        const row = document.createElement('tr');
+        const title = document.createElement('th');
+        title.scope = 'row';
+        title.textContent = bot.car;
+        row.append(title);
+        for (const track of ['road/alpine-2', 'road/forza', 'oval/michigan', 'dirt/dirt-4']) {
+          const run = comparison.runs.find(r => r.bot.id === bot.id && r.track.id === track);
+          const cell = document.createElement('td');
+          cell.textContent = run?.completed ? `${run.warm_mean_s.toFixed(2)}${(run.peak_lap_damage ?? run.damage) > 0 ? ' *' : ''}` : 'Did not finish';
+          row.append(cell);
+        }
+        byId('results').append(row);
+      }
+      for (const track of choices.tracks) {
+        byId('track').add(new Option(`${track.name} (${track.category})`, track.id));
+      }
+      byId('bot').value = shortlist[0]?.id || '';
+      byId('track').value = choices.tracks.find(t => t.name === 'alpine-2')?.id || choices.tracks[0]?.id || '';
+      loaded = shortlist.length > 0 && choices.tracks.length > 0;
+      if (!loaded) throw new Error('No installed bots or tracks found');
+      byId('track').onchange = recommend;
+      byId('bot').onchange = recommend;
+      recommend();
+    } catch (error) {
+      byId('message').textContent = error.message;
+    }
     await refresh();
     setInterval(refresh, 2000);
   </script>

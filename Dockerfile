@@ -43,4 +43,5 @@ COPY gym_torcs ./gym_torcs
 COPY torcsrl ./torcsrl
 COPY scripts ./scripts
 RUN pip install --no-cache-dir --no-deps --no-build-isolation -e .
+RUN python -m scripts.configure_baseline
 CMD ["python", "-m", "scripts.smoke_test", "--steps", "100"]

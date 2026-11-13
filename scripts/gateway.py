@@ -11,6 +11,7 @@ import threading
 
 from gym_torcs.client import DriverAction, TorcsClient
 from gym_torcs.server import RaceConfig, TorcsServer, scr_idx_from_port
+from scripts.native import CAMERAS, NativeRace, catalog
 
 
 @dataclass
@@ -25,12 +26,52 @@ lock = threading.RLock()
 demo_lock = threading.Lock()
 demo_process = None
 demo_log = Path("/tmp/torcsrl-demo.log")
+native_race = None
+
+
+def native_control(operation, body):
+    global native_race
+    with lock:
+        if operation == "native-stop":
+            if native_race is not None:
+                native_race.close()
+                native_race = None
+            return {"status": "stopped"}
+        installed = catalog()
+        bots = {bot["id"]: bot for bot in installed["bots"]}
+        tracks = {track["id"]: track for track in installed["tracks"]}
+        bot = bots[body["bot"]]
+        track = tracks[body["track"]]
+        laps = body.get("laps", 5)
+        camera = body.get("camera", "follow")
+        if type(laps) is not int or not 1 <= laps <= 100:
+            raise ValueError("Choose between 1 and 100 laps")
+        if camera not in CAMERAS:
+            raise ValueError("Unknown camera")
+        if demo_process is not None and demo_process.poll() is None:
+            raise RuntimeError("Stop the demo before starting a bot")
+        if any(s.server.render_mode == "human" and s.server.running for s in sessions.values()):
+            raise RuntimeError("Stop the current Python race before starting a bot")
+        if native_race is not None:
+            native_race.close()
+        native_race = NativeRace(bot=bot, track=track, laps=laps, camera=camera)
+        try:
+            native_race.start()
+            if not native_race.running:
+                raise RuntimeError("TORCS could not start; check the desktop logs")
+        except (OSError, RuntimeError, ValueError):
+            native_race.close()
+            native_race = None
+            raise
+        return {"status": "running"}
 
 
 def demo_control(operation):
     global demo_process
-    with demo_lock:
+    with lock, demo_lock:
         if operation == "demo-start":
+            if native_race is not None and native_race.running:
+                raise RuntimeError("Stop the bot race before starting the demo")
             if demo_process is not None and demo_process.poll() is None:
                 return {"status": "running"}
             with demo_log.open("w") as output:
@@ -53,10 +94,17 @@ def status():
                  for port, s in sessions.items()]
     running_demo = demo_process is not None and demo_process.poll() is None
     error = None
+    native = None
+    with lock:
+        if native_race is not None:
+            native = dict(bot=native_race.bot["name"], car=native_race.bot["car"],
+                          track=native_race.race_config.track_name, running=native_race.running)
+            if not native_race.running:
+                error = "The bot race closed. You can start another race."
     if demo_process is not None and demo_process.poll() not in (None, 0):
         lines = demo_log.read_text().strip().splitlines()
         error = lines[-1] if lines else "The driving demo stopped unexpectedly."
-    return {"races": races, "demo_running": running_demo, "error": error}
+    return {"races": races, "demo_running": running_demo, "native": native, "error": error}
 
 
 def stop(port):
@@ -86,6 +134,8 @@ def dispatch(operation, body):
             if mode == "human" and any(
                     s.server.render_mode == "human" for p, s in sessions.items() if p != port):
                 raise ValueError("Only one graphical race can use the desktop at a time")
+            if mode == "human" and native_race is not None and native_race.running:
+                raise RuntimeError("Stop the bot race in the viewer before starting a Python race")
             race = RaceConfig(**body["race"])
             race.scr_idx = scr_idx_from_port(port)
             stop(port)
@@ -149,6 +199,8 @@ class Handler(BaseHTTPRequestHandler):
                 self.reply(404, {"error": "Unknown asset"})
         elif path == "/status":
             self.reply(200, status())
+        elif path == "/catalog":
+            self.reply(200, catalog())
         elif path == "/health":
             self.reply(200, {"status": "ok"})
         else:
@@ -172,7 +224,12 @@ class Handler(BaseHTTPRequestHandler):
                 raise ValueError("Invalid request size")
             body = json.loads(self.rfile.read(size))
             operation = self.path.strip("/")
-            result = demo_control(operation) if operation in ("demo-start", "demo-stop") else dispatch(operation, body)
+            if operation in ("native-start", "native-stop"):
+                result = native_control(operation, body)
+            elif operation in ("demo-start", "demo-stop"):
+                result = demo_control(operation)
+            else:
+                result = dispatch(operation, body)
         except (ValueError, KeyError, TypeError, RuntimeError, OSError, subprocess.TimeoutExpired) as error:
             self.reply(400, {"error": str(error), "type": type(error).__name__})
             return
@@ -193,6 +250,7 @@ def main():
         server.server_close()
         for port in list(sessions):
             stop(port)
+        native_control("native-stop", {})
 
 
 if __name__ == "__main__":

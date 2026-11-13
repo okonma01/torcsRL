@@ -236,16 +236,33 @@ stopped. After rebuilding the image, run `desktop-stop` followed by `desktop`
 to replace the existing container and use the new image.
 
 Open [the race viewer](http://127.0.0.1:8000/).
-Press **Start demo** to watch a simple driving controller, and **Stop demo** to
-end it. The demo continues until stopped. The viewer shows a clear idle message
-when no race is running. **Full screen** enlarges the race to your browser's full
+Choose a **Car**, **Track**, number of **Laps**, and **View**, then press
+**Start race**. Tita drives four native TRB1 racing cars: `car1-trb1`,
+`car2-trb1`, `car3-trb1`, and `car4-trb1`. All four are rear-wheel drive and
+use their original installed Tita entries and setups. There are no open-wheel,
+FWD, or 4WD choices in this baseline. The image validates these native profiles
+without changing their settings or the car physics.
+
+Choose another car and press **Start race** again to switch. **Stop race** ends
+the current run. **Follow car** keeps a steady view behind the car; **Bonnet**
+and **Overhead** are also available. Camera choices take effect when starting
+a race. The table above the race shows five-lap results, and the selected-car
+summary covers every installed track. Damage is reported from lap-end samples;
+repairs can reduce it, so the highest sampled value is shown.
+
+Use the same car and track when comparing Tita with an RL agent. The viewer
+does not yet export trajectories. See [the Tita baseline](docs/tita-baseline.md).
+The earlier Berniw2 and single-car bot comparisons are historical test records.
+
+The viewer shows a clear idle message when no race is running.
+**Full screen** enlarges the race to your browser's full
 screen; press Escape to return. TORCS renders at 1280 x 800, fills the virtual
 display, and scales to fit the browser window.
 
 The viewer uses noVNC, a browser client for the Linux simulator's display. It
 does not change where training runs: MPS training still runs on your Mac.
 
-Stop the demo before training. This command trains on the
+Stop the bot race before training. This command trains on the
 Mac's Metal GPU and shows its training race in the viewer:
 
 ```bash

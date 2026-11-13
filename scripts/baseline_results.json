@@ -1,0 +1,8970 @@
+[
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "dirt/dirt-1",
+      "category": "dirt",
+      "name": "dirt-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 39.27,
+        "damage": 8.0,
+        "top_speed_kmh": 162.00503999999998
+      },
+      {
+        "lap": 2,
+        "time_s": 34.25,
+        "damage": 16.0,
+        "top_speed_kmh": 162.22644
+      },
+      {
+        "lap": 3,
+        "time_s": 34.298,
+        "damage": 23.0,
+        "top_speed_kmh": 162.09864000000002
+      },
+      {
+        "lap": 4,
+        "time_s": 34.316,
+        "damage": 31.0,
+        "top_speed_kmh": 162.06156000000001
+      },
+      {
+        "lap": 5,
+        "time_s": 34.32,
+        "damage": 39.0,
+        "top_speed_kmh": 162.17712
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.273,
+    "best_s": 34.25,
+    "mean_s": 35.290800000000004,
+    "warm_mean_s": 34.296,
+    "warm_std_s": 0.027820855486487654,
+    "damage": 39.0,
+    "peak_lap_damage": 39.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "dirt/dirt-1",
+      "category": "dirt",
+      "name": "dirt-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 38.702,
+        "damage": 8.0,
+        "top_speed_kmh": 166.15512
+      },
+      {
+        "lap": 2,
+        "time_s": 33.958,
+        "damage": 16.0,
+        "top_speed_kmh": 165.88404
+      },
+      {
+        "lap": 3,
+        "time_s": 33.97,
+        "damage": 24.0,
+        "top_speed_kmh": 166.01507999999998
+      },
+      {
+        "lap": 4,
+        "time_s": 34.036,
+        "damage": 32.0,
+        "top_speed_kmh": 166.16916
+      },
+      {
+        "lap": 5,
+        "time_s": 33.994,
+        "damage": 40.0,
+        "top_speed_kmh": 166.16628
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.224,
+    "best_s": 33.958,
+    "mean_s": 34.932,
+    "warm_mean_s": 33.9895,
+    "warm_std_s": 0.029811910371528815,
+    "damage": 40.0,
+    "peak_lap_damage": 40.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "dirt/dirt-1",
+      "category": "dirt",
+      "name": "dirt-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 38.952,
+        "damage": 3.0,
+        "top_speed_kmh": 163.23444
+      },
+      {
+        "lap": 2,
+        "time_s": 33.924,
+        "damage": 12.0,
+        "top_speed_kmh": 163.27836
+      },
+      {
+        "lap": 3,
+        "time_s": 33.862,
+        "damage": 21.0,
+        "top_speed_kmh": 163.2168
+      },
+      {
+        "lap": 4,
+        "time_s": 33.95,
+        "damage": 30.0,
+        "top_speed_kmh": 163.52568
+      },
+      {
+        "lap": 5,
+        "time_s": 33.874,
+        "damage": 38.0,
+        "top_speed_kmh": 163.16064
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.224,
+    "best_s": 33.862,
+    "mean_s": 34.9124,
+    "warm_mean_s": 33.9025,
+    "warm_std_s": 0.035954832776693466,
+    "damage": 38.0,
+    "peak_lap_damage": 38.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "dirt/dirt-1",
+      "category": "dirt",
+      "name": "dirt-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 39.142,
+        "damage": 13.0,
+        "top_speed_kmh": 166.72788
+      },
+      {
+        "lap": 2,
+        "time_s": 34.082,
+        "damage": 27.0,
+        "top_speed_kmh": 166.41756
+      },
+      {
+        "lap": 3,
+        "time_s": 34.112,
+        "damage": 40.0,
+        "top_speed_kmh": 166.6026
+      },
+      {
+        "lap": 4,
+        "time_s": 34.102,
+        "damage": 54.0,
+        "top_speed_kmh": 166.29372
+      },
+      {
+        "lap": 5,
+        "time_s": 34.062,
+        "damage": 67.0,
+        "top_speed_kmh": 166.293
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.219,
+    "best_s": 34.062,
+    "mean_s": 35.1,
+    "warm_mean_s": 34.0895,
+    "warm_std_s": 0.019202864369672324,
+    "damage": 67.0,
+    "peak_lap_damage": 67.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "dirt/dirt-2",
+      "category": "dirt",
+      "name": "dirt-2"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 89.01,
+        "damage": 367.0,
+        "top_speed_kmh": 180.96336000000002
+      },
+      {
+        "lap": 2,
+        "time_s": 84.06,
+        "damage": 726.0,
+        "top_speed_kmh": 180.52704
+      },
+      {
+        "lap": 3,
+        "time_s": 85.542,
+        "damage": 1065.0,
+        "top_speed_kmh": 180.44604
+      },
+      {
+        "lap": 4,
+        "time_s": 83.786,
+        "damage": 1422.0,
+        "top_speed_kmh": 180.47592
+      },
+      {
+        "lap": 5,
+        "time_s": 83.924,
+        "damage": 1759.0,
+        "top_speed_kmh": 179.80524
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.423,
+    "best_s": 83.786,
+    "mean_s": 85.26440000000001,
+    "warm_mean_s": 84.328,
+    "warm_std_s": 0.7075662513150263,
+    "damage": 1759.0,
+    "peak_lap_damage": 1759.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "dirt/dirt-2",
+      "category": "dirt",
+      "name": "dirt-2"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 95.504,
+        "damage": 419.0,
+        "top_speed_kmh": 181.89936
+      },
+      {
+        "lap": 2,
+        "time_s": 91.778,
+        "damage": 834.0,
+        "top_speed_kmh": 181.2204
+      },
+      {
+        "lap": 3,
+        "time_s": 89.236,
+        "damage": 1217.0,
+        "top_speed_kmh": 180.9954
+      },
+      {
+        "lap": 4,
+        "time_s": 89.9,
+        "damage": 1601.0,
+        "top_speed_kmh": 180.88164
+      },
+      {
+        "lap": 5,
+        "time_s": 83.404,
+        "damage": 1978.0,
+        "top_speed_kmh": 180.49716
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.42,
+    "best_s": 83.404,
+    "mean_s": 89.9644,
+    "warm_mean_s": 88.5795,
+    "warm_std_s": 3.130132385379255,
+    "damage": 1978.0,
+    "peak_lap_damage": 1978.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "dirt/dirt-2",
+      "category": "dirt",
+      "name": "dirt-2"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 88.714,
+        "damage": 353.0,
+        "top_speed_kmh": 181.386
+      },
+      {
+        "lap": 2,
+        "time_s": 82.95,
+        "damage": 722.0,
+        "top_speed_kmh": 180.99143999999998
+      },
+      {
+        "lap": 3,
+        "time_s": 82.96,
+        "damage": 1113.0,
+        "top_speed_kmh": 180.95904
+      },
+      {
+        "lap": 4,
+        "time_s": 84.006,
+        "damage": 1497.0,
+        "top_speed_kmh": 180.8946
+      },
+      {
+        "lap": 5,
+        "time_s": 83.118,
+        "damage": 1884.0,
+        "top_speed_kmh": 180.32760000000002
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.382,
+    "best_s": 82.95,
+    "mean_s": 84.3496,
+    "warm_mean_s": 83.2585,
+    "warm_std_s": 0.43668381009604756,
+    "damage": 1884.0,
+    "peak_lap_damage": 1884.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "dirt/dirt-2",
+      "category": "dirt",
+      "name": "dirt-2"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 89.012,
+        "damage": 402.0,
+        "top_speed_kmh": 182.09736
+      },
+      {
+        "lap": 2,
+        "time_s": 83.594,
+        "damage": 795.0,
+        "top_speed_kmh": 181.3914
+      },
+      {
+        "lap": 3,
+        "time_s": 89.574,
+        "damage": 1229.0,
+        "top_speed_kmh": 181.36368
+      },
+      {
+        "lap": 4,
+        "time_s": 94.232,
+        "damage": 1666.0,
+        "top_speed_kmh": 180.81108
+      },
+      {
+        "lap": 5,
+        "time_s": 96.512,
+        "damage": 2070.0,
+        "top_speed_kmh": 180.67068
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.469,
+    "best_s": 83.594,
+    "mean_s": 90.5848,
+    "warm_mean_s": 90.978,
+    "warm_std_s": 4.942376553845328,
+    "damage": 2070.0,
+    "peak_lap_damage": 2070.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "dirt/dirt-3",
+      "category": "dirt",
+      "name": "dirt-3"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 70.848,
+        "damage": 42.0,
+        "top_speed_kmh": 205.74864
+      },
+      {
+        "lap": 2,
+        "time_s": 65.238,
+        "damage": 77.0,
+        "top_speed_kmh": 210.08664
+      },
+      {
+        "lap": 3,
+        "time_s": 65.24,
+        "damage": 120.0,
+        "top_speed_kmh": 210.19608
+      },
+      {
+        "lap": 4,
+        "time_s": 65.078,
+        "damage": 162.0,
+        "top_speed_kmh": 210.14424
+      },
+      {
+        "lap": 5,
+        "time_s": 65.142,
+        "damage": 205.0,
+        "top_speed_kmh": 210.14424
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.369,
+    "best_s": 65.078,
+    "mean_s": 66.3092,
+    "warm_mean_s": 65.1745,
+    "warm_std_s": 0.06835751604615063,
+    "damage": 205.0,
+    "peak_lap_damage": 205.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "dirt/dirt-3",
+      "category": "dirt",
+      "name": "dirt-3"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 69.858,
+        "damage": 68.0,
+        "top_speed_kmh": 206.00567999999998
+      },
+      {
+        "lap": 2,
+        "time_s": 64.518,
+        "damage": 136.0,
+        "top_speed_kmh": 212.3568
+      },
+      {
+        "lap": 3,
+        "time_s": 64.486,
+        "damage": 204.0,
+        "top_speed_kmh": 212.364
+      },
+      {
+        "lap": 4,
+        "time_s": 64.444,
+        "damage": 270.0,
+        "top_speed_kmh": 212.35788000000002
+      },
+      {
+        "lap": 5,
+        "time_s": 64.508,
+        "damage": 337.0,
+        "top_speed_kmh": 212.41152
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.368,
+    "best_s": 64.444,
+    "mean_s": 65.5628,
+    "warm_mean_s": 64.489,
+    "warm_std_s": 0.02844292530665407,
+    "damage": 337.0,
+    "peak_lap_damage": 337.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "dirt/dirt-3",
+      "category": "dirt",
+      "name": "dirt-3"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 70.048,
+        "damage": 65.0,
+        "top_speed_kmh": 202.65336
+      },
+      {
+        "lap": 2,
+        "time_s": 64.352,
+        "damage": 129.0,
+        "top_speed_kmh": 210.29364
+      },
+      {
+        "lap": 3,
+        "time_s": 64.28,
+        "damage": 194.0,
+        "top_speed_kmh": 210.23496
+      },
+      {
+        "lap": 4,
+        "time_s": 64.28,
+        "damage": 259.0,
+        "top_speed_kmh": 210.31307999999999
+      },
+      {
+        "lap": 5,
+        "time_s": 64.286,
+        "damage": 325.0,
+        "top_speed_kmh": 210.28284000000002
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.374,
+    "best_s": 64.28,
+    "mean_s": 65.4492,
+    "warm_mean_s": 64.2995,
+    "warm_std_s": 0.030409702399071092,
+    "damage": 325.0,
+    "peak_lap_damage": 325.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "dirt/dirt-3",
+      "category": "dirt",
+      "name": "dirt-3"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 70.274,
+        "damage": 84.0,
+        "top_speed_kmh": 208.04328
+      },
+      {
+        "lap": 2,
+        "time_s": 64.526,
+        "damage": 157.0,
+        "top_speed_kmh": 213.20172000000002
+      },
+      {
+        "lap": 3,
+        "time_s": 64.51,
+        "damage": 239.0,
+        "top_speed_kmh": 213.16716
+      },
+      {
+        "lap": 4,
+        "time_s": 64.576,
+        "damage": 314.0,
+        "top_speed_kmh": 213.02352000000002
+      },
+      {
+        "lap": 5,
+        "time_s": 64.572,
+        "damage": 388.0,
+        "top_speed_kmh": 212.92344
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.376,
+    "best_s": 64.51,
+    "mean_s": 65.6916,
+    "warm_mean_s": 64.54599999999999,
+    "warm_std_s": 0.028600699292148122,
+    "damage": 388.0,
+    "peak_lap_damage": 388.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "dirt/dirt-4",
+      "category": "dirt",
+      "name": "dirt-4"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 83.926,
+        "damage": 0.0,
+        "top_speed_kmh": 233.70696
+      },
+      {
+        "lap": 2,
+        "time_s": 77.308,
+        "damage": 0.0,
+        "top_speed_kmh": 259.2396
+      },
+      {
+        "lap": 3,
+        "time_s": 77.264,
+        "damage": 0.0,
+        "top_speed_kmh": 259.263
+      },
+      {
+        "lap": 4,
+        "time_s": 77.252,
+        "damage": 0.0,
+        "top_speed_kmh": 259.41528
+      },
+      {
+        "lap": 5,
+        "time_s": 77.134,
+        "damage": 0.0,
+        "top_speed_kmh": 259.42104
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.474,
+    "best_s": 77.134,
+    "mean_s": 78.5768,
+    "warm_mean_s": 77.23949999999999,
+    "warm_std_s": 0.0643797328357313,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "dirt/dirt-4",
+      "category": "dirt",
+      "name": "dirt-4"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 82.748,
+        "damage": 0.0,
+        "top_speed_kmh": 234.70667999999998
+      },
+      {
+        "lap": 2,
+        "time_s": 76.414,
+        "damage": 0.0,
+        "top_speed_kmh": 260.6094
+      },
+      {
+        "lap": 3,
+        "time_s": 76.33,
+        "damage": 0.0,
+        "top_speed_kmh": 260.62848
+      },
+      {
+        "lap": 4,
+        "time_s": 76.404,
+        "damage": 0.0,
+        "top_speed_kmh": 260.76456
+      },
+      {
+        "lap": 5,
+        "time_s": 76.416,
+        "damage": 0.0,
+        "top_speed_kmh": 260.54568
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.476,
+    "best_s": 76.33,
+    "mean_s": 77.6624,
+    "warm_mean_s": 76.39099999999999,
+    "warm_std_s": 0.03551056180912949,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "dirt/dirt-4",
+      "category": "dirt",
+      "name": "dirt-4"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 82.868,
+        "damage": 0.0,
+        "top_speed_kmh": 233.32176
+      },
+      {
+        "lap": 2,
+        "time_s": 76.164,
+        "damage": 0.0,
+        "top_speed_kmh": 259.182
+      },
+      {
+        "lap": 3,
+        "time_s": 76.192,
+        "damage": 0.0,
+        "top_speed_kmh": 259.15175999999997
+      },
+      {
+        "lap": 4,
+        "time_s": 76.072,
+        "damage": 0.0,
+        "top_speed_kmh": 259.33968
+      },
+      {
+        "lap": 5,
+        "time_s": 76.104,
+        "damage": 0.0,
+        "top_speed_kmh": 259.19172
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.423,
+    "best_s": 76.072,
+    "mean_s": 77.48,
+    "warm_mean_s": 76.133,
+    "warm_std_s": 0.04744470465710316,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "dirt/dirt-4",
+      "category": "dirt",
+      "name": "dirt-4"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 82.948,
+        "damage": 0.0,
+        "top_speed_kmh": 238.30272
+      },
+      {
+        "lap": 2,
+        "time_s": 76.162,
+        "damage": 0.0,
+        "top_speed_kmh": 264.10176
+      },
+      {
+        "lap": 3,
+        "time_s": 76.236,
+        "damage": 0.0,
+        "top_speed_kmh": 264.05820000000006
+      },
+      {
+        "lap": 4,
+        "time_s": 76.134,
+        "damage": 0.0,
+        "top_speed_kmh": 264.06755999999996
+      },
+      {
+        "lap": 5,
+        "time_s": 76.18,
+        "damage": 0.0,
+        "top_speed_kmh": 264.30372
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.421,
+    "best_s": 76.134,
+    "mean_s": 77.532,
+    "warm_mean_s": 76.178,
+    "warm_std_s": 0.03728270376461547,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "dirt/dirt-5",
+      "category": "dirt",
+      "name": "dirt-5"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 38.12,
+        "damage": 0.0,
+        "top_speed_kmh": 162.78516
+      },
+      {
+        "lap": 2,
+        "time_s": 33.034,
+        "damage": 0.0,
+        "top_speed_kmh": 162.4914
+      },
+      {
+        "lap": 3,
+        "time_s": 33.058,
+        "damage": 0.0,
+        "top_speed_kmh": 162.94716
+      },
+      {
+        "lap": 4,
+        "time_s": 33.032,
+        "damage": 0.0,
+        "top_speed_kmh": 162.94176000000002
+      },
+      {
+        "lap": 5,
+        "time_s": 33.034,
+        "damage": 0.0,
+        "top_speed_kmh": 162.77148
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.223,
+    "best_s": 33.032,
+    "mean_s": 34.0556,
+    "warm_mean_s": 33.0395,
+    "warm_std_s": 0.010712142642815095,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "dirt/dirt-5",
+      "category": "dirt",
+      "name": "dirt-5"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 37.608,
+        "damage": 0.0,
+        "top_speed_kmh": 166.69584
+      },
+      {
+        "lap": 2,
+        "time_s": 32.696,
+        "damage": 0.0,
+        "top_speed_kmh": 166.67748
+      },
+      {
+        "lap": 3,
+        "time_s": 32.75,
+        "damage": 0.0,
+        "top_speed_kmh": 166.69008
+      },
+      {
+        "lap": 4,
+        "time_s": 32.766,
+        "damage": 0.0,
+        "top_speed_kmh": 166.82436
+      },
+      {
+        "lap": 5,
+        "time_s": 32.718,
+        "damage": 0.0,
+        "top_speed_kmh": 166.46472
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.27,
+    "best_s": 32.696,
+    "mean_s": 33.7076,
+    "warm_mean_s": 32.7325,
+    "warm_std_s": 0.027253440149822963,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "dirt/dirt-5",
+      "category": "dirt",
+      "name": "dirt-5"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 37.826,
+        "damage": 0.0,
+        "top_speed_kmh": 165.50208
+      },
+      {
+        "lap": 2,
+        "time_s": 32.6,
+        "damage": 0.0,
+        "top_speed_kmh": 165.06756000000001
+      },
+      {
+        "lap": 3,
+        "time_s": 32.578,
+        "damage": 0.0,
+        "top_speed_kmh": 165.63996
+      },
+      {
+        "lap": 4,
+        "time_s": 32.576,
+        "damage": 0.0,
+        "top_speed_kmh": 165.63672
+      },
+      {
+        "lap": 5,
+        "time_s": 32.566,
+        "damage": 0.0,
+        "top_speed_kmh": 165.48912
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.272,
+    "best_s": 32.566,
+    "mean_s": 33.629200000000004,
+    "warm_mean_s": 32.58,
+    "warm_std_s": 0.012409673645990563,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "dirt/dirt-5",
+      "category": "dirt",
+      "name": "dirt-5"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 38.004,
+        "damage": 5.0,
+        "top_speed_kmh": 166.7142
+      },
+      {
+        "lap": 2,
+        "time_s": 32.77,
+        "damage": 10.0,
+        "top_speed_kmh": 166.88088000000002
+      },
+      {
+        "lap": 3,
+        "time_s": 32.734,
+        "damage": 15.0,
+        "top_speed_kmh": 166.54248
+      },
+      {
+        "lap": 4,
+        "time_s": 32.804,
+        "damage": 19.0,
+        "top_speed_kmh": 166.83012000000002
+      },
+      {
+        "lap": 5,
+        "time_s": 32.738,
+        "damage": 23.0,
+        "top_speed_kmh": 166.61628
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.273,
+    "best_s": 32.734,
+    "mean_s": 33.81,
+    "warm_mean_s": 32.7615,
+    "warm_std_s": 0.02822676035254556,
+    "damage": 23.0,
+    "peak_lap_damage": 23.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "dirt/dirt-6",
+      "category": "dirt",
+      "name": "dirt-6"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 100.684,
+        "damage": 0.0,
+        "top_speed_kmh": 201.015
+      },
+      {
+        "lap": 2,
+        "time_s": 95.218,
+        "damage": 0.0,
+        "top_speed_kmh": 208.70964
+      },
+      {
+        "lap": 3,
+        "time_s": 95.188,
+        "damage": 0.0,
+        "top_speed_kmh": 208.65492
+      },
+      {
+        "lap": 4,
+        "time_s": 95.232,
+        "damage": 0.0,
+        "top_speed_kmh": 208.57680000000002
+      },
+      {
+        "lap": 5,
+        "time_s": 95.108,
+        "damage": 0.0,
+        "top_speed_kmh": 208.755
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.527,
+    "best_s": 95.108,
+    "mean_s": 96.286,
+    "warm_mean_s": 95.1865,
+    "warm_std_s": 0.048028637290681915,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "dirt/dirt-6",
+      "category": "dirt",
+      "name": "dirt-6"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 99.348,
+        "damage": 0.0,
+        "top_speed_kmh": 201.4974
+      },
+      {
+        "lap": 2,
+        "time_s": 94.068,
+        "damage": 0.0,
+        "top_speed_kmh": 212.06124000000003
+      },
+      {
+        "lap": 3,
+        "time_s": 94.148,
+        "damage": 0.0,
+        "top_speed_kmh": 212.00904
+      },
+      {
+        "lap": 4,
+        "time_s": 94.038,
+        "damage": 0.0,
+        "top_speed_kmh": 211.9806
+      },
+      {
+        "lap": 5,
+        "time_s": 94.078,
+        "damage": 0.0,
+        "top_speed_kmh": 212.35860000000002
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.52,
+    "best_s": 94.038,
+    "mean_s": 95.136,
+    "warm_mean_s": 94.083,
+    "warm_std_s": 0.04031128874149222,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "dirt/dirt-6",
+      "category": "dirt",
+      "name": "dirt-6"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 99.456,
+        "damage": 0.0,
+        "top_speed_kmh": 200.04804000000001
+      },
+      {
+        "lap": 2,
+        "time_s": 94.054,
+        "damage": 0.0,
+        "top_speed_kmh": 209.02752
+      },
+      {
+        "lap": 3,
+        "time_s": 94.0,
+        "damage": 0.0,
+        "top_speed_kmh": 208.83024
+      },
+      {
+        "lap": 4,
+        "time_s": 94.002,
+        "damage": 0.0,
+        "top_speed_kmh": 208.88712
+      },
+      {
+        "lap": 5,
+        "time_s": 93.948,
+        "damage": 0.0,
+        "top_speed_kmh": 209.05884
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.468,
+    "best_s": 93.948,
+    "mean_s": 95.092,
+    "warm_mean_s": 94.001,
+    "warm_std_s": 0.03748332962798569,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "dirt/dirt-6",
+      "category": "dirt",
+      "name": "dirt-6"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 99.828,
+        "damage": 0.0,
+        "top_speed_kmh": 202.74552
+      },
+      {
+        "lap": 2,
+        "time_s": 94.362,
+        "damage": 0.0,
+        "top_speed_kmh": 212.49504000000002
+      },
+      {
+        "lap": 3,
+        "time_s": 94.322,
+        "damage": 0.0,
+        "top_speed_kmh": 212.55696
+      },
+      {
+        "lap": 4,
+        "time_s": 94.26,
+        "damage": 0.0,
+        "top_speed_kmh": 212.39352
+      },
+      {
+        "lap": 5,
+        "time_s": 94.214,
+        "damage": 0.0,
+        "top_speed_kmh": 212.3784
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.52,
+    "best_s": 94.214,
+    "mean_s": 95.3972,
+    "warm_mean_s": 94.2895,
+    "warm_std_s": 0.05675165195833361,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "dirt/mixed-1",
+      "category": "dirt",
+      "name": "mixed-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 51.672,
+        "damage": 0.0,
+        "top_speed_kmh": 161.93088
+      },
+      {
+        "lap": 2,
+        "time_s": 46.822,
+        "damage": 0.0,
+        "top_speed_kmh": 161.87328
+      },
+      {
+        "lap": 3,
+        "time_s": 46.758,
+        "damage": 0.0,
+        "top_speed_kmh": 162.34380000000002
+      },
+      {
+        "lap": 4,
+        "time_s": 46.76,
+        "damage": 0.0,
+        "top_speed_kmh": 161.99136
+      },
+      {
+        "lap": 5,
+        "time_s": 46.786,
+        "damage": 0.0,
+        "top_speed_kmh": 161.88696000000002
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.272,
+    "best_s": 46.758,
+    "mean_s": 47.7596,
+    "warm_mean_s": 46.7815,
+    "warm_std_s": 0.025860201081972435,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "dirt/mixed-1",
+      "category": "dirt",
+      "name": "mixed-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 51.304,
+        "damage": 0.0,
+        "top_speed_kmh": 160.76268000000002
+      },
+      {
+        "lap": 2,
+        "time_s": 46.618,
+        "damage": 0.0,
+        "top_speed_kmh": 163.16064
+      },
+      {
+        "lap": 3,
+        "time_s": 46.618,
+        "damage": 0.0,
+        "top_speed_kmh": 162.70884
+      },
+      {
+        "lap": 4,
+        "time_s": 46.638,
+        "damage": 0.0,
+        "top_speed_kmh": 163.54044000000002
+      },
+      {
+        "lap": 5,
+        "time_s": 46.64,
+        "damage": 0.0,
+        "top_speed_kmh": 163.0278
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.268,
+    "best_s": 46.618,
+    "mean_s": 47.5636,
+    "warm_mean_s": 46.6285,
+    "warm_std_s": 0.010523782589923278,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "dirt/mixed-1",
+      "category": "dirt",
+      "name": "mixed-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 51.268,
+        "damage": 0.0,
+        "top_speed_kmh": 161.86356
+      },
+      {
+        "lap": 2,
+        "time_s": 46.184,
+        "damage": 0.0,
+        "top_speed_kmh": 162.18504000000001
+      },
+      {
+        "lap": 3,
+        "time_s": 46.3,
+        "damage": 0.0,
+        "top_speed_kmh": 162.34128
+      },
+      {
+        "lap": 4,
+        "time_s": 46.264,
+        "damage": 0.0,
+        "top_speed_kmh": 162.19548
+      },
+      {
+        "lap": 5,
+        "time_s": 46.2,
+        "damage": 0.0,
+        "top_speed_kmh": 162.30168
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.27,
+    "best_s": 46.184,
+    "mean_s": 47.2432,
+    "warm_mean_s": 46.237,
+    "warm_std_s": 0.04710626285325512,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "dirt/mixed-1",
+      "category": "dirt",
+      "name": "mixed-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 51.476,
+        "damage": 0.0,
+        "top_speed_kmh": 161.95464
+      },
+      {
+        "lap": 2,
+        "time_s": 46.644,
+        "damage": 0.0,
+        "top_speed_kmh": 163.89
+      },
+      {
+        "lap": 3,
+        "time_s": 46.586,
+        "damage": 0.0,
+        "top_speed_kmh": 164.13335999999998
+      },
+      {
+        "lap": 4,
+        "time_s": 46.584,
+        "damage": 0.0,
+        "top_speed_kmh": 163.863
+      },
+      {
+        "lap": 5,
+        "time_s": 46.52,
+        "damage": 0.0,
+        "top_speed_kmh": 163.70172000000002
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.272,
+    "best_s": 46.52,
+    "mean_s": 47.562,
+    "warm_mean_s": 46.5835,
+    "warm_std_s": 0.043871972830040934,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "dirt/mixed-2",
+      "category": "dirt",
+      "name": "mixed-2"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 67.806,
+        "damage": 0.0,
+        "top_speed_kmh": 161.71128000000002
+      },
+      {
+        "lap": 2,
+        "time_s": 63.024,
+        "damage": 0.0,
+        "top_speed_kmh": 161.8866
+      },
+      {
+        "lap": 3,
+        "time_s": 62.986,
+        "damage": 0.0,
+        "top_speed_kmh": 161.79336
+      },
+      {
+        "lap": 4,
+        "time_s": 62.826,
+        "damage": 0.0,
+        "top_speed_kmh": 161.67168
+      },
+      {
+        "lap": 5,
+        "time_s": 62.86,
+        "damage": 0.0,
+        "top_speed_kmh": 161.65296
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.393,
+    "best_s": 62.826,
+    "mean_s": 63.9004,
+    "warm_mean_s": 62.924,
+    "warm_std_s": 0.08298192574289867,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "dirt/mixed-2",
+      "category": "dirt",
+      "name": "mixed-2"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 67.686,
+        "damage": 0.0,
+        "top_speed_kmh": 166.31136
+      },
+      {
+        "lap": 2,
+        "time_s": 62.742,
+        "damage": 0.0,
+        "top_speed_kmh": 166.1994
+      },
+      {
+        "lap": 3,
+        "time_s": 62.708,
+        "damage": 0.0,
+        "top_speed_kmh": 166.30056000000002
+      },
+      {
+        "lap": 4,
+        "time_s": 62.724,
+        "damage": 0.0,
+        "top_speed_kmh": 166.38335999999998
+      },
+      {
+        "lap": 5,
+        "time_s": 62.764,
+        "damage": 0.0,
+        "top_speed_kmh": 166.18392
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.367,
+    "best_s": 62.708,
+    "mean_s": 63.7248,
+    "warm_mean_s": 62.7345,
+    "warm_std_s": 0.020850659461994756,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "dirt/mixed-2",
+      "category": "dirt",
+      "name": "mixed-2"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 67.258,
+        "damage": 0.0,
+        "top_speed_kmh": 163.5246
+      },
+      {
+        "lap": 2,
+        "time_s": 62.154,
+        "damage": 0.0,
+        "top_speed_kmh": 163.9224
+      },
+      {
+        "lap": 3,
+        "time_s": 62.086,
+        "damage": 0.0,
+        "top_speed_kmh": 163.58112
+      },
+      {
+        "lap": 4,
+        "time_s": 62.076,
+        "damage": 0.0,
+        "top_speed_kmh": 163.55772
+      },
+      {
+        "lap": 5,
+        "time_s": 62.182,
+        "damage": 0.0,
+        "top_speed_kmh": 163.70892
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.388,
+    "best_s": 62.076,
+    "mean_s": 63.1512,
+    "warm_mean_s": 62.1245,
+    "warm_std_s": 0.0447520949230327,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "dirt/mixed-2",
+      "category": "dirt",
+      "name": "mixed-2"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 67.648,
+        "damage": 0.0,
+        "top_speed_kmh": 166.5432
+      },
+      {
+        "lap": 2,
+        "time_s": 62.578,
+        "damage": 0.0,
+        "top_speed_kmh": 166.71384
+      },
+      {
+        "lap": 3,
+        "time_s": 62.51,
+        "damage": 0.0,
+        "top_speed_kmh": 166.5702
+      },
+      {
+        "lap": 4,
+        "time_s": 62.534,
+        "damage": 0.0,
+        "top_speed_kmh": 166.464
+      },
+      {
+        "lap": 5,
+        "time_s": 62.538,
+        "damage": 0.0,
+        "top_speed_kmh": 166.52448
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.425,
+    "best_s": 62.51,
+    "mean_s": 63.5616,
+    "warm_mean_s": 62.54,
+    "warm_std_s": 0.0244131112314693,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "oval/a-speedway",
+      "category": "oval",
+      "name": "a-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 34.728,
+        "damage": 0.0,
+        "top_speed_kmh": 263.09736
+      },
+      {
+        "lap": 2,
+        "time_s": 28.788,
+        "damage": 0.0,
+        "top_speed_kmh": 263.62728
+      },
+      {
+        "lap": 3,
+        "time_s": 28.8,
+        "damage": 0.0,
+        "top_speed_kmh": 263.27412
+      },
+      {
+        "lap": 4,
+        "time_s": 28.748,
+        "damage": 0.0,
+        "top_speed_kmh": 263.1834
+      },
+      {
+        "lap": 5,
+        "time_s": 28.724,
+        "damage": 0.0,
+        "top_speed_kmh": 263.85803999999996
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.276,
+    "best_s": 28.724,
+    "mean_s": 29.9576,
+    "warm_mean_s": 28.765,
+    "warm_std_s": 0.030512292604784746,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "oval/a-speedway",
+      "category": "oval",
+      "name": "a-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 34.034,
+        "damage": 0.0,
+        "top_speed_kmh": 268.70256
+      },
+      {
+        "lap": 2,
+        "time_s": 28.122,
+        "damage": 0.0,
+        "top_speed_kmh": 268.587
+      },
+      {
+        "lap": 3,
+        "time_s": 28.108,
+        "damage": 0.0,
+        "top_speed_kmh": 268.26948
+      },
+      {
+        "lap": 4,
+        "time_s": 28.098,
+        "damage": 0.0,
+        "top_speed_kmh": 268.44552000000004
+      },
+      {
+        "lap": 5,
+        "time_s": 28.086,
+        "damage": 0.0,
+        "top_speed_kmh": 268.95744
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.268,
+    "best_s": 28.086,
+    "mean_s": 29.2896,
+    "warm_mean_s": 28.1035,
+    "warm_std_s": 0.013219304066402888,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "oval/a-speedway",
+      "category": "oval",
+      "name": "a-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 33.882,
+        "damage": 0.0,
+        "top_speed_kmh": 269.42364000000003
+      },
+      {
+        "lap": 2,
+        "time_s": 27.604,
+        "damage": 0.0,
+        "top_speed_kmh": 269.38188
+      },
+      {
+        "lap": 3,
+        "time_s": 27.614,
+        "damage": 0.0,
+        "top_speed_kmh": 268.96896
+      },
+      {
+        "lap": 4,
+        "time_s": 27.602,
+        "damage": 0.0,
+        "top_speed_kmh": 269.11692
+      },
+      {
+        "lap": 5,
+        "time_s": 27.558,
+        "damage": 0.0,
+        "top_speed_kmh": 269.76168
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.222,
+    "best_s": 27.558,
+    "mean_s": 28.852,
+    "warm_mean_s": 27.5945,
+    "warm_std_s": 0.021558061137310285,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "oval/a-speedway",
+      "category": "oval",
+      "name": "a-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 33.788,
+        "damage": 5.0,
+        "top_speed_kmh": 272.4768
+      },
+      {
+        "lap": 2,
+        "time_s": 27.642,
+        "damage": 10.0,
+        "top_speed_kmh": 272.23344000000003
+      },
+      {
+        "lap": 3,
+        "time_s": 27.672,
+        "damage": 15.0,
+        "top_speed_kmh": 272.41704000000004
+      },
+      {
+        "lap": 4,
+        "time_s": 27.634,
+        "damage": 20.0,
+        "top_speed_kmh": 272.54556
+      },
+      {
+        "lap": 5,
+        "time_s": 27.626,
+        "damage": 25.0,
+        "top_speed_kmh": 272.2068
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.281,
+    "best_s": 27.626,
+    "mean_s": 28.8724,
+    "warm_mean_s": 27.6435,
+    "warm_std_s": 0.01739971264130522,
+    "damage": 25.0,
+    "peak_lap_damage": 25.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "oval/b-speedway",
+      "category": "oval",
+      "name": "b-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 56.482,
+        "damage": 0.0,
+        "top_speed_kmh": 300.10176
+      },
+      {
+        "lap": 2,
+        "time_s": 47.64,
+        "damage": 0.0,
+        "top_speed_kmh": 300.78468
+      },
+      {
+        "lap": 3,
+        "time_s": 47.634,
+        "damage": 0.0,
+        "top_speed_kmh": 300.7962
+      },
+      {
+        "lap": 4,
+        "time_s": 47.632,
+        "damage": 0.0,
+        "top_speed_kmh": 300.8052
+      },
+      {
+        "lap": 5,
+        "time_s": 47.63,
+        "damage": 0.0,
+        "top_speed_kmh": 300.81528
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.376,
+    "best_s": 47.63,
+    "mean_s": 49.4036,
+    "warm_mean_s": 47.634,
+    "warm_std_s": 0.003741657386773767,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "oval/b-speedway",
+      "category": "oval",
+      "name": "b-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 55.974,
+        "damage": 4.0,
+        "top_speed_kmh": 303.138
+      },
+      {
+        "lap": 2,
+        "time_s": 47.072,
+        "damage": 4.0,
+        "top_speed_kmh": 303.78492
+      },
+      {
+        "lap": 3,
+        "time_s": 47.07,
+        "damage": 4.0,
+        "top_speed_kmh": 303.77160000000003
+      },
+      {
+        "lap": 4,
+        "time_s": 47.07,
+        "damage": 4.0,
+        "top_speed_kmh": 303.77448
+      },
+      {
+        "lap": 5,
+        "time_s": 47.07,
+        "damage": 4.0,
+        "top_speed_kmh": 303.76116
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.371,
+    "best_s": 47.07,
+    "mean_s": 48.8512,
+    "warm_mean_s": 47.0705,
+    "warm_std_s": 0.0008660254037854971,
+    "damage": 4.0,
+    "peak_lap_damage": 4.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "oval/b-speedway",
+      "category": "oval",
+      "name": "b-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 56.49,
+        "damage": 4.0,
+        "top_speed_kmh": 303.13475999999997
+      },
+      {
+        "lap": 2,
+        "time_s": 46.924,
+        "damage": 4.0,
+        "top_speed_kmh": 305.03628
+      },
+      {
+        "lap": 3,
+        "time_s": 46.91,
+        "damage": 4.0,
+        "top_speed_kmh": 305.055
+      },
+      {
+        "lap": 4,
+        "time_s": 46.908,
+        "damage": 4.0,
+        "top_speed_kmh": 305.06652
+      },
+      {
+        "lap": 5,
+        "time_s": 46.904,
+        "damage": 4.0,
+        "top_speed_kmh": 305.07696
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.373,
+    "best_s": 46.904,
+    "mean_s": 48.8272,
+    "warm_mean_s": 46.911500000000004,
+    "warm_std_s": 0.007533259586658631,
+    "damage": 4.0,
+    "peak_lap_damage": 4.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "oval/b-speedway",
+      "category": "oval",
+      "name": "b-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 55.556,
+        "damage": 3.0,
+        "top_speed_kmh": 307.38635999999997
+      },
+      {
+        "lap": 2,
+        "time_s": 46.442,
+        "damage": 3.0,
+        "top_speed_kmh": 308.29464
+      },
+      {
+        "lap": 3,
+        "time_s": 46.434,
+        "damage": 3.0,
+        "top_speed_kmh": 308.30472
+      },
+      {
+        "lap": 4,
+        "time_s": 46.432,
+        "damage": 3.0,
+        "top_speed_kmh": 308.31408
+      },
+      {
+        "lap": 5,
+        "time_s": 46.432,
+        "damage": 3.0,
+        "top_speed_kmh": 308.3256
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.368,
+    "best_s": 46.432,
+    "mean_s": 48.2592,
+    "warm_mean_s": 46.435,
+    "warm_std_s": 0.004123105625617099,
+    "damage": 3.0,
+    "peak_lap_damage": 3.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "oval/c-speedway",
+      "category": "oval",
+      "name": "c-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 48.052,
+        "damage": 0.0,
+        "top_speed_kmh": 296.35056
+      },
+      {
+        "lap": 2,
+        "time_s": 39.238,
+        "damage": 0.0,
+        "top_speed_kmh": 300.19608
+      },
+      {
+        "lap": 3,
+        "time_s": 39.23,
+        "damage": 0.0,
+        "top_speed_kmh": 300.21912
+      },
+      {
+        "lap": 4,
+        "time_s": 39.228,
+        "damage": 0.0,
+        "top_speed_kmh": 300.22704
+      },
+      {
+        "lap": 5,
+        "time_s": 39.224,
+        "damage": 0.0,
+        "top_speed_kmh": 300.23964
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.323,
+    "best_s": 39.224,
+    "mean_s": 40.9944,
+    "warm_mean_s": 39.23,
+    "warm_std_s": 0.005099019513593443,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "oval/c-speedway",
+      "category": "oval",
+      "name": "c-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 47.568,
+        "damage": 4.0,
+        "top_speed_kmh": 299.84148
+      },
+      {
+        "lap": 2,
+        "time_s": 38.72,
+        "damage": 4.0,
+        "top_speed_kmh": 303.4746
+      },
+      {
+        "lap": 3,
+        "time_s": 38.704,
+        "damage": 4.0,
+        "top_speed_kmh": 303.50088000000005
+      },
+      {
+        "lap": 4,
+        "time_s": 38.704,
+        "damage": 4.0,
+        "top_speed_kmh": 303.5106
+      },
+      {
+        "lap": 5,
+        "time_s": 38.702,
+        "damage": 4.0,
+        "top_speed_kmh": 303.52068
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.271,
+    "best_s": 38.702,
+    "mean_s": 40.4796,
+    "warm_mean_s": 38.707499999999996,
+    "warm_std_s": 0.00726291952316668,
+    "damage": 4.0,
+    "peak_lap_damage": 4.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "oval/c-speedway",
+      "category": "oval",
+      "name": "c-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 48.122,
+        "damage": 4.0,
+        "top_speed_kmh": 299.50128
+      },
+      {
+        "lap": 2,
+        "time_s": 38.68,
+        "damage": 4.0,
+        "top_speed_kmh": 304.08732
+      },
+      {
+        "lap": 3,
+        "time_s": 38.646,
+        "damage": 4.0,
+        "top_speed_kmh": 304.1748
+      },
+      {
+        "lap": 4,
+        "time_s": 38.642,
+        "damage": 4.0,
+        "top_speed_kmh": 304.1892
+      },
+      {
+        "lap": 5,
+        "time_s": 38.64,
+        "damage": 4.0,
+        "top_speed_kmh": 304.19964
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.32,
+    "best_s": 38.64,
+    "mean_s": 40.546,
+    "warm_mean_s": 38.652,
+    "warm_std_s": 0.01630950643029933,
+    "damage": 4.0,
+    "peak_lap_damage": 4.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "oval/c-speedway",
+      "category": "oval",
+      "name": "c-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 47.302,
+        "damage": 3.0,
+        "top_speed_kmh": 303.77628
+      },
+      {
+        "lap": 2,
+        "time_s": 38.246,
+        "damage": 3.0,
+        "top_speed_kmh": 307.65276000000006
+      },
+      {
+        "lap": 3,
+        "time_s": 38.23,
+        "damage": 3.0,
+        "top_speed_kmh": 307.68228
+      },
+      {
+        "lap": 4,
+        "time_s": 38.23,
+        "damage": 3.0,
+        "top_speed_kmh": 307.69344
+      },
+      {
+        "lap": 5,
+        "time_s": 38.226,
+        "damage": 3.0,
+        "top_speed_kmh": 307.70496
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.318,
+    "best_s": 38.226,
+    "mean_s": 40.0468,
+    "warm_mean_s": 38.233,
+    "warm_std_s": 0.007681145747870364,
+    "damage": 3.0,
+    "peak_lap_damage": 3.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "oval/d-speedway",
+      "category": "oval",
+      "name": "d-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 49.76,
+        "damage": 0.0,
+        "top_speed_kmh": 298.40724
+      },
+      {
+        "lap": 2,
+        "time_s": 40.958,
+        "damage": 0.0,
+        "top_speed_kmh": 300.75624000000005
+      },
+      {
+        "lap": 3,
+        "time_s": 40.952,
+        "damage": 0.0,
+        "top_speed_kmh": 300.76812
+      },
+      {
+        "lap": 4,
+        "time_s": 40.948,
+        "damage": 0.0,
+        "top_speed_kmh": 300.77784
+      },
+      {
+        "lap": 5,
+        "time_s": 40.948,
+        "damage": 0.0,
+        "top_speed_kmh": 300.78576
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.326,
+    "best_s": 40.948,
+    "mean_s": 42.7132,
+    "warm_mean_s": 40.951499999999996,
+    "warm_std_s": 0.004092676385935367,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "oval/d-speedway",
+      "category": "oval",
+      "name": "d-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 49.304,
+        "damage": 4.0,
+        "top_speed_kmh": 301.45428000000004
+      },
+      {
+        "lap": 2,
+        "time_s": 40.466,
+        "damage": 4.0,
+        "top_speed_kmh": 303.68124
+      },
+      {
+        "lap": 3,
+        "time_s": 40.46,
+        "damage": 4.0,
+        "top_speed_kmh": 303.68988
+      },
+      {
+        "lap": 4,
+        "time_s": 40.462,
+        "damage": 4.0,
+        "top_speed_kmh": 303.6906
+      },
+      {
+        "lap": 5,
+        "time_s": 40.462,
+        "damage": 4.0,
+        "top_speed_kmh": 303.69456
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.323,
+    "best_s": 40.46,
+    "mean_s": 42.2308,
+    "warm_mean_s": 40.462500000000006,
+    "warm_std_s": 0.0021794494717701477,
+    "damage": 4.0,
+    "peak_lap_damage": 4.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "oval/d-speedway",
+      "category": "oval",
+      "name": "d-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 49.834,
+        "damage": 4.0,
+        "top_speed_kmh": 300.56436
+      },
+      {
+        "lap": 2,
+        "time_s": 40.362,
+        "damage": 4.0,
+        "top_speed_kmh": 305.07984
+      },
+      {
+        "lap": 3,
+        "time_s": 40.332,
+        "damage": 4.0,
+        "top_speed_kmh": 305.13348
+      },
+      {
+        "lap": 4,
+        "time_s": 40.33,
+        "damage": 4.0,
+        "top_speed_kmh": 305.14284
+      },
+      {
+        "lap": 5,
+        "time_s": 40.328,
+        "damage": 4.0,
+        "top_speed_kmh": 305.1522
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.328,
+    "best_s": 40.328,
+    "mean_s": 42.2372,
+    "warm_mean_s": 40.338,
+    "warm_std_s": 0.013928388277184562,
+    "damage": 4.0,
+    "peak_lap_damage": 4.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "oval/d-speedway",
+      "category": "oval",
+      "name": "d-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 48.998,
+        "damage": 3.0,
+        "top_speed_kmh": 305.49348000000003
+      },
+      {
+        "lap": 2,
+        "time_s": 39.926,
+        "damage": 3.0,
+        "top_speed_kmh": 308.3328
+      },
+      {
+        "lap": 3,
+        "time_s": 39.914,
+        "damage": 3.0,
+        "top_speed_kmh": 308.35008
+      },
+      {
+        "lap": 4,
+        "time_s": 39.914,
+        "damage": 3.0,
+        "top_speed_kmh": 308.35944
+      },
+      {
+        "lap": 5,
+        "time_s": 39.912,
+        "damage": 3.0,
+        "top_speed_kmh": 308.36844
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.323,
+    "best_s": 39.912,
+    "mean_s": 41.7328,
+    "warm_mean_s": 39.9165,
+    "warm_std_s": 0.005545268253205399,
+    "damage": 3.0,
+    "peak_lap_damage": 3.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "oval/e-speedway",
+      "category": "oval",
+      "name": "e-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 57.768,
+        "damage": 0.0,
+        "top_speed_kmh": 299.8692
+      },
+      {
+        "lap": 2,
+        "time_s": 48.896,
+        "damage": 0.0,
+        "top_speed_kmh": 301.31568000000004
+      },
+      {
+        "lap": 3,
+        "time_s": 48.894,
+        "damage": 0.0,
+        "top_speed_kmh": 301.32612
+      },
+      {
+        "lap": 4,
+        "time_s": 48.89,
+        "damage": 0.0,
+        "top_speed_kmh": 301.33584
+      },
+      {
+        "lap": 5,
+        "time_s": 48.89,
+        "damage": 0.0,
+        "top_speed_kmh": 301.34412
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.37,
+    "best_s": 48.89,
+    "mean_s": 50.6676,
+    "warm_mean_s": 48.8925,
+    "warm_std_s": 0.0025980762113530726,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "oval/e-speedway",
+      "category": "oval",
+      "name": "e-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 57.244,
+        "damage": 4.0,
+        "top_speed_kmh": 303.21144
+      },
+      {
+        "lap": 2,
+        "time_s": 48.37,
+        "damage": 4.0,
+        "top_speed_kmh": 303.71976
+      },
+      {
+        "lap": 3,
+        "time_s": 48.366,
+        "damage": 4.0,
+        "top_speed_kmh": 303.73056
+      },
+      {
+        "lap": 4,
+        "time_s": 48.364,
+        "damage": 4.0,
+        "top_speed_kmh": 303.72984
+      },
+      {
+        "lap": 5,
+        "time_s": 48.364,
+        "damage": 4.0,
+        "top_speed_kmh": 303.72444
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.372,
+    "best_s": 48.364,
+    "mean_s": 50.1416,
+    "warm_mean_s": 48.366,
+    "warm_std_s": 0.002449489742783271,
+    "damage": 4.0,
+    "peak_lap_damage": 4.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "oval/e-speedway",
+      "category": "oval",
+      "name": "e-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 57.744,
+        "damage": 4.0,
+        "top_speed_kmh": 303.60744000000005
+      },
+      {
+        "lap": 2,
+        "time_s": 48.156,
+        "damage": 4.0,
+        "top_speed_kmh": 305.73828000000003
+      },
+      {
+        "lap": 3,
+        "time_s": 48.142,
+        "damage": 4.0,
+        "top_speed_kmh": 305.7624
+      },
+      {
+        "lap": 4,
+        "time_s": 48.138,
+        "damage": 4.0,
+        "top_speed_kmh": 305.7732
+      },
+      {
+        "lap": 5,
+        "time_s": 48.138,
+        "damage": 4.0,
+        "top_speed_kmh": 305.78148000000004
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.368,
+    "best_s": 48.138,
+    "mean_s": 50.0636,
+    "warm_mean_s": 48.1435,
+    "warm_std_s": 0.007399324293474411,
+    "damage": 4.0,
+    "peak_lap_damage": 4.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "oval/e-speedway",
+      "category": "oval",
+      "name": "e-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 56.794,
+        "damage": 3.0,
+        "top_speed_kmh": 307.36404
+      },
+      {
+        "lap": 2,
+        "time_s": 47.668,
+        "damage": 3.0,
+        "top_speed_kmh": 308.87316000000004
+      },
+      {
+        "lap": 3,
+        "time_s": 47.664,
+        "damage": 3.0,
+        "top_speed_kmh": 308.88396
+      },
+      {
+        "lap": 4,
+        "time_s": 47.664,
+        "damage": 3.0,
+        "top_speed_kmh": 308.89224
+      },
+      {
+        "lap": 5,
+        "time_s": 47.66,
+        "damage": 3.0,
+        "top_speed_kmh": 308.90016
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.371,
+    "best_s": 47.66,
+    "mean_s": 49.49,
+    "warm_mean_s": 47.664,
+    "warm_std_s": 0.0028284271247471346,
+    "damage": 3.0,
+    "peak_lap_damage": 3.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "oval/e-track-5",
+      "category": "oval",
+      "name": "e-track-5"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 36.568,
+        "damage": 0.0,
+        "top_speed_kmh": 223.53804
+      },
+      {
+        "lap": 2,
+        "time_s": 31.462,
+        "damage": 0.0,
+        "top_speed_kmh": 223.02504
+      },
+      {
+        "lap": 3,
+        "time_s": 31.418,
+        "damage": 0.0,
+        "top_speed_kmh": 223.82927999999998
+      },
+      {
+        "lap": 4,
+        "time_s": 31.458,
+        "damage": 0.0,
+        "top_speed_kmh": 223.56684
+      },
+      {
+        "lap": 5,
+        "time_s": 31.352,
+        "damage": 0.0,
+        "top_speed_kmh": 223.425
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.269,
+    "best_s": 31.352,
+    "mean_s": 32.4516,
+    "warm_mean_s": 31.4225,
+    "warm_std_s": 0.044189930979805316,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "oval/e-track-5",
+      "category": "oval",
+      "name": "e-track-5"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 36.052,
+        "damage": 0.0,
+        "top_speed_kmh": 225.18216
+      },
+      {
+        "lap": 2,
+        "time_s": 31.024,
+        "damage": 0.0,
+        "top_speed_kmh": 225.58716
+      },
+      {
+        "lap": 3,
+        "time_s": 31.032,
+        "damage": 0.0,
+        "top_speed_kmh": 225.31392000000002
+      },
+      {
+        "lap": 4,
+        "time_s": 31.044,
+        "damage": 0.0,
+        "top_speed_kmh": 225.2466
+      },
+      {
+        "lap": 5,
+        "time_s": 31.082,
+        "damage": 0.0,
+        "top_speed_kmh": 225.30132
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.269,
+    "best_s": 31.024,
+    "mean_s": 32.0468,
+    "warm_mean_s": 31.0455,
+    "warm_std_s": 0.022242976419535293,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "oval/e-track-5",
+      "category": "oval",
+      "name": "e-track-5"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 35.846,
+        "damage": 0.0,
+        "top_speed_kmh": 226.15704
+      },
+      {
+        "lap": 2,
+        "time_s": 30.502,
+        "damage": 0.0,
+        "top_speed_kmh": 225.86508
+      },
+      {
+        "lap": 3,
+        "time_s": 30.614,
+        "damage": 0.0,
+        "top_speed_kmh": 226.14552
+      },
+      {
+        "lap": 4,
+        "time_s": 30.548,
+        "damage": 0.0,
+        "top_speed_kmh": 225.59292000000002
+      },
+      {
+        "lap": 5,
+        "time_s": 30.542,
+        "damage": 0.0,
+        "top_speed_kmh": 226.04148
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.22,
+    "best_s": 30.502,
+    "mean_s": 31.6104,
+    "warm_mean_s": 30.5515,
+    "warm_std_s": 0.0401839520206767,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "oval/e-track-5",
+      "category": "oval",
+      "name": "e-track-5"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 35.962,
+        "damage": 0.0,
+        "top_speed_kmh": 228.366
+      },
+      {
+        "lap": 2,
+        "time_s": 30.664,
+        "damage": 0.0,
+        "top_speed_kmh": 228.53232
+      },
+      {
+        "lap": 3,
+        "time_s": 30.592,
+        "damage": 0.0,
+        "top_speed_kmh": 228.76884
+      },
+      {
+        "lap": 4,
+        "time_s": 30.68,
+        "damage": 0.0,
+        "top_speed_kmh": 228.8628
+      },
+      {
+        "lap": 5,
+        "time_s": 30.73,
+        "damage": 0.0,
+        "top_speed_kmh": 228.5874
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.217,
+    "best_s": 30.592,
+    "mean_s": 31.7256,
+    "warm_mean_s": 30.6665,
+    "warm_std_s": 0.049424184363528516,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "oval/f-speedway",
+      "category": "oval",
+      "name": "f-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 53.128,
+        "damage": 0.0,
+        "top_speed_kmh": 298.77228
+      },
+      {
+        "lap": 2,
+        "time_s": 44.294,
+        "damage": 0.0,
+        "top_speed_kmh": 301.26132
+      },
+      {
+        "lap": 3,
+        "time_s": 44.288,
+        "damage": 0.0,
+        "top_speed_kmh": 301.27464
+      },
+      {
+        "lap": 4,
+        "time_s": 44.288,
+        "damage": 0.0,
+        "top_speed_kmh": 301.28256
+      },
+      {
+        "lap": 5,
+        "time_s": 44.284,
+        "damage": 0.0,
+        "top_speed_kmh": 301.29012
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.371,
+    "best_s": 44.284,
+    "mean_s": 46.0564,
+    "warm_mean_s": 44.2885,
+    "warm_std_s": 0.003570714214270814,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "oval/f-speedway",
+      "category": "oval",
+      "name": "f-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 52.658,
+        "damage": 4.0,
+        "top_speed_kmh": 301.65084
+      },
+      {
+        "lap": 2,
+        "time_s": 43.8,
+        "damage": 4.0,
+        "top_speed_kmh": 303.74460000000005
+      },
+      {
+        "lap": 3,
+        "time_s": 43.798,
+        "damage": 4.0,
+        "top_speed_kmh": 303.74208
+      },
+      {
+        "lap": 4,
+        "time_s": 43.796,
+        "damage": 4.0,
+        "top_speed_kmh": 303.7518
+      },
+      {
+        "lap": 5,
+        "time_s": 43.798,
+        "damage": 4.0,
+        "top_speed_kmh": 303.7266
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.32,
+    "best_s": 43.796,
+    "mean_s": 45.57,
+    "warm_mean_s": 43.798,
+    "warm_std_s": 0.0014142135623723114,
+    "damage": 4.0,
+    "peak_lap_damage": 4.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "oval/f-speedway",
+      "category": "oval",
+      "name": "f-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 53.182,
+        "damage": 4.0,
+        "top_speed_kmh": 301.39308
+      },
+      {
+        "lap": 2,
+        "time_s": 43.634,
+        "damage": 4.0,
+        "top_speed_kmh": 305.58564
+      },
+      {
+        "lap": 3,
+        "time_s": 43.614,
+        "damage": 4.0,
+        "top_speed_kmh": 305.6292
+      },
+      {
+        "lap": 4,
+        "time_s": 43.61,
+        "damage": 4.0,
+        "top_speed_kmh": 305.63784
+      },
+      {
+        "lap": 5,
+        "time_s": 43.61,
+        "damage": 4.0,
+        "top_speed_kmh": 305.64648
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.322,
+    "best_s": 43.61,
+    "mean_s": 45.53,
+    "warm_mean_s": 43.617,
+    "warm_std_s": 0.009949874371066755,
+    "damage": 4.0,
+    "peak_lap_damage": 4.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "oval/f-speedway",
+      "category": "oval",
+      "name": "f-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 52.292,
+        "damage": 3.0,
+        "top_speed_kmh": 305.74800000000005
+      },
+      {
+        "lap": 2,
+        "time_s": 43.18,
+        "damage": 3.0,
+        "top_speed_kmh": 308.80224000000004
+      },
+      {
+        "lap": 3,
+        "time_s": 43.172,
+        "damage": 3.0,
+        "top_speed_kmh": 308.81628
+      },
+      {
+        "lap": 4,
+        "time_s": 43.17,
+        "damage": 3.0,
+        "top_speed_kmh": 308.82563999999996
+      },
+      {
+        "lap": 5,
+        "time_s": 43.168,
+        "damage": 3.0,
+        "top_speed_kmh": 308.83320000000003
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.369,
+    "best_s": 43.168,
+    "mean_s": 44.9964,
+    "warm_mean_s": 43.1725,
+    "warm_std_s": 0.004555216789572062,
+    "damage": 3.0,
+    "peak_lap_damage": 3.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "oval/g-speedway",
+      "category": "oval",
+      "name": "g-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 44.62,
+        "damage": 0.0,
+        "top_speed_kmh": 295.9542
+      },
+      {
+        "lap": 2,
+        "time_s": 35.876,
+        "damage": 0.0,
+        "top_speed_kmh": 299.47860000000003
+      },
+      {
+        "lap": 3,
+        "time_s": 35.86,
+        "damage": 0.0,
+        "top_speed_kmh": 299.59236000000004
+      },
+      {
+        "lap": 4,
+        "time_s": 35.86,
+        "damage": 0.0,
+        "top_speed_kmh": 299.60424
+      },
+      {
+        "lap": 5,
+        "time_s": 35.856,
+        "damage": 0.0,
+        "top_speed_kmh": 299.61791999999997
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.325,
+    "best_s": 35.856,
+    "mean_s": 37.614399999999996,
+    "warm_mean_s": 35.863,
+    "warm_std_s": 0.007681145747867358,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "oval/g-speedway",
+      "category": "oval",
+      "name": "g-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 44.164,
+        "damage": 4.0,
+        "top_speed_kmh": 299.2374
+      },
+      {
+        "lap": 2,
+        "time_s": 35.386,
+        "damage": 4.0,
+        "top_speed_kmh": 303.05735999999996
+      },
+      {
+        "lap": 3,
+        "time_s": 35.366,
+        "damage": 4.0,
+        "top_speed_kmh": 303.09804
+      },
+      {
+        "lap": 4,
+        "time_s": 35.364,
+        "damage": 4.0,
+        "top_speed_kmh": 303.10992
+      },
+      {
+        "lap": 5,
+        "time_s": 35.362,
+        "damage": 4.0,
+        "top_speed_kmh": 303.11964
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.32,
+    "best_s": 35.362,
+    "mean_s": 37.1284,
+    "warm_mean_s": 35.3695,
+    "warm_std_s": 0.009630680142130367,
+    "damage": 4.0,
+    "peak_lap_damage": 4.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "oval/g-speedway",
+      "category": "oval",
+      "name": "g-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 44.714,
+        "damage": 4.0,
+        "top_speed_kmh": 297.67392
+      },
+      {
+        "lap": 2,
+        "time_s": 35.382,
+        "damage": 4.0,
+        "top_speed_kmh": 303.55956000000003
+      },
+      {
+        "lap": 3,
+        "time_s": 35.33,
+        "damage": 4.0,
+        "top_speed_kmh": 303.66504
+      },
+      {
+        "lap": 4,
+        "time_s": 35.328,
+        "damage": 4.0,
+        "top_speed_kmh": 303.67980000000006
+      },
+      {
+        "lap": 5,
+        "time_s": 35.326,
+        "damage": 4.0,
+        "top_speed_kmh": 303.6906
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.321,
+    "best_s": 35.326,
+    "mean_s": 37.216,
+    "warm_mean_s": 35.341499999999996,
+    "warm_std_s": 0.023425413550243745,
+    "damage": 4.0,
+    "peak_lap_damage": 4.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "oval/g-speedway",
+      "category": "oval",
+      "name": "g-speedway"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 43.936,
+        "damage": 3.0,
+        "top_speed_kmh": 303.02568
+      },
+      {
+        "lap": 2,
+        "time_s": 34.966,
+        "damage": 3.0,
+        "top_speed_kmh": 307.04184000000004
+      },
+      {
+        "lap": 3,
+        "time_s": 34.946,
+        "damage": 3.0,
+        "top_speed_kmh": 307.09512
+      },
+      {
+        "lap": 4,
+        "time_s": 34.944,
+        "damage": 3.0,
+        "top_speed_kmh": 307.10952000000003
+      },
+      {
+        "lap": 5,
+        "time_s": 34.942,
+        "damage": 3.0,
+        "top_speed_kmh": 307.12212
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.317,
+    "best_s": 34.942,
+    "mean_s": 36.7468,
+    "warm_mean_s": 34.9495,
+    "warm_std_s": 0.009630680142129353,
+    "damage": 3.0,
+    "peak_lap_damage": 3.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "oval/michigan",
+      "category": "oval",
+      "name": "michigan"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 43.216,
+        "damage": 0.0,
+        "top_speed_kmh": 267.38352000000003
+      },
+      {
+        "lap": 2,
+        "time_s": 36.402,
+        "damage": 0.0,
+        "top_speed_kmh": 278.42796
+      },
+      {
+        "lap": 3,
+        "time_s": 36.402,
+        "damage": 0.0,
+        "top_speed_kmh": 278.50176
+      },
+      {
+        "lap": 4,
+        "time_s": 36.428,
+        "damage": 0.0,
+        "top_speed_kmh": 278.61408
+      },
+      {
+        "lap": 5,
+        "time_s": 36.398,
+        "damage": 0.0,
+        "top_speed_kmh": 278.4816
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.273,
+    "best_s": 36.398,
+    "mean_s": 37.7692,
+    "warm_mean_s": 36.4075,
+    "warm_std_s": 0.01194780314534647,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "oval/michigan",
+      "category": "oval",
+      "name": "michigan"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 42.772,
+        "damage": 0.0,
+        "top_speed_kmh": 269.80812000000003
+      },
+      {
+        "lap": 2,
+        "time_s": 35.99,
+        "damage": 0.0,
+        "top_speed_kmh": 281.69604000000004
+      },
+      {
+        "lap": 3,
+        "time_s": 36.064,
+        "damage": 0.0,
+        "top_speed_kmh": 281.80080000000004
+      },
+      {
+        "lap": 4,
+        "time_s": 35.972,
+        "damage": 0.0,
+        "top_speed_kmh": 281.78604
+      },
+      {
+        "lap": 5,
+        "time_s": 35.998,
+        "damage": 0.0,
+        "top_speed_kmh": 281.93796000000003
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.321,
+    "best_s": 35.972,
+    "mean_s": 37.3592,
+    "warm_mean_s": 36.006,
+    "warm_std_s": 0.034785054261851786,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "oval/michigan",
+      "category": "oval",
+      "name": "michigan"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 42.934,
+        "damage": 0.0,
+        "top_speed_kmh": 268.89155999999997
+      },
+      {
+        "lap": 2,
+        "time_s": 35.836,
+        "damage": 0.0,
+        "top_speed_kmh": 279.46512
+      },
+      {
+        "lap": 3,
+        "time_s": 35.79,
+        "damage": 0.0,
+        "top_speed_kmh": 279.64476
+      },
+      {
+        "lap": 4,
+        "time_s": 35.846,
+        "damage": 0.0,
+        "top_speed_kmh": 279.7524
+      },
+      {
+        "lap": 5,
+        "time_s": 35.824,
+        "damage": 0.0,
+        "top_speed_kmh": 279.70452
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.272,
+    "best_s": 35.79,
+    "mean_s": 37.245999999999995,
+    "warm_mean_s": 35.824,
+    "warm_std_s": 0.021118712081942107,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "oval/michigan",
+      "category": "oval",
+      "name": "michigan"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 42.588,
+        "damage": 0.0,
+        "top_speed_kmh": 274.05576
+      },
+      {
+        "lap": 2,
+        "time_s": 35.568,
+        "damage": 0.0,
+        "top_speed_kmh": 285.37955999999997
+      },
+      {
+        "lap": 3,
+        "time_s": 35.536,
+        "damage": 0.0,
+        "top_speed_kmh": 285.54336
+      },
+      {
+        "lap": 4,
+        "time_s": 35.542,
+        "damage": 0.0,
+        "top_speed_kmh": 285.54984
+      },
+      {
+        "lap": 5,
+        "time_s": 35.456,
+        "damage": 0.0,
+        "top_speed_kmh": 285.68376
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.321,
+    "best_s": 35.456,
+    "mean_s": 36.938,
+    "warm_mean_s": 35.5255,
+    "warm_std_s": 0.0418897362130614,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "road/aalborg",
+      "category": "road",
+      "name": "aalborg"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 81.36,
+        "damage": 0.0,
+        "top_speed_kmh": 222.52788
+      },
+      {
+        "lap": 2,
+        "time_s": 76.356,
+        "damage": 0.0,
+        "top_speed_kmh": 222.60708
+      },
+      {
+        "lap": 3,
+        "time_s": 76.376,
+        "damage": 0.0,
+        "top_speed_kmh": 222.64272
+      },
+      {
+        "lap": 4,
+        "time_s": 76.406,
+        "damage": 0.0,
+        "top_speed_kmh": 222.63192
+      },
+      {
+        "lap": 5,
+        "time_s": 76.36,
+        "damage": 0.0,
+        "top_speed_kmh": 222.80328
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.477,
+    "best_s": 76.356,
+    "mean_s": 77.3716,
+    "warm_mean_s": 76.3745,
+    "warm_std_s": 0.01966596043930098,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "road/aalborg",
+      "category": "road",
+      "name": "aalborg"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 81.154,
+        "damage": 0.0,
+        "top_speed_kmh": 222.63516
+      },
+      {
+        "lap": 2,
+        "time_s": 76.082,
+        "damage": 0.0,
+        "top_speed_kmh": 222.88464
+      },
+      {
+        "lap": 3,
+        "time_s": 76.154,
+        "damage": 0.0,
+        "top_speed_kmh": 222.86016
+      },
+      {
+        "lap": 4,
+        "time_s": 76.086,
+        "damage": 0.0,
+        "top_speed_kmh": 222.98471999999998
+      },
+      {
+        "lap": 5,
+        "time_s": 76.156,
+        "damage": 0.0,
+        "top_speed_kmh": 223.00884
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.421,
+    "best_s": 76.082,
+    "mean_s": 77.1264,
+    "warm_mean_s": 76.1195,
+    "warm_std_s": 0.035535193822465484,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "road/aalborg",
+      "category": "road",
+      "name": "aalborg"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 81.494,
+        "damage": 0.0,
+        "top_speed_kmh": 221.5494
+      },
+      {
+        "lap": 2,
+        "time_s": 76.086,
+        "damage": 0.0,
+        "top_speed_kmh": 221.83632
+      },
+      {
+        "lap": 3,
+        "time_s": 76.04,
+        "damage": 0.0,
+        "top_speed_kmh": 221.6088
+      },
+      {
+        "lap": 4,
+        "time_s": 76.064,
+        "damage": 0.0,
+        "top_speed_kmh": 221.82372
+      },
+      {
+        "lap": 5,
+        "time_s": 75.978,
+        "damage": 0.0,
+        "top_speed_kmh": 221.85468
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.373,
+    "best_s": 75.978,
+    "mean_s": 77.1324,
+    "warm_mean_s": 76.042,
+    "warm_std_s": 0.040373258476373464,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "road/aalborg",
+      "category": "road",
+      "name": "aalborg"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 81.322,
+        "damage": 0.0,
+        "top_speed_kmh": 225.04644000000002
+      },
+      {
+        "lap": 2,
+        "time_s": 76.132,
+        "damage": 0.0,
+        "top_speed_kmh": 225.17208000000002
+      },
+      {
+        "lap": 3,
+        "time_s": 76.154,
+        "damage": 0.0,
+        "top_speed_kmh": 225.03996
+      },
+      {
+        "lap": 4,
+        "time_s": 76.06,
+        "damage": 0.0,
+        "top_speed_kmh": 225.11772
+      },
+      {
+        "lap": 5,
+        "time_s": 76.03,
+        "damage": 0.0,
+        "top_speed_kmh": 225.17748
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.423,
+    "best_s": 76.03,
+    "mean_s": 77.1396,
+    "warm_mean_s": 76.094,
+    "warm_std_s": 0.05073460357586241,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "road/alpine-1",
+      "category": "road",
+      "name": "alpine-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 136.486,
+        "damage": 0.0,
+        "top_speed_kmh": 282.04596000000004
+      },
+      {
+        "lap": 2,
+        "time_s": 132.558,
+        "damage": 0.0,
+        "top_speed_kmh": 282.22236
+      },
+      {
+        "lap": 3,
+        "time_s": 132.36,
+        "damage": 0.0,
+        "top_speed_kmh": 282.39155999999997
+      },
+      {
+        "lap": 4,
+        "time_s": 132.294,
+        "damage": 0.0,
+        "top_speed_kmh": 282.57336
+      },
+      {
+        "lap": 5,
+        "time_s": 132.176,
+        "damage": 0.0,
+        "top_speed_kmh": 282.76344
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.671,
+    "best_s": 132.176,
+    "mean_s": 133.1748,
+    "warm_mean_s": 132.347,
+    "warm_std_s": 0.1385099274420432,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "road/alpine-1",
+      "category": "road",
+      "name": "alpine-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 135.564,
+        "damage": 0.0,
+        "top_speed_kmh": 288.57563999999996
+      },
+      {
+        "lap": 2,
+        "time_s": 131.854,
+        "damage": 0.0,
+        "top_speed_kmh": 288.68940000000003
+      },
+      {
+        "lap": 3,
+        "time_s": 131.724,
+        "damage": 0.0,
+        "top_speed_kmh": 288.82547999999997
+      },
+      {
+        "lap": 4,
+        "time_s": 131.63,
+        "damage": 0.0,
+        "top_speed_kmh": 288.94428
+      },
+      {
+        "lap": 5,
+        "time_s": 131.528,
+        "damage": 0.0,
+        "top_speed_kmh": 289.16064
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.679,
+    "best_s": 131.528,
+    "mean_s": 132.46,
+    "warm_mean_s": 131.684,
+    "warm_std_s": 0.12015822901491895,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "road/alpine-1",
+      "category": "road",
+      "name": "alpine-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 135.758,
+        "damage": 0.0,
+        "top_speed_kmh": 285.93144
+      },
+      {
+        "lap": 2,
+        "time_s": 131.638,
+        "damage": 0.0,
+        "top_speed_kmh": 286.01028
+      },
+      {
+        "lap": 3,
+        "time_s": 131.472,
+        "damage": 0.0,
+        "top_speed_kmh": 286.17048
+      },
+      {
+        "lap": 4,
+        "time_s": 131.394,
+        "damage": 0.0,
+        "top_speed_kmh": 286.26480000000004
+      },
+      {
+        "lap": 5,
+        "time_s": 131.358,
+        "damage": 0.0,
+        "top_speed_kmh": 286.43796000000003
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.672,
+    "best_s": 131.358,
+    "mean_s": 132.324,
+    "warm_mean_s": 131.46550000000002,
+    "warm_std_s": 0.10778102801513847,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "road/alpine-1",
+      "category": "road",
+      "name": "alpine-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 135.132,
+        "damage": 0.0,
+        "top_speed_kmh": 290.22912
+      },
+      {
+        "lap": 2,
+        "time_s": 131.11,
+        "damage": 0.0,
+        "top_speed_kmh": 290.35908
+      },
+      {
+        "lap": 3,
+        "time_s": 130.928,
+        "damage": 0.0,
+        "top_speed_kmh": 290.50344
+      },
+      {
+        "lap": 4,
+        "time_s": 130.91,
+        "damage": 0.0,
+        "top_speed_kmh": 290.68056
+      },
+      {
+        "lap": 5,
+        "time_s": 130.85,
+        "damage": 0.0,
+        "top_speed_kmh": 290.86344
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.621,
+    "best_s": 130.85,
+    "mean_s": 131.786,
+    "warm_mean_s": 130.9495,
+    "warm_std_s": 0.09706054811302826,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "road/alpine-2",
+      "category": "road",
+      "name": "alpine-2"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 105.966,
+        "damage": 0.0,
+        "top_speed_kmh": 222.25932
+      },
+      {
+        "lap": 2,
+        "time_s": 100.184,
+        "damage": 0.0,
+        "top_speed_kmh": 240.46632
+      },
+      {
+        "lap": 3,
+        "time_s": 100.368,
+        "damage": 0.0,
+        "top_speed_kmh": 240.28128
+      },
+      {
+        "lap": 4,
+        "time_s": 100.188,
+        "damage": 0.0,
+        "top_speed_kmh": 240.36731999999998
+      },
+      {
+        "lap": 5,
+        "time_s": 100.246,
+        "damage": 0.0,
+        "top_speed_kmh": 240.53292000000002
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.521,
+    "best_s": 100.184,
+    "mean_s": 101.3904,
+    "warm_mean_s": 100.2465,
+    "warm_std_s": 0.07431520705750409,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "road/alpine-2",
+      "category": "road",
+      "name": "alpine-2"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 105.38,
+        "damage": 0.0,
+        "top_speed_kmh": 222.59448
+      },
+      {
+        "lap": 2,
+        "time_s": 99.774,
+        "damage": 0.0,
+        "top_speed_kmh": 239.86007999999998
+      },
+      {
+        "lap": 3,
+        "time_s": 99.888,
+        "damage": 0.0,
+        "top_speed_kmh": 240.20784
+      },
+      {
+        "lap": 4,
+        "time_s": 99.848,
+        "damage": 0.0,
+        "top_speed_kmh": 240.11568000000003
+      },
+      {
+        "lap": 5,
+        "time_s": 99.828,
+        "damage": 0.0,
+        "top_speed_kmh": 240.31440000000003
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.522,
+    "best_s": 99.774,
+    "mean_s": 100.9436,
+    "warm_mean_s": 99.8345,
+    "warm_std_s": 0.04107006208907038,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "road/alpine-2",
+      "category": "road",
+      "name": "alpine-2"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 105.042,
+        "damage": 0.0,
+        "top_speed_kmh": 221.90040000000002
+      },
+      {
+        "lap": 2,
+        "time_s": 99.174,
+        "damage": 0.0,
+        "top_speed_kmh": 239.12964
+      },
+      {
+        "lap": 3,
+        "time_s": 99.222,
+        "damage": 0.0,
+        "top_speed_kmh": 239.33483999999999
+      },
+      {
+        "lap": 4,
+        "time_s": 99.112,
+        "damage": 0.0,
+        "top_speed_kmh": 239.4288
+      },
+      {
+        "lap": 5,
+        "time_s": 99.12,
+        "damage": 0.0,
+        "top_speed_kmh": 239.47164000000004
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.568,
+    "best_s": 99.112,
+    "mean_s": 100.334,
+    "warm_mean_s": 99.157,
+    "warm_std_s": 0.044463468150830306,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "road/alpine-2",
+      "category": "road",
+      "name": "alpine-2"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 105.42,
+        "damage": 0.0,
+        "top_speed_kmh": 225.25668000000002
+      },
+      {
+        "lap": 2,
+        "time_s": 99.624,
+        "damage": 0.0,
+        "top_speed_kmh": 243.51336
+      },
+      {
+        "lap": 3,
+        "time_s": 99.572,
+        "damage": 0.0,
+        "top_speed_kmh": 243.38088000000002
+      },
+      {
+        "lap": 4,
+        "time_s": 99.584,
+        "damage": 0.0,
+        "top_speed_kmh": 243.63468
+      },
+      {
+        "lap": 5,
+        "time_s": 99.592,
+        "damage": 0.0,
+        "top_speed_kmh": 243.67752
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.522,
+    "best_s": 99.572,
+    "mean_s": 100.7584,
+    "warm_mean_s": 99.593,
+    "warm_std_s": 0.0192613602842552,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "road/brondehach",
+      "category": "road",
+      "name": "brondehach"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 86.454,
+        "damage": 0.0,
+        "top_speed_kmh": 249.66216
+      },
+      {
+        "lap": 2,
+        "time_s": 80.674,
+        "damage": 1.0,
+        "top_speed_kmh": 251.25984
+      },
+      {
+        "lap": 3,
+        "time_s": 80.722,
+        "damage": 1.0,
+        "top_speed_kmh": 251.27676
+      },
+      {
+        "lap": 4,
+        "time_s": 80.678,
+        "damage": 1.0,
+        "top_speed_kmh": 251.22996000000003
+      },
+      {
+        "lap": 5,
+        "time_s": 80.502,
+        "damage": 1.0,
+        "top_speed_kmh": 251.22636
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.471,
+    "best_s": 80.502,
+    "mean_s": 81.806,
+    "warm_mean_s": 80.644,
+    "warm_std_s": 0.0841189633792533,
+    "damage": 1.0,
+    "peak_lap_damage": 1.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "road/brondehach",
+      "category": "road",
+      "name": "brondehach"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 86.402,
+        "damage": 15.0,
+        "top_speed_kmh": 246.23028000000002
+      },
+      {
+        "lap": 2,
+        "time_s": 80.614,
+        "damage": 28.0,
+        "top_speed_kmh": 250.63524000000004
+      },
+      {
+        "lap": 3,
+        "time_s": 80.454,
+        "damage": 41.0,
+        "top_speed_kmh": 250.89012
+      },
+      {
+        "lap": 4,
+        "time_s": 80.378,
+        "damage": 54.0,
+        "top_speed_kmh": 251.04888
+      },
+      {
+        "lap": 5,
+        "time_s": 80.218,
+        "damage": 66.0,
+        "top_speed_kmh": 251.02259999999998
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.479,
+    "best_s": 80.218,
+    "mean_s": 81.6132,
+    "warm_mean_s": 80.416,
+    "warm_std_s": 0.14256226709757372,
+    "damage": 66.0,
+    "peak_lap_damage": 66.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "road/brondehach",
+      "category": "road",
+      "name": "brondehach"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 85.34,
+        "damage": 14.0,
+        "top_speed_kmh": 246.22848
+      },
+      {
+        "lap": 2,
+        "time_s": 79.474,
+        "damage": 27.0,
+        "top_speed_kmh": 250.09956
+      },
+      {
+        "lap": 3,
+        "time_s": 79.504,
+        "damage": 40.0,
+        "top_speed_kmh": 249.89976000000001
+      },
+      {
+        "lap": 4,
+        "time_s": 79.476,
+        "damage": 54.0,
+        "top_speed_kmh": 250.11252000000002
+      },
+      {
+        "lap": 5,
+        "time_s": 79.37,
+        "damage": 68.0,
+        "top_speed_kmh": 250.1586
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.476,
+    "best_s": 79.37,
+    "mean_s": 80.6328,
+    "warm_mean_s": 79.456,
+    "warm_std_s": 0.05104899607240035,
+    "damage": 68.0,
+    "peak_lap_damage": 68.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "road/brondehach",
+      "category": "road",
+      "name": "brondehach"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 85.552,
+        "damage": 15.0,
+        "top_speed_kmh": 248.71859999999998
+      },
+      {
+        "lap": 2,
+        "time_s": 79.684,
+        "damage": 31.0,
+        "top_speed_kmh": 254.16576000000003
+      },
+      {
+        "lap": 3,
+        "time_s": 79.732,
+        "damage": 47.0,
+        "top_speed_kmh": 254.13264
+      },
+      {
+        "lap": 4,
+        "time_s": 79.634,
+        "damage": 62.0,
+        "top_speed_kmh": 254.13696
+      },
+      {
+        "lap": 5,
+        "time_s": 79.552,
+        "damage": 77.0,
+        "top_speed_kmh": 254.2806
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.47,
+    "best_s": 79.552,
+    "mean_s": 80.8308,
+    "warm_mean_s": 79.6505,
+    "warm_std_s": 0.06659391864126632,
+    "damage": 77.0,
+    "peak_lap_damage": 77.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "road/corkscrew",
+      "category": "road",
+      "name": "corkscrew"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 88.016,
+        "damage": 0.0,
+        "top_speed_kmh": 222.35472000000001
+      },
+      {
+        "lap": 2,
+        "time_s": 83.824,
+        "damage": 0.0,
+        "top_speed_kmh": 240.66072
+      },
+      {
+        "lap": 3,
+        "time_s": 83.958,
+        "damage": 0.0,
+        "top_speed_kmh": 240.54876000000002
+      },
+      {
+        "lap": 4,
+        "time_s": 83.924,
+        "damage": 0.0,
+        "top_speed_kmh": 240.66324
+      },
+      {
+        "lap": 5,
+        "time_s": 83.882,
+        "damage": 0.0,
+        "top_speed_kmh": 240.73235999999997
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.519,
+    "best_s": 83.824,
+    "mean_s": 84.7208,
+    "warm_mean_s": 83.897,
+    "warm_std_s": 0.050009999000200686,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "road/corkscrew",
+      "category": "road",
+      "name": "corkscrew"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 87.638,
+        "damage": 10.0,
+        "top_speed_kmh": 222.92064000000002
+      },
+      {
+        "lap": 2,
+        "time_s": 83.558,
+        "damage": 14.0,
+        "top_speed_kmh": 240.59699999999998
+      },
+      {
+        "lap": 3,
+        "time_s": 83.634,
+        "damage": 15.0,
+        "top_speed_kmh": 240.69528000000003
+      },
+      {
+        "lap": 4,
+        "time_s": 83.476,
+        "damage": 25.0,
+        "top_speed_kmh": 240.69851999999997
+      },
+      {
+        "lap": 5,
+        "time_s": 83.496,
+        "damage": 26.0,
+        "top_speed_kmh": 240.82092
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.574,
+    "best_s": 83.476,
+    "mean_s": 84.3604,
+    "warm_mean_s": 83.541,
+    "warm_std_s": 0.061619802012017326,
+    "damage": 26.0,
+    "peak_lap_damage": 26.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "road/corkscrew",
+      "category": "road",
+      "name": "corkscrew"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 87.588,
+        "damage": 4.0,
+        "top_speed_kmh": 222.26760000000002
+      },
+      {
+        "lap": 2,
+        "time_s": 83.24,
+        "damage": 4.0,
+        "top_speed_kmh": 239.16096
+      },
+      {
+        "lap": 3,
+        "time_s": 83.256,
+        "damage": 7.0,
+        "top_speed_kmh": 239.02740000000003
+      },
+      {
+        "lap": 4,
+        "time_s": 83.33,
+        "damage": 7.0,
+        "top_speed_kmh": 239.12387999999999
+      },
+      {
+        "lap": 5,
+        "time_s": 83.194,
+        "damage": 11.0,
+        "top_speed_kmh": 239.211
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.671,
+    "best_s": 83.194,
+    "mean_s": 84.1216,
+    "warm_mean_s": 83.255,
+    "warm_std_s": 0.048918299234538956,
+    "damage": 11.0,
+    "peak_lap_damage": 11.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "road/corkscrew",
+      "category": "road",
+      "name": "corkscrew"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 87.59,
+        "damage": 4.0,
+        "top_speed_kmh": 225.66888
+      },
+      {
+        "lap": 2,
+        "time_s": 83.214,
+        "damage": 8.0,
+        "top_speed_kmh": 243.80748
+      },
+      {
+        "lap": 3,
+        "time_s": 83.198,
+        "damage": 12.0,
+        "top_speed_kmh": 243.65088000000003
+      },
+      {
+        "lap": 4,
+        "time_s": 83.148,
+        "damage": 16.0,
+        "top_speed_kmh": 243.80244
+      },
+      {
+        "lap": 5,
+        "time_s": 83.196,
+        "damage": 20.0,
+        "top_speed_kmh": 244.01628000000002
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.573,
+    "best_s": 83.148,
+    "mean_s": 84.0692,
+    "warm_mean_s": 83.189,
+    "warm_std_s": 0.024677925358506634,
+    "damage": 20.0,
+    "peak_lap_damage": 20.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "road/e-track-1",
+      "category": "road",
+      "name": "e-track-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 75.136,
+        "damage": 0.0,
+        "top_speed_kmh": 251.60832
+      },
+      {
+        "lap": 2,
+        "time_s": 69.704,
+        "damage": 0.0,
+        "top_speed_kmh": 253.395
+      },
+      {
+        "lap": 3,
+        "time_s": 69.586,
+        "damage": 0.0,
+        "top_speed_kmh": 253.42128000000002
+      },
+      {
+        "lap": 4,
+        "time_s": 69.532,
+        "damage": 0.0,
+        "top_speed_kmh": 253.43820000000002
+      },
+      {
+        "lap": 5,
+        "time_s": 69.536,
+        "damage": 0.0,
+        "top_speed_kmh": 253.54404
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.477,
+    "best_s": 69.532,
+    "mean_s": 70.69879999999999,
+    "warm_mean_s": 69.5895,
+    "warm_std_s": 0.0694460222042969,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "road/e-track-1",
+      "category": "road",
+      "name": "e-track-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 74.658,
+        "damage": 1.0,
+        "top_speed_kmh": 252.82691999999997
+      },
+      {
+        "lap": 2,
+        "time_s": 69.336,
+        "damage": 1.0,
+        "top_speed_kmh": 253.41588
+      },
+      {
+        "lap": 3,
+        "time_s": 69.29,
+        "damage": 4.0,
+        "top_speed_kmh": 253.34136000000004
+      },
+      {
+        "lap": 4,
+        "time_s": 69.18,
+        "damage": 7.0,
+        "top_speed_kmh": 253.38528
+      },
+      {
+        "lap": 5,
+        "time_s": 69.288,
+        "damage": 10.0,
+        "top_speed_kmh": 253.57428
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.371,
+    "best_s": 69.18,
+    "mean_s": 70.35040000000001,
+    "warm_mean_s": 69.2735,
+    "warm_std_s": 0.057295287764349896,
+    "damage": 10.0,
+    "peak_lap_damage": 10.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "road/e-track-1",
+      "category": "road",
+      "name": "e-track-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 74.698,
+        "damage": 0.0,
+        "top_speed_kmh": 251.40240000000003
+      },
+      {
+        "lap": 2,
+        "time_s": 68.994,
+        "damage": 0.0,
+        "top_speed_kmh": 252.46187999999998
+      },
+      {
+        "lap": 3,
+        "time_s": 68.926,
+        "damage": 0.0,
+        "top_speed_kmh": 252.34668
+      },
+      {
+        "lap": 4,
+        "time_s": 68.992,
+        "damage": 0.0,
+        "top_speed_kmh": 252.39419999999998
+      },
+      {
+        "lap": 5,
+        "time_s": 68.94,
+        "damage": 0.0,
+        "top_speed_kmh": 252.45252
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.376,
+    "best_s": 68.926,
+    "mean_s": 70.11,
+    "warm_mean_s": 68.963,
+    "warm_std_s": 0.03041381265149194,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "road/e-track-1",
+      "category": "road",
+      "name": "e-track-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 74.44,
+        "damage": 0.0,
+        "top_speed_kmh": 256.00392
+      },
+      {
+        "lap": 2,
+        "time_s": 68.9,
+        "damage": 0.0,
+        "top_speed_kmh": 256.64148
+      },
+      {
+        "lap": 3,
+        "time_s": 68.842,
+        "damage": 0.0,
+        "top_speed_kmh": 256.55868000000004
+      },
+      {
+        "lap": 4,
+        "time_s": 68.804,
+        "damage": 0.0,
+        "top_speed_kmh": 256.51548
+      },
+      {
+        "lap": 5,
+        "time_s": 68.736,
+        "damage": 0.0,
+        "top_speed_kmh": 256.70628
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.423,
+    "best_s": 68.736,
+    "mean_s": 69.9444,
+    "warm_mean_s": 68.82050000000001,
+    "warm_std_s": 0.05957138574852878,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "road/e-track-2",
+      "category": "road",
+      "name": "e-track-2"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 126.03,
+        "damage": 0.0,
+        "top_speed_kmh": 251.2476
+      },
+      {
+        "lap": 2,
+        "time_s": 119.746,
+        "damage": 0.0,
+        "top_speed_kmh": 257.12064
+      },
+      {
+        "lap": 3,
+        "time_s": 119.674,
+        "damage": 0.0,
+        "top_speed_kmh": 257.07528
+      },
+      {
+        "lap": 4,
+        "time_s": 119.516,
+        "damage": 0.0,
+        "top_speed_kmh": 257.184
+      },
+      {
+        "lap": 5,
+        "time_s": 119.628,
+        "damage": 0.0,
+        "top_speed_kmh": 257.34636
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.671,
+    "best_s": 119.516,
+    "mean_s": 120.9188,
+    "warm_mean_s": 119.641,
+    "warm_std_s": 0.08352843827104346,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "road/e-track-2",
+      "category": "road",
+      "name": "e-track-2"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 125.356,
+        "damage": 0.0,
+        "top_speed_kmh": 249.57648000000003
+      },
+      {
+        "lap": 2,
+        "time_s": 119.032,
+        "damage": 0.0,
+        "top_speed_kmh": 259.39655999999997
+      },
+      {
+        "lap": 3,
+        "time_s": 119.012,
+        "damage": 0.0,
+        "top_speed_kmh": 259.36812000000003
+      },
+      {
+        "lap": 4,
+        "time_s": 118.916,
+        "damage": 0.0,
+        "top_speed_kmh": 259.614
+      },
+      {
+        "lap": 5,
+        "time_s": 118.844,
+        "damage": 0.0,
+        "top_speed_kmh": 259.71551999999997
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.673,
+    "best_s": 118.844,
+    "mean_s": 120.232,
+    "warm_mean_s": 118.951,
+    "warm_std_s": 0.07575618786607628,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "road/e-track-2",
+      "category": "road",
+      "name": "e-track-2"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 125.024,
+        "damage": 3.0,
+        "top_speed_kmh": 248.42916
+      },
+      {
+        "lap": 2,
+        "time_s": 118.484,
+        "damage": 4.0,
+        "top_speed_kmh": 257.3172
+      },
+      {
+        "lap": 3,
+        "time_s": 118.364,
+        "damage": 6.0,
+        "top_speed_kmh": 257.25852000000003
+      },
+      {
+        "lap": 4,
+        "time_s": 118.266,
+        "damage": 8.0,
+        "top_speed_kmh": 257.53355999999997
+      },
+      {
+        "lap": 5,
+        "time_s": 118.252,
+        "damage": 10.0,
+        "top_speed_kmh": 257.63688
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.725,
+    "best_s": 118.252,
+    "mean_s": 119.678,
+    "warm_mean_s": 118.3415,
+    "warm_std_s": 0.09290182990662603,
+    "damage": 10.0,
+    "peak_lap_damage": 10.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "road/e-track-2",
+      "category": "road",
+      "name": "e-track-2"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 124.88,
+        "damage": 7.0,
+        "top_speed_kmh": 252.99972
+      },
+      {
+        "lap": 2,
+        "time_s": 118.268,
+        "damage": 14.0,
+        "top_speed_kmh": 263.54736
+      },
+      {
+        "lap": 3,
+        "time_s": 118.26,
+        "damage": 21.0,
+        "top_speed_kmh": 263.42316000000005
+      },
+      {
+        "lap": 4,
+        "time_s": 118.23,
+        "damage": 27.0,
+        "top_speed_kmh": 263.53008
+      },
+      {
+        "lap": 5,
+        "time_s": 117.942,
+        "damage": 34.0,
+        "top_speed_kmh": 263.72556
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.672,
+    "best_s": 117.942,
+    "mean_s": 119.516,
+    "warm_mean_s": 118.175,
+    "warm_std_s": 0.13526640381115027,
+    "damage": 34.0,
+    "peak_lap_damage": 34.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "road/e-track-3",
+      "category": "road",
+      "name": "e-track-3"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 93.354,
+        "damage": 0.0,
+        "top_speed_kmh": 255.28284000000002
+      },
+      {
+        "lap": 2,
+        "time_s": 87.57,
+        "damage": 0.0,
+        "top_speed_kmh": 255.27384000000004
+      },
+      {
+        "lap": 3,
+        "time_s": 87.7,
+        "damage": 0.0,
+        "top_speed_kmh": 255.21660000000003
+      },
+      {
+        "lap": 4,
+        "time_s": 87.642,
+        "damage": 0.0,
+        "top_speed_kmh": 255.57444000000004
+      },
+      {
+        "lap": 5,
+        "time_s": 87.436,
+        "damage": 0.0,
+        "top_speed_kmh": 255.51720000000003
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.475,
+    "best_s": 87.436,
+    "mean_s": 88.7404,
+    "warm_mean_s": 87.587,
+    "warm_std_s": 0.09859513172565659,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "road/e-track-3",
+      "category": "road",
+      "name": "e-track-3"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 92.652,
+        "damage": 0.0,
+        "top_speed_kmh": 256.4964
+      },
+      {
+        "lap": 2,
+        "time_s": 86.802,
+        "damage": 0.0,
+        "top_speed_kmh": 257.01156000000003
+      },
+      {
+        "lap": 3,
+        "time_s": 86.96,
+        "damage": 0.0,
+        "top_speed_kmh": 256.79016
+      },
+      {
+        "lap": 4,
+        "time_s": 86.872,
+        "damage": 0.0,
+        "top_speed_kmh": 256.93092
+      },
+      {
+        "lap": 5,
+        "time_s": 86.816,
+        "damage": 0.0,
+        "top_speed_kmh": 257.08392
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.474,
+    "best_s": 86.802,
+    "mean_s": 88.0204,
+    "warm_mean_s": 86.8625,
+    "warm_std_s": 0.062086633021926976,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "road/e-track-3",
+      "category": "road",
+      "name": "e-track-3"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 92.254,
+        "damage": 0.0,
+        "top_speed_kmh": 255.25080000000003
+      },
+      {
+        "lap": 2,
+        "time_s": 86.344,
+        "damage": 0.0,
+        "top_speed_kmh": 255.41316
+      },
+      {
+        "lap": 3,
+        "time_s": 86.378,
+        "damage": 0.0,
+        "top_speed_kmh": 255.57408
+      },
+      {
+        "lap": 4,
+        "time_s": 86.102,
+        "damage": 0.0,
+        "top_speed_kmh": 255.55463999999998
+      },
+      {
+        "lap": 5,
+        "time_s": 86.19,
+        "damage": 0.0,
+        "top_speed_kmh": 255.61260000000001
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.478,
+    "best_s": 86.102,
+    "mean_s": 87.4536,
+    "warm_mean_s": 86.2535,
+    "warm_std_s": 0.11255554184490216,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "road/e-track-3",
+      "category": "road",
+      "name": "e-track-3"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 92.512,
+        "damage": 0.0,
+        "top_speed_kmh": 260.50356
+      },
+      {
+        "lap": 2,
+        "time_s": 86.742,
+        "damage": 0.0,
+        "top_speed_kmh": 260.433
+      },
+      {
+        "lap": 3,
+        "time_s": 86.676,
+        "damage": 0.0,
+        "top_speed_kmh": 260.37971999999996
+      },
+      {
+        "lap": 4,
+        "time_s": 86.604,
+        "damage": 0.0,
+        "top_speed_kmh": 260.70192
+      },
+      {
+        "lap": 5,
+        "time_s": 86.632,
+        "damage": 0.0,
+        "top_speed_kmh": 260.60184
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.524,
+    "best_s": 86.604,
+    "mean_s": 87.8332,
+    "warm_mean_s": 86.6635,
+    "warm_std_s": 0.05208406666150533,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "road/e-track-4",
+      "category": "road",
+      "name": "e-track-4"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 113.448,
+        "damage": 11.0,
+        "top_speed_kmh": 297.68076
+      },
+      {
+        "lap": 2,
+        "time_s": 106.524,
+        "damage": 22.0,
+        "top_speed_kmh": 297.66096
+      },
+      {
+        "lap": 3,
+        "time_s": 106.36,
+        "damage": 33.0,
+        "top_speed_kmh": 297.59544000000005
+      },
+      {
+        "lap": 4,
+        "time_s": 106.398,
+        "damage": 44.0,
+        "top_speed_kmh": 297.46908
+      },
+      {
+        "lap": 5,
+        "time_s": 106.244,
+        "damage": 55.0,
+        "top_speed_kmh": 297.51084000000003
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.626,
+    "best_s": 106.244,
+    "mean_s": 107.7948,
+    "warm_mean_s": 106.3815,
+    "warm_std_s": 0.09993372804013695,
+    "damage": 55.0,
+    "peak_lap_damage": 55.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "road/e-track-4",
+      "category": "road",
+      "name": "e-track-4"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 111.892,
+        "damage": 15.0,
+        "top_speed_kmh": 300.19392000000005
+      },
+      {
+        "lap": 2,
+        "time_s": 104.678,
+        "damage": 30.0,
+        "top_speed_kmh": 300.15216000000004
+      },
+      {
+        "lap": 3,
+        "time_s": 104.682,
+        "damage": 44.0,
+        "top_speed_kmh": 300.06504
+      },
+      {
+        "lap": 4,
+        "time_s": 104.658,
+        "damage": 58.0,
+        "top_speed_kmh": 299.98728000000006
+      },
+      {
+        "lap": 5,
+        "time_s": 104.552,
+        "damage": 72.0,
+        "top_speed_kmh": 299.89728
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.652,
+    "best_s": 104.552,
+    "mean_s": 106.0924,
+    "warm_mean_s": 104.6425,
+    "warm_std_s": 0.053035365559216244,
+    "damage": 72.0,
+    "peak_lap_damage": 72.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "road/e-track-4",
+      "category": "road",
+      "name": "e-track-4"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 111.418,
+        "damage": 25.0,
+        "top_speed_kmh": 299.0502
+      },
+      {
+        "lap": 2,
+        "time_s": 104.25,
+        "damage": 51.0,
+        "top_speed_kmh": 298.91448
+      },
+      {
+        "lap": 3,
+        "time_s": 104.058,
+        "damage": 77.0,
+        "top_speed_kmh": 298.78848
+      },
+      {
+        "lap": 4,
+        "time_s": 104.096,
+        "damage": 103.0,
+        "top_speed_kmh": 298.58688
+      },
+      {
+        "lap": 5,
+        "time_s": 104.0,
+        "damage": 128.0,
+        "top_speed_kmh": 298.39500000000004
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.619,
+    "best_s": 104.0,
+    "mean_s": 105.5644,
+    "warm_mean_s": 104.101,
+    "warm_std_s": 0.09256889326334113,
+    "damage": 128.0,
+    "peak_lap_damage": 128.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "road/e-track-4",
+      "category": "road",
+      "name": "e-track-4"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 110.944,
+        "damage": 28.0,
+        "top_speed_kmh": 304.43472
+      },
+      {
+        "lap": 2,
+        "time_s": 103.774,
+        "damage": 56.0,
+        "top_speed_kmh": 304.245
+      },
+      {
+        "lap": 3,
+        "time_s": 103.642,
+        "damage": 84.0,
+        "top_speed_kmh": 304.05924
+      },
+      {
+        "lap": 4,
+        "time_s": 103.61,
+        "damage": 112.0,
+        "top_speed_kmh": 303.86483999999996
+      },
+      {
+        "lap": 5,
+        "time_s": 103.526,
+        "damage": 138.0,
+        "top_speed_kmh": 303.69383999999997
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.63,
+    "best_s": 103.526,
+    "mean_s": 105.0992,
+    "warm_mean_s": 103.638,
+    "warm_std_s": 0.08921883209278338,
+    "damage": 138.0,
+    "peak_lap_damage": 138.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "road/e-track-6",
+      "category": "road",
+      "name": "e-track-6"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 94.366,
+        "damage": 0.0,
+        "top_speed_kmh": 258.71112
+      },
+      {
+        "lap": 2,
+        "time_s": 88.112,
+        "damage": 0.0,
+        "top_speed_kmh": 258.63624000000004
+      },
+      {
+        "lap": 3,
+        "time_s": 87.956,
+        "damage": 0.0,
+        "top_speed_kmh": 258.70068000000003
+      },
+      {
+        "lap": 4,
+        "time_s": 88.068,
+        "damage": 0.0,
+        "top_speed_kmh": 258.88248
+      },
+      {
+        "lap": 5,
+        "time_s": 87.836,
+        "damage": 0.0,
+        "top_speed_kmh": 259.0002
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.519,
+    "best_s": 87.836,
+    "mean_s": 89.2676,
+    "warm_mean_s": 87.993,
+    "warm_std_s": 0.10700934538627767,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "road/e-track-6",
+      "category": "road",
+      "name": "e-track-6"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 93.898,
+        "damage": 0.0,
+        "top_speed_kmh": 261.04104
+      },
+      {
+        "lap": 2,
+        "time_s": 87.664,
+        "damage": 0.0,
+        "top_speed_kmh": 261.13608000000005
+      },
+      {
+        "lap": 3,
+        "time_s": 87.678,
+        "damage": 0.0,
+        "top_speed_kmh": 261.0792
+      },
+      {
+        "lap": 4,
+        "time_s": 87.624,
+        "damage": 0.0,
+        "top_speed_kmh": 261.30744000000004
+      },
+      {
+        "lap": 5,
+        "time_s": 87.6,
+        "damage": 0.0,
+        "top_speed_kmh": 261.42372
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.475,
+    "best_s": 87.6,
+    "mean_s": 88.8928,
+    "warm_mean_s": 87.6415,
+    "warm_std_s": 0.031092603622085536,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "road/e-track-6",
+      "category": "road",
+      "name": "e-track-6"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 94.08,
+        "damage": 0.0,
+        "top_speed_kmh": 259.54704000000004
+      },
+      {
+        "lap": 2,
+        "time_s": 87.612,
+        "damage": 0.0,
+        "top_speed_kmh": 259.54596000000004
+      },
+      {
+        "lap": 3,
+        "time_s": 87.572,
+        "damage": 0.0,
+        "top_speed_kmh": 259.57044
+      },
+      {
+        "lap": 4,
+        "time_s": 87.46,
+        "damage": 0.0,
+        "top_speed_kmh": 259.76988
+      },
+      {
+        "lap": 5,
+        "time_s": 87.52,
+        "damage": 0.0,
+        "top_speed_kmh": 259.83144
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.52,
+    "best_s": 87.46,
+    "mean_s": 88.8488,
+    "warm_mean_s": 87.541,
+    "warm_std_s": 0.057017541160595056,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "road/e-track-6",
+      "category": "road",
+      "name": "e-track-6"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 93.418,
+        "damage": 0.0,
+        "top_speed_kmh": 263.41308
+      },
+      {
+        "lap": 2,
+        "time_s": 87.116,
+        "damage": 0.0,
+        "top_speed_kmh": 264.1086
+      },
+      {
+        "lap": 3,
+        "time_s": 86.966,
+        "damage": 1.0,
+        "top_speed_kmh": 264.24108
+      },
+      {
+        "lap": 4,
+        "time_s": 86.898,
+        "damage": 1.0,
+        "top_speed_kmh": 264.33252000000005
+      },
+      {
+        "lap": 5,
+        "time_s": 87.07,
+        "damage": 1.0,
+        "top_speed_kmh": 264.38544
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.523,
+    "best_s": 86.898,
+    "mean_s": 88.2936,
+    "warm_mean_s": 87.01249999999999,
+    "warm_std_s": 0.08557306819321221,
+    "damage": 1.0,
+    "peak_lap_damage": 1.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "road/eroad",
+      "category": "road",
+      "name": "eroad"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 73.216,
+        "damage": 0.0,
+        "top_speed_kmh": 242.91467999999998
+      },
+      {
+        "lap": 2,
+        "time_s": 67.162,
+        "damage": 0.0,
+        "top_speed_kmh": 268.58592000000004
+      },
+      {
+        "lap": 3,
+        "time_s": 67.042,
+        "damage": 0.0,
+        "top_speed_kmh": 268.47828
+      },
+      {
+        "lap": 4,
+        "time_s": 67.002,
+        "damage": 0.0,
+        "top_speed_kmh": 268.63847999999996
+      },
+      {
+        "lap": 5,
+        "time_s": 67.064,
+        "damage": 0.0,
+        "top_speed_kmh": 268.74323999999996
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.472,
+    "best_s": 67.002,
+    "mean_s": 68.2972,
+    "warm_mean_s": 67.0675,
+    "warm_std_s": 0.05891307155462559,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "road/eroad",
+      "category": "road",
+      "name": "eroad"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 72.764,
+        "damage": 0.0,
+        "top_speed_kmh": 243.58248
+      },
+      {
+        "lap": 2,
+        "time_s": 66.75,
+        "damage": 0.0,
+        "top_speed_kmh": 270.98856
+      },
+      {
+        "lap": 3,
+        "time_s": 66.694,
+        "damage": 0.0,
+        "top_speed_kmh": 270.65124
+      },
+      {
+        "lap": 4,
+        "time_s": 66.674,
+        "damage": 0.0,
+        "top_speed_kmh": 270.73476
+      },
+      {
+        "lap": 5,
+        "time_s": 66.678,
+        "damage": 0.0,
+        "top_speed_kmh": 270.87408
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.505,
+    "best_s": 66.674,
+    "mean_s": 67.912,
+    "warm_mean_s": 66.699,
+    "warm_std_s": 0.030380915061925633,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "road/eroad",
+      "category": "road",
+      "name": "eroad"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 72.558,
+        "damage": 0.0,
+        "top_speed_kmh": 243.20232000000001
+      },
+      {
+        "lap": 2,
+        "time_s": 66.144,
+        "damage": 0.0,
+        "top_speed_kmh": 269.81568000000004
+      },
+      {
+        "lap": 3,
+        "time_s": 66.124,
+        "damage": 0.0,
+        "top_speed_kmh": 269.61516
+      },
+      {
+        "lap": 4,
+        "time_s": 66.148,
+        "damage": 0.0,
+        "top_speed_kmh": 269.59896
+      },
+      {
+        "lap": 5,
+        "time_s": 66.036,
+        "damage": 0.0,
+        "top_speed_kmh": 269.79552
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.425,
+    "best_s": 66.036,
+    "mean_s": 67.402,
+    "warm_mean_s": 66.113,
+    "warm_std_s": 0.045376205218153026,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "road/eroad",
+      "category": "road",
+      "name": "eroad"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 72.496,
+        "damage": 1.0,
+        "top_speed_kmh": 246.35412000000002
+      },
+      {
+        "lap": 2,
+        "time_s": 66.248,
+        "damage": 1.0,
+        "top_speed_kmh": 274.58711999999997
+      },
+      {
+        "lap": 3,
+        "time_s": 66.13,
+        "damage": 3.0,
+        "top_speed_kmh": 274.29876
+      },
+      {
+        "lap": 4,
+        "time_s": 66.126,
+        "damage": 4.0,
+        "top_speed_kmh": 274.38048000000003
+      },
+      {
+        "lap": 5,
+        "time_s": 66.042,
+        "damage": 4.0,
+        "top_speed_kmh": 274.4586
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.476,
+    "best_s": 66.042,
+    "mean_s": 67.4084,
+    "warm_mean_s": 66.1365,
+    "warm_std_s": 0.07333996182164383,
+    "damage": 4.0,
+    "peak_lap_damage": 4.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "road/forza",
+      "category": "road",
+      "name": "forza"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 98.7,
+        "damage": 0.0,
+        "top_speed_kmh": 294.15132
+      },
+      {
+        "lap": 2,
+        "time_s": 90.88,
+        "damage": 0.0,
+        "top_speed_kmh": 296.6454
+      },
+      {
+        "lap": 3,
+        "time_s": 90.84,
+        "damage": 0.0,
+        "top_speed_kmh": 296.67924
+      },
+      {
+        "lap": 4,
+        "time_s": 90.86,
+        "damage": 0.0,
+        "top_speed_kmh": 296.71632
+      },
+      {
+        "lap": 5,
+        "time_s": 90.754,
+        "damage": 0.0,
+        "top_speed_kmh": 296.75412000000006
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.599,
+    "best_s": 90.754,
+    "mean_s": 92.4068,
+    "warm_mean_s": 90.8335,
+    "warm_std_s": 0.04802863729068006,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "road/forza",
+      "category": "road",
+      "name": "forza"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 98.2,
+        "damage": 0.0,
+        "top_speed_kmh": 296.94744000000003
+      },
+      {
+        "lap": 2,
+        "time_s": 90.43,
+        "damage": 0.0,
+        "top_speed_kmh": 299.65788
+      },
+      {
+        "lap": 3,
+        "time_s": 90.38,
+        "damage": 0.0,
+        "top_speed_kmh": 299.68559999999997
+      },
+      {
+        "lap": 4,
+        "time_s": 90.286,
+        "damage": 0.0,
+        "top_speed_kmh": 299.7234
+      },
+      {
+        "lap": 5,
+        "time_s": 90.258,
+        "damage": 0.0,
+        "top_speed_kmh": 299.75904
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.521,
+    "best_s": 90.258,
+    "mean_s": 91.9108,
+    "warm_mean_s": 90.3385,
+    "warm_std_s": 0.06951798328490522,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "road/forza",
+      "category": "road",
+      "name": "forza"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 98.616,
+        "damage": 0.0,
+        "top_speed_kmh": 294.66143999999997
+      },
+      {
+        "lap": 2,
+        "time_s": 90.484,
+        "damage": 0.0,
+        "top_speed_kmh": 298.58292
+      },
+      {
+        "lap": 3,
+        "time_s": 90.45,
+        "damage": 0.0,
+        "top_speed_kmh": 298.63692000000003
+      },
+      {
+        "lap": 4,
+        "time_s": 90.368,
+        "damage": 0.0,
+        "top_speed_kmh": 298.67724000000004
+      },
+      {
+        "lap": 5,
+        "time_s": 90.422,
+        "damage": 0.0,
+        "top_speed_kmh": 298.7316
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.59,
+    "best_s": 90.368,
+    "mean_s": 92.068,
+    "warm_mean_s": 90.431,
+    "warm_std_s": 0.04248529157249667,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "road/forza",
+      "category": "road",
+      "name": "forza"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 97.462,
+        "damage": 0.0,
+        "top_speed_kmh": 300.69324
+      },
+      {
+        "lap": 2,
+        "time_s": 89.428,
+        "damage": 0.0,
+        "top_speed_kmh": 303.80183999999997
+      },
+      {
+        "lap": 3,
+        "time_s": 89.424,
+        "damage": 0.0,
+        "top_speed_kmh": 303.83928000000003
+      },
+      {
+        "lap": 4,
+        "time_s": 89.322,
+        "damage": 0.0,
+        "top_speed_kmh": 303.88104
+      },
+      {
+        "lap": 5,
+        "time_s": 89.222,
+        "damage": 0.0,
+        "top_speed_kmh": 303.93468
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.525,
+    "best_s": 89.222,
+    "mean_s": 90.9716,
+    "warm_mean_s": 89.349,
+    "warm_std_s": 0.08474078120952433,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "road/g-track-1",
+      "category": "road",
+      "name": "g-track-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 45.718,
+        "damage": 0.0,
+        "top_speed_kmh": 247.68431999999999
+      },
+      {
+        "lap": 2,
+        "time_s": 40.934,
+        "damage": 0.0,
+        "top_speed_kmh": 247.84956
+      },
+      {
+        "lap": 3,
+        "time_s": 40.992,
+        "damage": 0.0,
+        "top_speed_kmh": 247.75055999999998
+      },
+      {
+        "lap": 4,
+        "time_s": 40.954,
+        "damage": 0.0,
+        "top_speed_kmh": 247.85999999999999
+      },
+      {
+        "lap": 5,
+        "time_s": 41.022,
+        "damage": 0.0,
+        "top_speed_kmh": 247.79412
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.324,
+    "best_s": 40.934,
+    "mean_s": 41.924,
+    "warm_mean_s": 40.9755,
+    "warm_std_s": 0.033981612675092206,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "road/g-track-1",
+      "category": "road",
+      "name": "g-track-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 45.276,
+        "damage": 0.0,
+        "top_speed_kmh": 246.30444000000003
+      },
+      {
+        "lap": 2,
+        "time_s": 40.674,
+        "damage": 0.0,
+        "top_speed_kmh": 246.27852000000001
+      },
+      {
+        "lap": 3,
+        "time_s": 40.638,
+        "damage": 0.0,
+        "top_speed_kmh": 246.25296
+      },
+      {
+        "lap": 4,
+        "time_s": 40.696,
+        "damage": 0.0,
+        "top_speed_kmh": 246.22236
+      },
+      {
+        "lap": 5,
+        "time_s": 40.646,
+        "damage": 0.0,
+        "top_speed_kmh": 246.24324
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.37,
+    "best_s": 40.638,
+    "mean_s": 41.586,
+    "warm_mean_s": 40.6635,
+    "warm_std_s": 0.023038012067016136,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "road/g-track-1",
+      "category": "road",
+      "name": "g-track-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 45.382,
+        "damage": 0.0,
+        "top_speed_kmh": 245.96532000000002
+      },
+      {
+        "lap": 2,
+        "time_s": 40.428,
+        "damage": 0.0,
+        "top_speed_kmh": 246.08159999999998
+      },
+      {
+        "lap": 3,
+        "time_s": 40.424,
+        "damage": 0.0,
+        "top_speed_kmh": 246.05640000000002
+      },
+      {
+        "lap": 4,
+        "time_s": 40.424,
+        "damage": 0.0,
+        "top_speed_kmh": 246.25259999999997
+      },
+      {
+        "lap": 5,
+        "time_s": 40.446,
+        "damage": 0.0,
+        "top_speed_kmh": 246.1032
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.321,
+    "best_s": 40.424,
+    "mean_s": 41.4208,
+    "warm_mean_s": 40.430499999999995,
+    "warm_std_s": 0.009096702699329624,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "road/g-track-1",
+      "category": "road",
+      "name": "g-track-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 45.146,
+        "damage": 0.0,
+        "top_speed_kmh": 248.10768000000002
+      },
+      {
+        "lap": 2,
+        "time_s": 40.222,
+        "damage": 0.0,
+        "top_speed_kmh": 248.41619999999998
+      },
+      {
+        "lap": 3,
+        "time_s": 40.346,
+        "damage": 0.0,
+        "top_speed_kmh": 248.31756
+      },
+      {
+        "lap": 4,
+        "time_s": 40.268,
+        "damage": 0.0,
+        "top_speed_kmh": 248.2092
+      },
+      {
+        "lap": 5,
+        "time_s": 40.212,
+        "damage": 0.0,
+        "top_speed_kmh": 248.40504
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.317,
+    "best_s": 40.212,
+    "mean_s": 41.2388,
+    "warm_mean_s": 40.262,
+    "warm_std_s": 0.05289612462175039,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "road/g-track-2",
+      "category": "road",
+      "name": "g-track-2"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 59.742,
+        "damage": 0.0,
+        "top_speed_kmh": 253.20384
+      },
+      {
+        "lap": 2,
+        "time_s": 53.526,
+        "damage": 0.0,
+        "top_speed_kmh": 271.7028
+      },
+      {
+        "lap": 3,
+        "time_s": 53.386,
+        "damage": 0.0,
+        "top_speed_kmh": 271.81224000000003
+      },
+      {
+        "lap": 4,
+        "time_s": 53.448,
+        "damage": 0.0,
+        "top_speed_kmh": 272.04768
+      },
+      {
+        "lap": 5,
+        "time_s": 53.396,
+        "damage": 0.0,
+        "top_speed_kmh": 272.02824000000004
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.323,
+    "best_s": 53.386,
+    "mean_s": 54.699600000000004,
+    "warm_mean_s": 53.439,
+    "warm_std_s": 0.055470712993435166,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "road/g-track-2",
+      "category": "road",
+      "name": "g-track-2"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 59.076,
+        "damage": 0.0,
+        "top_speed_kmh": 263.7
+      },
+      {
+        "lap": 2,
+        "time_s": 53.066,
+        "damage": 0.0,
+        "top_speed_kmh": 274.7142
+      },
+      {
+        "lap": 3,
+        "time_s": 52.858,
+        "damage": 0.0,
+        "top_speed_kmh": 274.76064
+      },
+      {
+        "lap": 4,
+        "time_s": 52.84,
+        "damage": 0.0,
+        "top_speed_kmh": 275.02956
+      },
+      {
+        "lap": 5,
+        "time_s": 52.844,
+        "damage": 0.0,
+        "top_speed_kmh": 274.95468
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.369,
+    "best_s": 52.84,
+    "mean_s": 54.1368,
+    "warm_mean_s": 52.902,
+    "warm_std_s": 0.09492101980067498,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "road/g-track-2",
+      "category": "road",
+      "name": "g-track-2"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 59.11,
+        "damage": 0.0,
+        "top_speed_kmh": 264.81852
+      },
+      {
+        "lap": 2,
+        "time_s": 52.544,
+        "damage": 2.0,
+        "top_speed_kmh": 273.02076
+      },
+      {
+        "lap": 3,
+        "time_s": 52.476,
+        "damage": 5.0,
+        "top_speed_kmh": 273.3822
+      },
+      {
+        "lap": 4,
+        "time_s": 52.488,
+        "damage": 7.0,
+        "top_speed_kmh": 273.46752000000004
+      },
+      {
+        "lap": 5,
+        "time_s": 52.462,
+        "damage": 8.0,
+        "top_speed_kmh": 273.41964
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.376,
+    "best_s": 52.462,
+    "mean_s": 53.816,
+    "warm_mean_s": 52.4925,
+    "warm_std_s": 0.031124748994969892,
+    "damage": 8.0,
+    "peak_lap_damage": 8.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "road/g-track-2",
+      "category": "road",
+      "name": "g-track-2"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 58.6,
+        "damage": 0.0,
+        "top_speed_kmh": 269.00676000000004
+      },
+      {
+        "lap": 2,
+        "time_s": 52.2,
+        "damage": 4.0,
+        "top_speed_kmh": 278.60832
+      },
+      {
+        "lap": 3,
+        "time_s": 52.244,
+        "damage": 8.0,
+        "top_speed_kmh": 278.78544
+      },
+      {
+        "lap": 4,
+        "time_s": 52.24,
+        "damage": 12.0,
+        "top_speed_kmh": 278.58924
+      },
+      {
+        "lap": 5,
+        "time_s": 52.208,
+        "damage": 16.0,
+        "top_speed_kmh": 278.65296
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.369,
+    "best_s": 52.2,
+    "mean_s": 53.498400000000004,
+    "warm_mean_s": 52.223,
+    "warm_std_s": 0.01926136028425806,
+    "damage": 16.0,
+    "peak_lap_damage": 16.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "road/g-track-3",
+      "category": "road",
+      "name": "g-track-3"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 69.61,
+        "damage": 0.0,
+        "top_speed_kmh": 228.08736
+      },
+      {
+        "lap": 2,
+        "time_s": 64.602,
+        "damage": 0.0,
+        "top_speed_kmh": 229.428
+      },
+      {
+        "lap": 3,
+        "time_s": 64.574,
+        "damage": 0.0,
+        "top_speed_kmh": 229.29551999999998
+      },
+      {
+        "lap": 4,
+        "time_s": 64.574,
+        "damage": 0.0,
+        "top_speed_kmh": 229.46688
+      },
+      {
+        "lap": 5,
+        "time_s": 64.526,
+        "damage": 0.0,
+        "top_speed_kmh": 229.40244
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.371,
+    "best_s": 64.526,
+    "mean_s": 65.5772,
+    "warm_mean_s": 64.569,
+    "warm_std_s": 0.027331300737435362,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "road/g-track-3",
+      "category": "road",
+      "name": "g-track-3"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 69.004,
+        "damage": 4.0,
+        "top_speed_kmh": 228.4128
+      },
+      {
+        "lap": 2,
+        "time_s": 64.248,
+        "damage": 8.0,
+        "top_speed_kmh": 230.21676000000002
+      },
+      {
+        "lap": 3,
+        "time_s": 64.21,
+        "damage": 12.0,
+        "top_speed_kmh": 229.81788
+      },
+      {
+        "lap": 4,
+        "time_s": 64.156,
+        "damage": 16.0,
+        "top_speed_kmh": 230.29992000000001
+      },
+      {
+        "lap": 5,
+        "time_s": 64.126,
+        "damage": 20.0,
+        "top_speed_kmh": 230.45004000000003
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.432,
+    "best_s": 64.126,
+    "mean_s": 65.14880000000001,
+    "warm_mean_s": 64.185,
+    "warm_std_s": 0.047212286536449835,
+    "damage": 20.0,
+    "peak_lap_damage": 20.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "road/g-track-3",
+      "category": "road",
+      "name": "g-track-3"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 68.838,
+        "damage": 6.0,
+        "top_speed_kmh": 227.76156
+      },
+      {
+        "lap": 2,
+        "time_s": 63.57,
+        "damage": 12.0,
+        "top_speed_kmh": 230.05764
+      },
+      {
+        "lap": 3,
+        "time_s": 63.488,
+        "damage": 18.0,
+        "top_speed_kmh": 230.05836
+      },
+      {
+        "lap": 4,
+        "time_s": 63.628,
+        "damage": 24.0,
+        "top_speed_kmh": 230.0976
+      },
+      {
+        "lap": 5,
+        "time_s": 63.602,
+        "damage": 28.0,
+        "top_speed_kmh": 229.94064
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.421,
+    "best_s": 63.488,
+    "mean_s": 64.62519999999999,
+    "warm_mean_s": 63.572,
+    "warm_std_s": 0.05266877632905452,
+    "damage": 28.0,
+    "peak_lap_damage": 28.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "road/g-track-3",
+      "category": "road",
+      "name": "g-track-3"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 68.794,
+        "damage": 16.0,
+        "top_speed_kmh": 232.01856
+      },
+      {
+        "lap": 2,
+        "time_s": 63.78,
+        "damage": 30.0,
+        "top_speed_kmh": 233.81208
+      },
+      {
+        "lap": 3,
+        "time_s": 63.676,
+        "damage": 43.0,
+        "top_speed_kmh": 233.77931999999998
+      },
+      {
+        "lap": 4,
+        "time_s": 63.764,
+        "damage": 60.0,
+        "top_speed_kmh": 233.90964000000002
+      },
+      {
+        "lap": 5,
+        "time_s": 63.574,
+        "damage": 74.0,
+        "top_speed_kmh": 233.88660000000002
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.369,
+    "best_s": 63.574,
+    "mean_s": 64.7176,
+    "warm_mean_s": 63.6985,
+    "warm_std_s": 0.08206552260237085,
+    "damage": 74.0,
+    "peak_lap_damage": 74.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "road/ole-road-1",
+      "category": "road",
+      "name": "ole-road-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 123.726,
+        "damage": 35.0,
+        "top_speed_kmh": 295.30656
+      },
+      {
+        "lap": 2,
+        "time_s": 116.74,
+        "damage": 66.0,
+        "top_speed_kmh": 298.368
+      },
+      {
+        "lap": 3,
+        "time_s": 116.652,
+        "damage": 104.0,
+        "top_speed_kmh": 298.17324
+      },
+      {
+        "lap": 4,
+        "time_s": 116.646,
+        "damage": 135.0,
+        "top_speed_kmh": 297.92484
+      },
+      {
+        "lap": 5,
+        "time_s": 116.724,
+        "damage": 166.0,
+        "top_speed_kmh": 297.702
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.577,
+    "best_s": 116.646,
+    "mean_s": 118.0976,
+    "warm_mean_s": 116.6905,
+    "warm_std_s": 0.041937453427692756,
+    "damage": 166.0,
+    "peak_lap_damage": 166.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "road/ole-road-1",
+      "category": "road",
+      "name": "ole-road-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 123.204,
+        "damage": 74.0,
+        "top_speed_kmh": 297.32148
+      },
+      {
+        "lap": 2,
+        "time_s": 116.176,
+        "damage": 150.0,
+        "top_speed_kmh": 300.57372
+      },
+      {
+        "lap": 3,
+        "time_s": 116.208,
+        "damage": 225.0,
+        "top_speed_kmh": 299.97432000000003
+      },
+      {
+        "lap": 4,
+        "time_s": 116.194,
+        "damage": 298.0,
+        "top_speed_kmh": 299.39292
+      },
+      {
+        "lap": 5,
+        "time_s": 116.194,
+        "damage": 375.0,
+        "top_speed_kmh": 298.81692
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.582,
+    "best_s": 116.176,
+    "mean_s": 117.5952,
+    "warm_mean_s": 116.193,
+    "warm_std_s": 0.011357816691599413,
+    "damage": 375.0,
+    "peak_lap_damage": 375.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "road/ole-road-1",
+      "category": "road",
+      "name": "ole-road-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 123.196,
+        "damage": 63.0,
+        "top_speed_kmh": 295.78824
+      },
+      {
+        "lap": 2,
+        "time_s": 115.744,
+        "damage": 122.0,
+        "top_speed_kmh": 299.90412000000003
+      },
+      {
+        "lap": 3,
+        "time_s": 115.842,
+        "damage": 185.0,
+        "top_speed_kmh": 299.40444
+      },
+      {
+        "lap": 4,
+        "time_s": 115.808,
+        "damage": 242.0,
+        "top_speed_kmh": 298.9098
+      },
+      {
+        "lap": 5,
+        "time_s": 115.744,
+        "damage": 304.0,
+        "top_speed_kmh": 298.46664
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.675,
+    "best_s": 115.744,
+    "mean_s": 117.2668,
+    "warm_mean_s": 115.78450000000001,
+    "warm_std_s": 0.04224630161327799,
+    "damage": 304.0,
+    "peak_lap_damage": 304.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "road/ole-road-1",
+      "category": "road",
+      "name": "ole-road-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 122.402,
+        "damage": 86.0,
+        "top_speed_kmh": 301.0824
+      },
+      {
+        "lap": 2,
+        "time_s": 115.504,
+        "damage": 174.0,
+        "top_speed_kmh": 304.61976000000004
+      },
+      {
+        "lap": 3,
+        "time_s": 115.428,
+        "damage": 261.0,
+        "top_speed_kmh": 303.93612
+      },
+      {
+        "lap": 4,
+        "time_s": 115.252,
+        "damage": 352.0,
+        "top_speed_kmh": 303.318
+      },
+      {
+        "lap": 5,
+        "time_s": 115.262,
+        "damage": 438.0,
+        "top_speed_kmh": 302.65452
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.626,
+    "best_s": 115.252,
+    "mean_s": 116.7696,
+    "warm_mean_s": 115.3615,
+    "warm_std_s": 0.10795716743227607,
+    "damage": 438.0,
+    "peak_lap_damage": 438.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "road/ruudskogen",
+      "category": "road",
+      "name": "ruudskogen"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 71.332,
+        "damage": 0.0,
+        "top_speed_kmh": 246.56220000000002
+      },
+      {
+        "lap": 2,
+        "time_s": 66.064,
+        "damage": 0.0,
+        "top_speed_kmh": 246.57768
+      },
+      {
+        "lap": 3,
+        "time_s": 65.928,
+        "damage": 0.0,
+        "top_speed_kmh": 246.83472000000003
+      },
+      {
+        "lap": 4,
+        "time_s": 66.008,
+        "damage": 0.0,
+        "top_speed_kmh": 246.89952000000002
+      },
+      {
+        "lap": 5,
+        "time_s": 65.826,
+        "damage": 0.0,
+        "top_speed_kmh": 247.08528
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.421,
+    "best_s": 65.826,
+    "mean_s": 67.0316,
+    "warm_mean_s": 65.95649999999999,
+    "warm_std_s": 0.08951396539088176,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "road/ruudskogen",
+      "category": "road",
+      "name": "ruudskogen"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 70.844,
+        "damage": 1.0,
+        "top_speed_kmh": 246.2238
+      },
+      {
+        "lap": 2,
+        "time_s": 65.648,
+        "damage": 1.0,
+        "top_speed_kmh": 246.25332
+      },
+      {
+        "lap": 3,
+        "time_s": 65.684,
+        "damage": 2.0,
+        "top_speed_kmh": 246.32136000000003
+      },
+      {
+        "lap": 4,
+        "time_s": 65.388,
+        "damage": 3.0,
+        "top_speed_kmh": 246.2976
+      },
+      {
+        "lap": 5,
+        "time_s": 65.466,
+        "damage": 3.0,
+        "top_speed_kmh": 246.23891999999998
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.424,
+    "best_s": 65.388,
+    "mean_s": 66.606,
+    "warm_mean_s": 65.5465,
+    "warm_std_s": 0.12329943227768513,
+    "damage": 3.0,
+    "peak_lap_damage": 3.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "road/ruudskogen",
+      "category": "road",
+      "name": "ruudskogen"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 70.494,
+        "damage": 3.0,
+        "top_speed_kmh": 245.78712
+      },
+      {
+        "lap": 2,
+        "time_s": 64.94,
+        "damage": 6.0,
+        "top_speed_kmh": 245.98332
+      },
+      {
+        "lap": 3,
+        "time_s": 64.814,
+        "damage": 9.0,
+        "top_speed_kmh": 246.17844000000002
+      },
+      {
+        "lap": 4,
+        "time_s": 64.85,
+        "damage": 12.0,
+        "top_speed_kmh": 246.1608
+      },
+      {
+        "lap": 5,
+        "time_s": 64.89,
+        "damage": 15.0,
+        "top_speed_kmh": 246.19752
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.424,
+    "best_s": 64.814,
+    "mean_s": 65.99759999999999,
+    "warm_mean_s": 64.87349999999999,
+    "warm_std_s": 0.046869499677297664,
+    "damage": 15.0,
+    "peak_lap_damage": 15.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "road/ruudskogen",
+      "category": "road",
+      "name": "ruudskogen"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 70.37,
+        "damage": 2.0,
+        "top_speed_kmh": 247.57776000000004
+      },
+      {
+        "lap": 2,
+        "time_s": 65.1,
+        "damage": 4.0,
+        "top_speed_kmh": 247.65552
+      },
+      {
+        "lap": 3,
+        "time_s": 64.972,
+        "damage": 6.0,
+        "top_speed_kmh": 247.44995999999998
+      },
+      {
+        "lap": 4,
+        "time_s": 64.994,
+        "damage": 9.0,
+        "top_speed_kmh": 247.82904
+      },
+      {
+        "lap": 5,
+        "time_s": 64.798,
+        "damage": 12.0,
+        "top_speed_kmh": 248.01444
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.467,
+    "best_s": 64.798,
+    "mean_s": 66.0468,
+    "warm_mean_s": 64.966,
+    "warm_std_s": 0.10839741694339144,
+    "damage": 12.0,
+    "peak_lap_damage": 12.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "road/spring",
+      "category": "road",
+      "name": "spring"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 453.312,
+        "damage": 2.0,
+        "top_speed_kmh": 299.16900000000004
+      },
+      {
+        "lap": 2,
+        "time_s": 446.27,
+        "damage": 10.0,
+        "top_speed_kmh": 299.34108000000003
+      },
+      {
+        "lap": 3,
+        "time_s": 444.926,
+        "damage": 15.0,
+        "top_speed_kmh": 299.46996
+      },
+      {
+        "lap": 4,
+        "time_s": 444.256,
+        "damage": 76.0,
+        "top_speed_kmh": 299.57759999999996
+      },
+      {
+        "lap": 5,
+        "time_s": 443.048,
+        "damage": 96.0,
+        "top_speed_kmh": 299.20788
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 2.233,
+    "best_s": 443.048,
+    "mean_s": 446.3624,
+    "warm_mean_s": 444.625,
+    "warm_std_s": 1.164014175171414,
+    "damage": 96.0,
+    "peak_lap_damage": 96.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "road/spring",
+      "category": "road",
+      "name": "spring"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 450.304,
+        "damage": 4.0,
+        "top_speed_kmh": 302.14296
+      },
+      {
+        "lap": 2,
+        "time_s": 443.764,
+        "damage": 8.0,
+        "top_speed_kmh": 302.28156
+      },
+      {
+        "lap": 3,
+        "time_s": 442.778,
+        "damage": 12.0,
+        "top_speed_kmh": 302.39136
+      },
+      {
+        "lap": 4,
+        "time_s": 441.826,
+        "damage": 16.0,
+        "top_speed_kmh": 302.52096000000006
+      },
+      {
+        "lap": 5,
+        "time_s": 440.35,
+        "damage": 23.0,
+        "top_speed_kmh": 302.63688
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 2.134,
+    "best_s": 440.35,
+    "mean_s": 443.8044,
+    "warm_mean_s": 442.1795,
+    "warm_std_s": 1.2590547049274663,
+    "damage": 23.0,
+    "peak_lap_damage": 23.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "road/spring",
+      "category": "road",
+      "name": "spring"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 448.918,
+        "damage": 17.0,
+        "top_speed_kmh": 300.8754
+      },
+      {
+        "lap": 2,
+        "time_s": 441.762,
+        "damage": 33.0,
+        "top_speed_kmh": 300.92724000000004
+      },
+      {
+        "lap": 3,
+        "time_s": 440.676,
+        "damage": 47.0,
+        "top_speed_kmh": 300.98052
+      },
+      {
+        "lap": 4,
+        "time_s": 439.884,
+        "damage": 61.0,
+        "top_speed_kmh": 301.02552000000003
+      },
+      {
+        "lap": 5,
+        "time_s": 438.674,
+        "damage": 84.0,
+        "top_speed_kmh": 301.10112000000004
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 2.086,
+    "best_s": 438.674,
+    "mean_s": 441.9828,
+    "warm_mean_s": 440.249,
+    "warm_std_s": 1.1275358087440115,
+    "damage": 84.0,
+    "peak_lap_damage": 84.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "road/spring",
+      "category": "road",
+      "name": "spring"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 448.794,
+        "damage": 40.0,
+        "top_speed_kmh": 305.94383999999997
+      },
+      {
+        "lap": 2,
+        "time_s": 441.778,
+        "damage": 81.0,
+        "top_speed_kmh": 305.793
+      },
+      {
+        "lap": 3,
+        "time_s": 440.376,
+        "damage": 124.0,
+        "top_speed_kmh": 305.62596
+      },
+      {
+        "lap": 4,
+        "time_s": 439.202,
+        "damage": 166.0,
+        "top_speed_kmh": 305.4474
+      },
+      {
+        "lap": 5,
+        "time_s": 438.416,
+        "damage": 207.0,
+        "top_speed_kmh": 305.28180000000003
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 2.129,
+    "best_s": 438.416,
+    "mean_s": 441.7132,
+    "warm_mean_s": 439.943,
+    "warm_std_s": 1.2684167296279312,
+    "damage": 207.0,
+    "peak_lap_damage": 207.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "road/street-1",
+      "category": "road",
+      "name": "street-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 85.588,
+        "damage": 0.0,
+        "top_speed_kmh": 272.95596
+      },
+      {
+        "lap": 2,
+        "time_s": 80.262,
+        "damage": 0.0,
+        "top_speed_kmh": 273.03768
+      },
+      {
+        "lap": 3,
+        "time_s": 80.06,
+        "damage": 0.0,
+        "top_speed_kmh": 273.11004
+      },
+      {
+        "lap": 4,
+        "time_s": 80.182,
+        "damage": 0.0,
+        "top_speed_kmh": 273.1698
+      },
+      {
+        "lap": 5,
+        "time_s": 80.072,
+        "damage": 0.0,
+        "top_speed_kmh": 273.26808
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.423,
+    "best_s": 80.06,
+    "mean_s": 81.2328,
+    "warm_mean_s": 80.144,
+    "warm_std_s": 0.08307827634225372,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "road/street-1",
+      "category": "road",
+      "name": "street-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 85.338,
+        "damage": 0.0,
+        "top_speed_kmh": 275.33232000000004
+      },
+      {
+        "lap": 2,
+        "time_s": 79.944,
+        "damage": 0.0,
+        "top_speed_kmh": 275.41404
+      },
+      {
+        "lap": 3,
+        "time_s": 79.992,
+        "damage": 0.0,
+        "top_speed_kmh": 275.47956
+      },
+      {
+        "lap": 4,
+        "time_s": 79.988,
+        "damage": 0.0,
+        "top_speed_kmh": 275.52024
+      },
+      {
+        "lap": 5,
+        "time_s": 79.906,
+        "damage": 0.0,
+        "top_speed_kmh": 275.67288
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.473,
+    "best_s": 79.906,
+    "mean_s": 81.0336,
+    "warm_mean_s": 79.95750000000001,
+    "warm_std_s": 0.03519588044075471,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "road/street-1",
+      "category": "road",
+      "name": "street-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 85.588,
+        "damage": 0.0,
+        "top_speed_kmh": 273.33252000000005
+      },
+      {
+        "lap": 2,
+        "time_s": 79.946,
+        "damage": 0.0,
+        "top_speed_kmh": 273.43404000000004
+      },
+      {
+        "lap": 3,
+        "time_s": 79.826,
+        "damage": 0.0,
+        "top_speed_kmh": 273.4668
+      },
+      {
+        "lap": 4,
+        "time_s": 79.878,
+        "damage": 0.0,
+        "top_speed_kmh": 273.57156
+      },
+      {
+        "lap": 5,
+        "time_s": 79.86,
+        "damage": 0.0,
+        "top_speed_kmh": 273.60612000000003
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.474,
+    "best_s": 79.826,
+    "mean_s": 81.0196,
+    "warm_mean_s": 79.8775,
+    "warm_std_s": 0.04373499742769062,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "road/street-1",
+      "category": "road",
+      "name": "street-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 85.236,
+        "damage": 0.0,
+        "top_speed_kmh": 278.99208
+      },
+      {
+        "lap": 2,
+        "time_s": 79.766,
+        "damage": 0.0,
+        "top_speed_kmh": 279.1476
+      },
+      {
+        "lap": 3,
+        "time_s": 79.692,
+        "damage": 0.0,
+        "top_speed_kmh": 279.28512
+      },
+      {
+        "lap": 4,
+        "time_s": 79.522,
+        "damage": 0.0,
+        "top_speed_kmh": 279.40212
+      },
+      {
+        "lap": 5,
+        "time_s": 79.534,
+        "damage": 0.0,
+        "top_speed_kmh": 279.3924
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.468,
+    "best_s": 79.522,
+    "mean_s": 80.75,
+    "warm_mean_s": 79.6285,
+    "warm_std_s": 0.10393627855565912,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "road/wheel-1",
+      "category": "road",
+      "name": "wheel-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 93.726,
+        "damage": 0.0,
+        "top_speed_kmh": 251.27748000000003
+      },
+      {
+        "lap": 2,
+        "time_s": 88.116,
+        "damage": 0.0,
+        "top_speed_kmh": 251.28468
+      },
+      {
+        "lap": 3,
+        "time_s": 88.146,
+        "damage": 0.0,
+        "top_speed_kmh": 251.26380000000003
+      },
+      {
+        "lap": 4,
+        "time_s": 87.96,
+        "damage": 0.0,
+        "top_speed_kmh": 251.21916000000002
+      },
+      {
+        "lap": 5,
+        "time_s": 88.04,
+        "damage": 0.0,
+        "top_speed_kmh": 251.24544000000003
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.524,
+    "best_s": 87.96,
+    "mean_s": 89.1976,
+    "warm_mean_s": 88.0655,
+    "warm_std_s": 0.07213009080820759,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "road/wheel-1",
+      "category": "road",
+      "name": "wheel-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 93.268,
+        "damage": 0.0,
+        "top_speed_kmh": 251.09568000000002
+      },
+      {
+        "lap": 2,
+        "time_s": 87.682,
+        "damage": 0.0,
+        "top_speed_kmh": 251.05607999999998
+      },
+      {
+        "lap": 3,
+        "time_s": 87.65,
+        "damage": 0.0,
+        "top_speed_kmh": 251.29152000000002
+      },
+      {
+        "lap": 4,
+        "time_s": 87.528,
+        "damage": 0.0,
+        "top_speed_kmh": 251.38439999999997
+      },
+      {
+        "lap": 5,
+        "time_s": 87.452,
+        "damage": 0.0,
+        "top_speed_kmh": 251.46828
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.57,
+    "best_s": 87.452,
+    "mean_s": 88.71600000000001,
+    "warm_mean_s": 87.578,
+    "warm_std_s": 0.09270382947861586,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "road/wheel-1",
+      "category": "road",
+      "name": "wheel-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 93.176,
+        "damage": 0.0,
+        "top_speed_kmh": 249.36804
+      },
+      {
+        "lap": 2,
+        "time_s": 87.146,
+        "damage": 0.0,
+        "top_speed_kmh": 249.57000000000002
+      },
+      {
+        "lap": 3,
+        "time_s": 87.216,
+        "damage": 0.0,
+        "top_speed_kmh": 249.54912
+      },
+      {
+        "lap": 4,
+        "time_s": 87.038,
+        "damage": 0.0,
+        "top_speed_kmh": 249.65892
+      },
+      {
+        "lap": 5,
+        "time_s": 87.056,
+        "damage": 0.0,
+        "top_speed_kmh": 249.7986
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.52,
+    "best_s": 87.038,
+    "mean_s": 88.32639999999999,
+    "warm_mean_s": 87.114,
+    "warm_std_s": 0.07170774016798959,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "road/wheel-1",
+      "category": "road",
+      "name": "wheel-1"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 92.73,
+        "damage": 0.0,
+        "top_speed_kmh": 253.95191999999997
+      },
+      {
+        "lap": 2,
+        "time_s": 86.962,
+        "damage": 0.0,
+        "top_speed_kmh": 254.13551999999999
+      },
+      {
+        "lap": 3,
+        "time_s": 86.89,
+        "damage": 0.0,
+        "top_speed_kmh": 254.31516000000002
+      },
+      {
+        "lap": 4,
+        "time_s": 86.774,
+        "damage": 0.0,
+        "top_speed_kmh": 254.31840000000003
+      },
+      {
+        "lap": 5,
+        "time_s": 86.792,
+        "damage": 0.0,
+        "top_speed_kmh": 254.5146
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.472,
+    "best_s": 86.774,
+    "mean_s": 88.0296,
+    "warm_mean_s": 86.8545,
+    "warm_std_s": 0.07616265489070152,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:3",
+      "module": "tita",
+      "index": 3,
+      "name": "tita 3",
+      "car": "car1-trb1"
+    },
+    "track": {
+      "id": "road/wheel-2",
+      "category": "road",
+      "name": "wheel-2"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 119.532,
+        "damage": 0.0,
+        "top_speed_kmh": 278.63388000000003
+      },
+      {
+        "lap": 2,
+        "time_s": 114.402,
+        "damage": 0.0,
+        "top_speed_kmh": 281.10384
+      },
+      {
+        "lap": 3,
+        "time_s": 114.426,
+        "damage": 0.0,
+        "top_speed_kmh": 281.24892
+      },
+      {
+        "lap": 4,
+        "time_s": 114.368,
+        "damage": 0.0,
+        "top_speed_kmh": 281.3706
+      },
+      {
+        "lap": 5,
+        "time_s": 114.214,
+        "damage": 0.0,
+        "top_speed_kmh": 281.40444
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.479,
+    "best_s": 114.214,
+    "mean_s": 115.3884,
+    "warm_mean_s": 114.35249999999999,
+    "warm_std_s": 0.08257572282456964,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:4",
+      "module": "tita",
+      "index": 4,
+      "name": "tita 4",
+      "car": "car2-trb1"
+    },
+    "track": {
+      "id": "road/wheel-2",
+      "category": "road",
+      "name": "wheel-2"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 118.824,
+        "damage": 0.0,
+        "top_speed_kmh": 282.41208
+      },
+      {
+        "lap": 2,
+        "time_s": 113.73,
+        "damage": 0.0,
+        "top_speed_kmh": 284.16708
+      },
+      {
+        "lap": 3,
+        "time_s": 113.632,
+        "damage": 0.0,
+        "top_speed_kmh": 284.27076
+      },
+      {
+        "lap": 4,
+        "time_s": 113.486,
+        "damage": 0.0,
+        "top_speed_kmh": 284.37048
+      },
+      {
+        "lap": 5,
+        "time_s": 113.588,
+        "damage": 0.0,
+        "top_speed_kmh": 284.64588
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.423,
+    "best_s": 113.486,
+    "mean_s": 114.652,
+    "warm_mean_s": 113.60900000000001,
+    "warm_std_s": 0.08766413177577306,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:5",
+      "module": "tita",
+      "index": 5,
+      "name": "tita 5",
+      "car": "car3-trb1"
+    },
+    "track": {
+      "id": "road/wheel-2",
+      "category": "road",
+      "name": "wheel-2"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 118.912,
+        "damage": 0.0,
+        "top_speed_kmh": 279.90396
+      },
+      {
+        "lap": 2,
+        "time_s": 113.45,
+        "damage": 0.0,
+        "top_speed_kmh": 282.0276
+      },
+      {
+        "lap": 3,
+        "time_s": 113.478,
+        "damage": 0.0,
+        "top_speed_kmh": 282.12876
+      },
+      {
+        "lap": 4,
+        "time_s": 113.354,
+        "damage": 0.0,
+        "top_speed_kmh": 282.27348
+      },
+      {
+        "lap": 5,
+        "time_s": 113.166,
+        "damage": 0.0,
+        "top_speed_kmh": 282.3768
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.473,
+    "best_s": 113.166,
+    "mean_s": 114.472,
+    "warm_mean_s": 113.362,
+    "warm_std_s": 0.12214745187682025,
+    "damage": 0.0,
+    "peak_lap_damage": 0.0,
+    "damage_free_at_lap_ends": true,
+    "damage_drop_detected": false
+  },
+  {
+    "bot": {
+      "id": "tita:6",
+      "module": "tita",
+      "index": 6,
+      "name": "tita 6",
+      "car": "car4-trb1"
+    },
+    "track": {
+      "id": "road/wheel-2",
+      "category": "road",
+      "name": "wheel-2"
+    },
+    "requested_laps": 5,
+    "laps": [
+      {
+        "lap": 1,
+        "time_s": 118.23,
+        "damage": 3.0,
+        "top_speed_kmh": 285.66792
+      },
+      {
+        "lap": 2,
+        "time_s": 112.88,
+        "damage": 6.0,
+        "top_speed_kmh": 287.67744
+      },
+      {
+        "lap": 3,
+        "time_s": 112.822,
+        "damage": 9.0,
+        "top_speed_kmh": 287.89092
+      },
+      {
+        "lap": 4,
+        "time_s": 112.676,
+        "damage": 12.0,
+        "top_speed_kmh": 287.9442
+      },
+      {
+        "lap": 5,
+        "time_s": 112.622,
+        "damage": 15.0,
+        "top_speed_kmh": 288.12312000000003
+      }
+    ],
+    "completed": true,
+    "timed_out": false,
+    "returncode": 0,
+    "wall_time_s": 0.42,
+    "best_s": 112.622,
+    "mean_s": 113.846,
+    "warm_mean_s": 112.75,
+    "warm_std_s": 0.10481412118602979,
+    "damage": 15.0,
+    "peak_lap_damage": 15.0,
+    "damage_free_at_lap_ends": false,
+    "damage_drop_detected": false
+  }
+]

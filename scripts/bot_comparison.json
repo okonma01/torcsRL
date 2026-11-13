@@ -1,0 +1,1294 @@
+{
+  "date": "2026-11-12",
+  "simulator_revision": "8134c27be99bc2039f51fd821129e1ddf7514f64",
+  "car": "car1-trb1",
+  "conditions": "Solo practice, same car model, default bot setups, fuel and damage enabled; fresh local directory per run.",
+  "source": "checkpoints/bot-benchmark-20261112/full/report.json",
+  "repeat_source": "checkpoints/bot-benchmark-20261112/repeat/report.json",
+  "repeat_matches": true,
+  "shortlist": [
+    "berniw:3",
+    "olethros:2",
+    "tita:3",
+    "bt:2"
+  ],
+  "same_results": [
+    "inferno:3",
+    "lliaw:3",
+    "tita:3"
+  ],
+  "runs": [
+    {
+      "bot": {
+        "id": "berniw:3",
+        "module": "berniw",
+        "index": 3,
+        "name": "berniw 3",
+        "car": "car1-trb1"
+      },
+      "track": {
+        "id": "road/alpine-2",
+        "category": "road",
+        "name": "alpine-2"
+      },
+      "requested_laps": 5,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 106.502,
+          "damage": 0.0,
+          "top_speed_kmh": 221.94864
+        },
+        {
+          "lap": 2,
+          "time_s": 100.314,
+          "damage": 0.0,
+          "top_speed_kmh": 240.1488
+        },
+        {
+          "lap": 3,
+          "time_s": 100.232,
+          "damage": 0.0,
+          "top_speed_kmh": 240.34896
+        },
+        {
+          "lap": 4,
+          "time_s": 100.138,
+          "damage": 0.0,
+          "top_speed_kmh": 240.41483999999997
+        },
+        {
+          "lap": 5,
+          "time_s": 100.212,
+          "damage": 0.0,
+          "top_speed_kmh": 240.63732
+        }
+      ],
+      "completed": true,
+      "best_s": 100.138,
+      "mean_s": 101.4796,
+      "warm_mean_s": 100.224,
+      "warm_std_s": 0.06265780079127765,
+      "damage": 0.0
+    },
+    {
+      "bot": {
+        "id": "bt:2",
+        "module": "bt",
+        "index": 2,
+        "name": "bt 3",
+        "car": "car1-trb1"
+      },
+      "track": {
+        "id": "road/alpine-2",
+        "category": "road",
+        "name": "alpine-2"
+      },
+      "requested_laps": 5,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 110.34,
+          "damage": 1.0,
+          "top_speed_kmh": 217.67328
+        },
+        {
+          "lap": 2,
+          "time_s": 103.458,
+          "damage": 2.0,
+          "top_speed_kmh": 235.03068
+        },
+        {
+          "lap": 3,
+          "time_s": 102.06,
+          "damage": 2.0,
+          "top_speed_kmh": 235.47168
+        },
+        {
+          "lap": 4,
+          "time_s": 100.892,
+          "damage": 8.0,
+          "top_speed_kmh": 236.12364
+        },
+        {
+          "lap": 5,
+          "time_s": 99.852,
+          "damage": 15.0,
+          "top_speed_kmh": 236.60855999999998
+        }
+      ],
+      "completed": true,
+      "best_s": 99.852,
+      "mean_s": 103.3204,
+      "warm_mean_s": 101.5655,
+      "warm_std_s": 1.3431093589131144,
+      "damage": 15.0
+    },
+    {
+      "bot": {
+        "id": "inferno:3",
+        "module": "inferno",
+        "index": 3,
+        "name": "inferno 3",
+        "car": "car1-trb1"
+      },
+      "track": {
+        "id": "road/alpine-2",
+        "category": "road",
+        "name": "alpine-2"
+      },
+      "requested_laps": 5,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 105.966,
+          "damage": 0.0,
+          "top_speed_kmh": 222.25932
+        },
+        {
+          "lap": 2,
+          "time_s": 100.184,
+          "damage": 0.0,
+          "top_speed_kmh": 240.46632
+        },
+        {
+          "lap": 3,
+          "time_s": 100.368,
+          "damage": 0.0,
+          "top_speed_kmh": 240.28128
+        },
+        {
+          "lap": 4,
+          "time_s": 100.188,
+          "damage": 0.0,
+          "top_speed_kmh": 240.36731999999998
+        },
+        {
+          "lap": 5,
+          "time_s": 100.246,
+          "damage": 0.0,
+          "top_speed_kmh": 240.53292000000002
+        }
+      ],
+      "completed": true,
+      "best_s": 100.184,
+      "mean_s": 101.3904,
+      "warm_mean_s": 100.2465,
+      "warm_std_s": 0.07431520705750409,
+      "damage": 0.0
+    },
+    {
+      "bot": {
+        "id": "lliaw:3",
+        "module": "lliaw",
+        "index": 3,
+        "name": "lliaw 3",
+        "car": "car1-trb1"
+      },
+      "track": {
+        "id": "road/alpine-2",
+        "category": "road",
+        "name": "alpine-2"
+      },
+      "requested_laps": 5,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 105.966,
+          "damage": 0.0,
+          "top_speed_kmh": 222.25932
+        },
+        {
+          "lap": 2,
+          "time_s": 100.184,
+          "damage": 0.0,
+          "top_speed_kmh": 240.46632
+        },
+        {
+          "lap": 3,
+          "time_s": 100.368,
+          "damage": 0.0,
+          "top_speed_kmh": 240.28128
+        },
+        {
+          "lap": 4,
+          "time_s": 100.188,
+          "damage": 0.0,
+          "top_speed_kmh": 240.36731999999998
+        },
+        {
+          "lap": 5,
+          "time_s": 100.246,
+          "damage": 0.0,
+          "top_speed_kmh": 240.53292000000002
+        }
+      ],
+      "completed": true,
+      "best_s": 100.184,
+      "mean_s": 101.3904,
+      "warm_mean_s": 100.2465,
+      "warm_std_s": 0.07431520705750409,
+      "damage": 0.0
+    },
+    {
+      "bot": {
+        "id": "olethros:2",
+        "module": "olethros",
+        "index": 2,
+        "name": "Olethros 3",
+        "car": "car1-trb1"
+      },
+      "track": {
+        "id": "road/alpine-2",
+        "category": "road",
+        "name": "alpine-2"
+      },
+      "requested_laps": 5,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 105.352,
+          "damage": 288.0,
+          "top_speed_kmh": 223.8066
+        },
+        {
+          "lap": 2,
+          "time_s": 100.004,
+          "damage": 380.0,
+          "top_speed_kmh": 240.33671999999999
+        },
+        {
+          "lap": 3,
+          "time_s": 100.548,
+          "damage": 414.0,
+          "top_speed_kmh": 240.228
+        },
+        {
+          "lap": 4,
+          "time_s": 99.88,
+          "damage": 452.0,
+          "top_speed_kmh": 240.40008
+        },
+        {
+          "lap": 5,
+          "time_s": 99.014,
+          "damage": 503.0,
+          "top_speed_kmh": 240.53544
+        }
+      ],
+      "completed": true,
+      "best_s": 99.014,
+      "mean_s": 100.9596,
+      "warm_mean_s": 99.8615,
+      "warm_std_s": 0.5500424983580838,
+      "damage": 503.0
+    },
+    {
+      "bot": {
+        "id": "tita:3",
+        "module": "tita",
+        "index": 3,
+        "name": "tita 3",
+        "car": "car1-trb1"
+      },
+      "track": {
+        "id": "road/alpine-2",
+        "category": "road",
+        "name": "alpine-2"
+      },
+      "requested_laps": 5,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 105.966,
+          "damage": 0.0,
+          "top_speed_kmh": 222.25932
+        },
+        {
+          "lap": 2,
+          "time_s": 100.184,
+          "damage": 0.0,
+          "top_speed_kmh": 240.46632
+        },
+        {
+          "lap": 3,
+          "time_s": 100.368,
+          "damage": 0.0,
+          "top_speed_kmh": 240.28128
+        },
+        {
+          "lap": 4,
+          "time_s": 100.188,
+          "damage": 0.0,
+          "top_speed_kmh": 240.36731999999998
+        },
+        {
+          "lap": 5,
+          "time_s": 100.246,
+          "damage": 0.0,
+          "top_speed_kmh": 240.53292000000002
+        }
+      ],
+      "completed": true,
+      "best_s": 100.184,
+      "mean_s": 101.3904,
+      "warm_mean_s": 100.2465,
+      "warm_std_s": 0.07431520705750409,
+      "damage": 0.0
+    },
+    {
+      "bot": {
+        "id": "berniw:3",
+        "module": "berniw",
+        "index": 3,
+        "name": "berniw 3",
+        "car": "car1-trb1"
+      },
+      "track": {
+        "id": "road/forza",
+        "category": "road",
+        "name": "forza"
+      },
+      "requested_laps": 5,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 99.428,
+          "damage": 0.0,
+          "top_speed_kmh": 294.24996
+        },
+        {
+          "lap": 2,
+          "time_s": 90.978,
+          "damage": 0.0,
+          "top_speed_kmh": 296.79588
+        },
+        {
+          "lap": 3,
+          "time_s": 90.934,
+          "damage": 0.0,
+          "top_speed_kmh": 296.83476
+        },
+        {
+          "lap": 4,
+          "time_s": 90.952,
+          "damage": 0.0,
+          "top_speed_kmh": 296.8722
+        },
+        {
+          "lap": 5,
+          "time_s": 90.77,
+          "damage": 0.0,
+          "top_speed_kmh": 296.90892
+        }
+      ],
+      "completed": true,
+      "best_s": 90.77,
+      "mean_s": 92.6124,
+      "warm_mean_s": 90.9085,
+      "warm_std_s": 0.08147852477800523,
+      "damage": 0.0
+    },
+    {
+      "bot": {
+        "id": "bt:2",
+        "module": "bt",
+        "index": 2,
+        "name": "bt 3",
+        "car": "car1-trb1"
+      },
+      "track": {
+        "id": "road/forza",
+        "category": "road",
+        "name": "forza"
+      },
+      "requested_laps": 5,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 103.184,
+          "damage": 0.0,
+          "top_speed_kmh": 292.54896
+        },
+        {
+          "lap": 2,
+          "time_s": 94.754,
+          "damage": 0.0,
+          "top_speed_kmh": 295.00128
+        },
+        {
+          "lap": 3,
+          "time_s": 94.05,
+          "damage": 0.0,
+          "top_speed_kmh": 295.07112
+        },
+        {
+          "lap": 4,
+          "time_s": 93.362,
+          "damage": 0.0,
+          "top_speed_kmh": 295.13916
+        },
+        {
+          "lap": 5,
+          "time_s": 92.774,
+          "damage": 0.0,
+          "top_speed_kmh": 295.20072000000005
+        }
+      ],
+      "completed": true,
+      "best_s": 92.774,
+      "mean_s": 95.6248,
+      "warm_mean_s": 93.735,
+      "warm_std_s": 0.7416596254347425,
+      "damage": 0.0
+    },
+    {
+      "bot": {
+        "id": "inferno:3",
+        "module": "inferno",
+        "index": 3,
+        "name": "inferno 3",
+        "car": "car1-trb1"
+      },
+      "track": {
+        "id": "road/forza",
+        "category": "road",
+        "name": "forza"
+      },
+      "requested_laps": 5,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 98.7,
+          "damage": 0.0,
+          "top_speed_kmh": 294.15132
+        },
+        {
+          "lap": 2,
+          "time_s": 90.88,
+          "damage": 0.0,
+          "top_speed_kmh": 296.6454
+        },
+        {
+          "lap": 3,
+          "time_s": 90.84,
+          "damage": 0.0,
+          "top_speed_kmh": 296.67924
+        },
+        {
+          "lap": 4,
+          "time_s": 90.86,
+          "damage": 0.0,
+          "top_speed_kmh": 296.71632
+        },
+        {
+          "lap": 5,
+          "time_s": 90.754,
+          "damage": 0.0,
+          "top_speed_kmh": 296.75412000000006
+        }
+      ],
+      "completed": true,
+      "best_s": 90.754,
+      "mean_s": 92.4068,
+      "warm_mean_s": 90.8335,
+      "warm_std_s": 0.04802863729068006,
+      "damage": 0.0
+    },
+    {
+      "bot": {
+        "id": "lliaw:3",
+        "module": "lliaw",
+        "index": 3,
+        "name": "lliaw 3",
+        "car": "car1-trb1"
+      },
+      "track": {
+        "id": "road/forza",
+        "category": "road",
+        "name": "forza"
+      },
+      "requested_laps": 5,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 98.7,
+          "damage": 0.0,
+          "top_speed_kmh": 294.15132
+        },
+        {
+          "lap": 2,
+          "time_s": 90.88,
+          "damage": 0.0,
+          "top_speed_kmh": 296.6454
+        },
+        {
+          "lap": 3,
+          "time_s": 90.84,
+          "damage": 0.0,
+          "top_speed_kmh": 296.67924
+        },
+        {
+          "lap": 4,
+          "time_s": 90.86,
+          "damage": 0.0,
+          "top_speed_kmh": 296.71632
+        },
+        {
+          "lap": 5,
+          "time_s": 90.754,
+          "damage": 0.0,
+          "top_speed_kmh": 296.75412000000006
+        }
+      ],
+      "completed": true,
+      "best_s": 90.754,
+      "mean_s": 92.4068,
+      "warm_mean_s": 90.8335,
+      "warm_std_s": 0.04802863729068006,
+      "damage": 0.0
+    },
+    {
+      "bot": {
+        "id": "olethros:2",
+        "module": "olethros",
+        "index": 2,
+        "name": "Olethros 3",
+        "car": "car1-trb1"
+      },
+      "track": {
+        "id": "road/forza",
+        "category": "road",
+        "name": "forza"
+      },
+      "requested_laps": 5,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 97.164,
+          "damage": 0.0,
+          "top_speed_kmh": 294.27011999999996
+        },
+        {
+          "lap": 2,
+          "time_s": 89.542,
+          "damage": 0.0,
+          "top_speed_kmh": 296.13996000000003
+        },
+        {
+          "lap": 3,
+          "time_s": 89.452,
+          "damage": 0.0,
+          "top_speed_kmh": 296.17452000000003
+        },
+        {
+          "lap": 4,
+          "time_s": 89.39,
+          "damage": 0.0,
+          "top_speed_kmh": 296.2134
+        },
+        {
+          "lap": 5,
+          "time_s": 89.342,
+          "damage": 0.0,
+          "top_speed_kmh": 296.24868000000004
+        }
+      ],
+      "completed": true,
+      "best_s": 89.342,
+      "mean_s": 90.978,
+      "warm_mean_s": 89.4315,
+      "warm_std_s": 0.07477131803037923,
+      "damage": 0.0
+    },
+    {
+      "bot": {
+        "id": "tita:3",
+        "module": "tita",
+        "index": 3,
+        "name": "tita 3",
+        "car": "car1-trb1"
+      },
+      "track": {
+        "id": "road/forza",
+        "category": "road",
+        "name": "forza"
+      },
+      "requested_laps": 5,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 98.7,
+          "damage": 0.0,
+          "top_speed_kmh": 294.15132
+        },
+        {
+          "lap": 2,
+          "time_s": 90.88,
+          "damage": 0.0,
+          "top_speed_kmh": 296.6454
+        },
+        {
+          "lap": 3,
+          "time_s": 90.84,
+          "damage": 0.0,
+          "top_speed_kmh": 296.67924
+        },
+        {
+          "lap": 4,
+          "time_s": 90.86,
+          "damage": 0.0,
+          "top_speed_kmh": 296.71632
+        },
+        {
+          "lap": 5,
+          "time_s": 90.754,
+          "damage": 0.0,
+          "top_speed_kmh": 296.75412000000006
+        }
+      ],
+      "completed": true,
+      "best_s": 90.754,
+      "mean_s": 92.4068,
+      "warm_mean_s": 90.8335,
+      "warm_std_s": 0.04802863729068006,
+      "damage": 0.0
+    },
+    {
+      "bot": {
+        "id": "berniw:3",
+        "module": "berniw",
+        "index": 3,
+        "name": "berniw 3",
+        "car": "car1-trb1"
+      },
+      "track": {
+        "id": "oval/michigan",
+        "category": "oval",
+        "name": "michigan"
+      },
+      "requested_laps": 5,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 43.84,
+          "damage": 0.0,
+          "top_speed_kmh": 267.34427999999997
+        },
+        {
+          "lap": 2,
+          "time_s": 36.414,
+          "damage": 0.0,
+          "top_speed_kmh": 278.59464
+        },
+        {
+          "lap": 3,
+          "time_s": 36.428,
+          "damage": 0.0,
+          "top_speed_kmh": 278.604
+        },
+        {
+          "lap": 4,
+          "time_s": 36.392,
+          "damage": 0.0,
+          "top_speed_kmh": 278.46432000000004
+        },
+        {
+          "lap": 5,
+          "time_s": 36.38,
+          "damage": 0.0,
+          "top_speed_kmh": 278.46504
+        }
+      ],
+      "completed": true,
+      "best_s": 36.38,
+      "mean_s": 37.8908,
+      "warm_mean_s": 36.4035,
+      "warm_std_s": 0.018674849396981143,
+      "damage": 0.0
+    },
+    {
+      "bot": {
+        "id": "bt:2",
+        "module": "bt",
+        "index": 2,
+        "name": "bt 3",
+        "car": "car1-trb1"
+      },
+      "track": {
+        "id": "oval/michigan",
+        "category": "oval",
+        "name": "michigan"
+      },
+      "requested_laps": 5,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 45.196,
+          "damage": 0.0,
+          "top_speed_kmh": 261.20808
+        },
+        {
+          "lap": 2,
+          "time_s": 37.958,
+          "damage": 0.0,
+          "top_speed_kmh": 275.53068
+        },
+        {
+          "lap": 3,
+          "time_s": 37.32,
+          "damage": 0.0,
+          "top_speed_kmh": 276.44868
+        },
+        {
+          "lap": 4,
+          "time_s": 36.734,
+          "damage": 0.0,
+          "top_speed_kmh": 277.36632000000003
+        },
+        {
+          "lap": 5,
+          "time_s": 36.3,
+          "damage": 0.0,
+          "top_speed_kmh": 278.19252
+        }
+      ],
+      "completed": true,
+      "best_s": 36.3,
+      "mean_s": 38.7016,
+      "warm_mean_s": 37.078,
+      "warm_std_s": 0.6238156779049402,
+      "damage": 0.0
+    },
+    {
+      "bot": {
+        "id": "inferno:3",
+        "module": "inferno",
+        "index": 3,
+        "name": "inferno 3",
+        "car": "car1-trb1"
+      },
+      "track": {
+        "id": "oval/michigan",
+        "category": "oval",
+        "name": "michigan"
+      },
+      "requested_laps": 5,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 43.216,
+          "damage": 0.0,
+          "top_speed_kmh": 267.38352000000003
+        },
+        {
+          "lap": 2,
+          "time_s": 36.402,
+          "damage": 0.0,
+          "top_speed_kmh": 278.42796
+        },
+        {
+          "lap": 3,
+          "time_s": 36.402,
+          "damage": 0.0,
+          "top_speed_kmh": 278.50176
+        },
+        {
+          "lap": 4,
+          "time_s": 36.428,
+          "damage": 0.0,
+          "top_speed_kmh": 278.61408
+        },
+        {
+          "lap": 5,
+          "time_s": 36.398,
+          "damage": 0.0,
+          "top_speed_kmh": 278.4816
+        }
+      ],
+      "completed": true,
+      "best_s": 36.398,
+      "mean_s": 37.7692,
+      "warm_mean_s": 36.4075,
+      "warm_std_s": 0.01194780314534647,
+      "damage": 0.0
+    },
+    {
+      "bot": {
+        "id": "lliaw:3",
+        "module": "lliaw",
+        "index": 3,
+        "name": "lliaw 3",
+        "car": "car1-trb1"
+      },
+      "track": {
+        "id": "oval/michigan",
+        "category": "oval",
+        "name": "michigan"
+      },
+      "requested_laps": 5,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 43.216,
+          "damage": 0.0,
+          "top_speed_kmh": 267.38352000000003
+        },
+        {
+          "lap": 2,
+          "time_s": 36.402,
+          "damage": 0.0,
+          "top_speed_kmh": 278.42796
+        },
+        {
+          "lap": 3,
+          "time_s": 36.402,
+          "damage": 0.0,
+          "top_speed_kmh": 278.50176
+        },
+        {
+          "lap": 4,
+          "time_s": 36.428,
+          "damage": 0.0,
+          "top_speed_kmh": 278.61408
+        },
+        {
+          "lap": 5,
+          "time_s": 36.398,
+          "damage": 0.0,
+          "top_speed_kmh": 278.4816
+        }
+      ],
+      "completed": true,
+      "best_s": 36.398,
+      "mean_s": 37.7692,
+      "warm_mean_s": 36.4075,
+      "warm_std_s": 0.01194780314534647,
+      "damage": 0.0
+    },
+    {
+      "bot": {
+        "id": "olethros:2",
+        "module": "olethros",
+        "index": 2,
+        "name": "Olethros 3",
+        "car": "car1-trb1"
+      },
+      "track": {
+        "id": "oval/michigan",
+        "category": "oval",
+        "name": "michigan"
+      },
+      "requested_laps": 5,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 44.478,
+          "damage": 0.0,
+          "top_speed_kmh": 267.31440000000003
+        },
+        {
+          "lap": 2,
+          "time_s": 37.598,
+          "damage": 0.0,
+          "top_speed_kmh": 278.89416
+        },
+        {
+          "lap": 3,
+          "time_s": 37.434,
+          "damage": 0.0,
+          "top_speed_kmh": 279.12960000000004
+        },
+        {
+          "lap": 4,
+          "time_s": 37.312,
+          "damage": 0.0,
+          "top_speed_kmh": 279.39528
+        },
+        {
+          "lap": 5,
+          "time_s": 37.158,
+          "damage": 0.0,
+          "top_speed_kmh": 279.38916
+        }
+      ],
+      "completed": true,
+      "best_s": 37.158,
+      "mean_s": 38.796,
+      "warm_mean_s": 37.3755,
+      "warm_std_s": 0.16145200525233422,
+      "damage": 0.0
+    },
+    {
+      "bot": {
+        "id": "tita:3",
+        "module": "tita",
+        "index": 3,
+        "name": "tita 3",
+        "car": "car1-trb1"
+      },
+      "track": {
+        "id": "oval/michigan",
+        "category": "oval",
+        "name": "michigan"
+      },
+      "requested_laps": 5,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 43.216,
+          "damage": 0.0,
+          "top_speed_kmh": 267.38352000000003
+        },
+        {
+          "lap": 2,
+          "time_s": 36.402,
+          "damage": 0.0,
+          "top_speed_kmh": 278.42796
+        },
+        {
+          "lap": 3,
+          "time_s": 36.402,
+          "damage": 0.0,
+          "top_speed_kmh": 278.50176
+        },
+        {
+          "lap": 4,
+          "time_s": 36.428,
+          "damage": 0.0,
+          "top_speed_kmh": 278.61408
+        },
+        {
+          "lap": 5,
+          "time_s": 36.398,
+          "damage": 0.0,
+          "top_speed_kmh": 278.4816
+        }
+      ],
+      "completed": true,
+      "best_s": 36.398,
+      "mean_s": 37.7692,
+      "warm_mean_s": 36.4075,
+      "warm_std_s": 0.01194780314534647,
+      "damage": 0.0
+    },
+    {
+      "bot": {
+        "id": "berniw:3",
+        "module": "berniw",
+        "index": 3,
+        "name": "berniw 3",
+        "car": "car1-trb1"
+      },
+      "track": {
+        "id": "dirt/dirt-4",
+        "category": "dirt",
+        "name": "dirt-4"
+      },
+      "requested_laps": 5,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 84.782,
+          "damage": 0.0,
+          "top_speed_kmh": 233.39412
+        },
+        {
+          "lap": 2,
+          "time_s": 77.576,
+          "damage": 0.0,
+          "top_speed_kmh": 259.10568
+        },
+        {
+          "lap": 3,
+          "time_s": 77.536,
+          "damage": 0.0,
+          "top_speed_kmh": 259.13736
+        },
+        {
+          "lap": 4,
+          "time_s": 77.426,
+          "damage": 0.0,
+          "top_speed_kmh": 259.07364
+        },
+        {
+          "lap": 5,
+          "time_s": 77.388,
+          "damage": 0.0,
+          "top_speed_kmh": 259.2612
+        }
+      ],
+      "completed": true,
+      "best_s": 77.388,
+      "mean_s": 78.9416,
+      "warm_mean_s": 77.4815,
+      "warm_std_s": 0.07701136279796267,
+      "damage": 0.0
+    },
+    {
+      "bot": {
+        "id": "bt:2",
+        "module": "bt",
+        "index": 2,
+        "name": "bt 3",
+        "car": "car1-trb1"
+      },
+      "track": {
+        "id": "dirt/dirt-4",
+        "category": "dirt",
+        "name": "dirt-4"
+      },
+      "requested_laps": 5,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 94.25,
+          "damage": 0.0,
+          "top_speed_kmh": 226.06128
+        },
+        {
+          "lap": 2,
+          "time_s": 85.478,
+          "damage": 0.0,
+          "top_speed_kmh": 251.98272
+        },
+        {
+          "lap": 3,
+          "time_s": 83.49,
+          "damage": 0.0,
+          "top_speed_kmh": 252.0756
+        },
+        {
+          "lap": 4,
+          "time_s": 81.57,
+          "damage": 0.0,
+          "top_speed_kmh": 252.22932
+        },
+        {
+          "lap": 5,
+          "time_s": 79.852,
+          "damage": 0.0,
+          "top_speed_kmh": 252.3762
+        }
+      ],
+      "completed": true,
+      "best_s": 79.852,
+      "mean_s": 84.928,
+      "warm_mean_s": 82.5975,
+      "warm_std_s": 2.1028173363371314,
+      "damage": 0.0
+    },
+    {
+      "bot": {
+        "id": "inferno:3",
+        "module": "inferno",
+        "index": 3,
+        "name": "inferno 3",
+        "car": "car1-trb1"
+      },
+      "track": {
+        "id": "dirt/dirt-4",
+        "category": "dirt",
+        "name": "dirt-4"
+      },
+      "requested_laps": 5,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 83.926,
+          "damage": 0.0,
+          "top_speed_kmh": 233.70696
+        },
+        {
+          "lap": 2,
+          "time_s": 77.308,
+          "damage": 0.0,
+          "top_speed_kmh": 259.2396
+        },
+        {
+          "lap": 3,
+          "time_s": 77.264,
+          "damage": 0.0,
+          "top_speed_kmh": 259.263
+        },
+        {
+          "lap": 4,
+          "time_s": 77.252,
+          "damage": 0.0,
+          "top_speed_kmh": 259.41528
+        },
+        {
+          "lap": 5,
+          "time_s": 77.134,
+          "damage": 0.0,
+          "top_speed_kmh": 259.42104
+        }
+      ],
+      "completed": true,
+      "best_s": 77.134,
+      "mean_s": 78.5768,
+      "warm_mean_s": 77.23949999999999,
+      "warm_std_s": 0.0643797328357313,
+      "damage": 0.0
+    },
+    {
+      "bot": {
+        "id": "lliaw:3",
+        "module": "lliaw",
+        "index": 3,
+        "name": "lliaw 3",
+        "car": "car1-trb1"
+      },
+      "track": {
+        "id": "dirt/dirt-4",
+        "category": "dirt",
+        "name": "dirt-4"
+      },
+      "requested_laps": 5,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 83.926,
+          "damage": 0.0,
+          "top_speed_kmh": 233.70696
+        },
+        {
+          "lap": 2,
+          "time_s": 77.308,
+          "damage": 0.0,
+          "top_speed_kmh": 259.2396
+        },
+        {
+          "lap": 3,
+          "time_s": 77.264,
+          "damage": 0.0,
+          "top_speed_kmh": 259.263
+        },
+        {
+          "lap": 4,
+          "time_s": 77.252,
+          "damage": 0.0,
+          "top_speed_kmh": 259.41528
+        },
+        {
+          "lap": 5,
+          "time_s": 77.134,
+          "damage": 0.0,
+          "top_speed_kmh": 259.42104
+        }
+      ],
+      "completed": true,
+      "best_s": 77.134,
+      "mean_s": 78.5768,
+      "warm_mean_s": 77.23949999999999,
+      "warm_std_s": 0.0643797328357313,
+      "damage": 0.0
+    },
+    {
+      "bot": {
+        "id": "olethros:2",
+        "module": "olethros",
+        "index": 2,
+        "name": "Olethros 3",
+        "car": "car1-trb1"
+      },
+      "track": {
+        "id": "dirt/dirt-4",
+        "category": "dirt",
+        "name": "dirt-4"
+      },
+      "requested_laps": 5,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 85.166,
+          "damage": 0.0,
+          "top_speed_kmh": 234.55548000000002
+        },
+        {
+          "lap": 2,
+          "time_s": 78.034,
+          "damage": 0.0,
+          "top_speed_kmh": 264.85092
+        },
+        {
+          "lap": 3,
+          "time_s": 77.57,
+          "damage": 0.0,
+          "top_speed_kmh": 264.9132
+        },
+        {
+          "lap": 4,
+          "time_s": 77.18,
+          "damage": 0.0,
+          "top_speed_kmh": 264.93372
+        },
+        {
+          "lap": 5,
+          "time_s": 76.836,
+          "damage": 0.0,
+          "top_speed_kmh": 264.85488000000004
+        }
+      ],
+      "completed": true,
+      "best_s": 76.836,
+      "mean_s": 78.9572,
+      "warm_mean_s": 77.405,
+      "warm_std_s": 0.446444845417663,
+      "damage": 0.0
+    },
+    {
+      "bot": {
+        "id": "tita:3",
+        "module": "tita",
+        "index": 3,
+        "name": "tita 3",
+        "car": "car1-trb1"
+      },
+      "track": {
+        "id": "dirt/dirt-4",
+        "category": "dirt",
+        "name": "dirt-4"
+      },
+      "requested_laps": 5,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 83.926,
+          "damage": 0.0,
+          "top_speed_kmh": 233.70696
+        },
+        {
+          "lap": 2,
+          "time_s": 77.308,
+          "damage": 0.0,
+          "top_speed_kmh": 259.2396
+        },
+        {
+          "lap": 3,
+          "time_s": 77.264,
+          "damage": 0.0,
+          "top_speed_kmh": 259.263
+        },
+        {
+          "lap": 4,
+          "time_s": 77.252,
+          "damage": 0.0,
+          "top_speed_kmh": 259.41528
+        },
+        {
+          "lap": 5,
+          "time_s": 77.134,
+          "damage": 0.0,
+          "top_speed_kmh": 259.42104
+        }
+      ],
+      "completed": true,
+      "best_s": 77.134,
+      "mean_s": 78.5768,
+      "warm_mean_s": 77.23949999999999,
+      "warm_std_s": 0.0643797328357313,
+      "damage": 0.0
+    }
+  ]
+}
