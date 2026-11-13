@@ -1,0 +1,1764 @@
+{
+  "date": "2026-11-12",
+  "conditions": "Berniw2, five-lap solo practice by default; fuel and damage enabled; fresh local settings for each run; car-specific ported setups, no physics changes.",
+  "setup_sources": {
+    "car1-ow1": "tita/1",
+    "car1-trb1": "tita/3",
+    "car1-stock1": "berniw/1",
+    "pw-focuswrc": "original berniw2/1"
+  },
+  "initial_runs": 152,
+  "repeat_runs": 24,
+  "total_laps": 880,
+  "repeat_laps_match": true,
+  "tracks": [
+    {
+      "track": "dirt/dirt-1",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 31.39,
+          "mean_all_laps_s": 32.3692,
+          "warm_mean_s": 31.428,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 34.308,
+          "mean_all_laps_s": 35.394,
+          "warm_mean_s": 34.3145,
+          "final_damage": 39.0,
+          "peak_lap_damage": 39.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 35.686,
+          "mean_all_laps_s": 36.763600000000004,
+          "warm_mean_s": 35.712500000000006,
+          "final_damage": 77.0,
+          "peak_lap_damage": 77.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 35.684,
+          "mean_all_laps_s": 36.8972,
+          "warm_mean_s": 35.822,
+          "final_damage": 40.0,
+          "peak_lap_damage": 40.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "dirt/dirt-2",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 80.03,
+          "mean_all_laps_s": 81.3256,
+          "warm_mean_s": 80.3985,
+          "final_damage": 1064.0,
+          "peak_lap_damage": 1064.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 83.794,
+          "mean_all_laps_s": 85.8364,
+          "warm_mean_s": 84.877,
+          "final_damage": 2036.0,
+          "peak_lap_damage": 2036.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 85.304,
+          "mean_all_laps_s": 86.716,
+          "warm_mean_s": 85.4995,
+          "final_damage": 1880.0,
+          "peak_lap_damage": 1880.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 84.228,
+          "mean_all_laps_s": 87.0004,
+          "warm_mean_s": 86.408,
+          "final_damage": 1954.0,
+          "peak_lap_damage": 1954.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "dirt/dirt-3",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 58.882,
+          "mean_all_laps_s": 60.035199999999996,
+          "warm_mean_s": 59.024,
+          "final_damage": 244.0,
+          "peak_lap_damage": 244.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 65.086,
+          "mean_all_laps_s": 66.3732,
+          "warm_mean_s": 65.149,
+          "final_damage": 206.0,
+          "peak_lap_damage": 206.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 67.534,
+          "mean_all_laps_s": 68.7744,
+          "warm_mean_s": 67.602,
+          "final_damage": 241.0,
+          "peak_lap_damage": 241.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 68.83,
+          "mean_all_laps_s": 70.09479999999999,
+          "warm_mean_s": 68.898,
+          "final_damage": 174.0,
+          "peak_lap_damage": 174.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "dirt/dirt-4",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 66.272,
+          "mean_all_laps_s": 67.6356,
+          "warm_mean_s": 66.457,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 77.198,
+          "mean_all_laps_s": 78.7624,
+          "warm_mean_s": 77.3125,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 82.046,
+          "mean_all_laps_s": 83.4772,
+          "warm_mean_s": 82.0975,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 83.682,
+          "mean_all_laps_s": 85.1948,
+          "warm_mean_s": 83.76050000000001,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "dirt/dirt-5",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 30.384,
+          "mean_all_laps_s": 31.3232,
+          "warm_mean_s": 30.387999999999998,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 32.984,
+          "mean_all_laps_s": 34.1872,
+          "warm_mean_s": 33.037,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 34.404,
+          "mean_all_laps_s": 35.5096,
+          "warm_mean_s": 34.4285,
+          "final_damage": 15.0,
+          "peak_lap_damage": 15.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 34.15,
+          "mean_all_laps_s": 35.262,
+          "warm_mean_s": 34.203,
+          "final_damage": 3.0,
+          "peak_lap_damage": 3.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "dirt/dirt-6",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 86.356,
+          "mean_all_laps_s": 87.46,
+          "warm_mean_s": 86.45400000000001,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 95.14,
+          "mean_all_laps_s": 96.3644,
+          "warm_mean_s": 95.168,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 98.718,
+          "mean_all_laps_s": 99.9492,
+          "warm_mean_s": 98.7925,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 98.658,
+          "mean_all_laps_s": 100.16,
+          "warm_mean_s": 98.8945,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "dirt/mixed-1",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 44.242,
+          "mean_all_laps_s": 45.193599999999996,
+          "warm_mean_s": 44.278999999999996,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 46.754,
+          "mean_all_laps_s": 47.9668,
+          "warm_mean_s": 46.772999999999996,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 47.868,
+          "mean_all_laps_s": 49.4472,
+          "warm_mean_s": 48.467,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 47.118,
+          "mean_all_laps_s": 48.2816,
+          "warm_mean_s": 47.157,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "dirt/mixed-2",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 59.022,
+          "mean_all_laps_s": 60.0228,
+          "warm_mean_s": 59.042,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 62.894,
+          "mean_all_laps_s": 64.124,
+          "warm_mean_s": 62.9845,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 64.876,
+          "mean_all_laps_s": 66.0516,
+          "warm_mean_s": 64.9,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 63.438,
+          "mean_all_laps_s": 64.6728,
+          "warm_mean_s": 63.5135,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "oval/a-speedway",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 20.898,
+          "mean_all_laps_s": 22.2516,
+          "warm_mean_s": 21.07,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 28.658,
+          "mean_all_laps_s": 30.2244,
+          "warm_mean_s": 28.73,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 32.56,
+          "mean_all_laps_s": 33.988,
+          "warm_mean_s": 32.6255,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 35.462,
+          "mean_all_laps_s": 36.9904,
+          "warm_mean_s": 35.499,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "oval/b-speedway",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 43.238,
+          "mean_all_laps_s": 44.4016,
+          "warm_mean_s": 43.2405,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 47.632,
+          "mean_all_laps_s": 49.54,
+          "warm_mean_s": 47.6345,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 45.91,
+          "mean_all_laps_s": 47.7108,
+          "warm_mean_s": 45.932,
+          "final_damage": 3.0,
+          "peak_lap_damage": 3.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 61.408,
+          "mean_all_laps_s": 63.0524,
+          "warm_mean_s": 61.409,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "oval/c-speedway",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 35.468,
+          "mean_all_laps_s": 36.6296,
+          "warm_mean_s": 35.4705,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 39.226,
+          "mean_all_laps_s": 41.1244,
+          "warm_mean_s": 39.230000000000004,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 37.848,
+          "mean_all_laps_s": 39.668,
+          "warm_mean_s": 37.9005,
+          "final_damage": 3.0,
+          "peak_lap_damage": 3.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 50.306,
+          "mean_all_laps_s": 51.956399999999995,
+          "warm_mean_s": 50.3065,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "oval/d-speedway",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 37.144,
+          "mean_all_laps_s": 38.3024,
+          "warm_mean_s": 37.1465,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 40.948,
+          "mean_all_laps_s": 42.8468,
+          "warm_mean_s": 40.952,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 39.102,
+          "mean_all_laps_s": 40.9108,
+          "warm_mean_s": 39.1185,
+          "final_damage": 3.0,
+          "peak_lap_damage": 3.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 52.724,
+          "mean_all_laps_s": 54.3604,
+          "warm_mean_s": 52.724999999999994,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "oval/e-speedway",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 44.47,
+          "mean_all_laps_s": 45.6332,
+          "warm_mean_s": 44.4725,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 48.89,
+          "mean_all_laps_s": 50.8012,
+          "warm_mean_s": 48.894000000000005,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 44.848,
+          "mean_all_laps_s": 46.872,
+          "warm_mean_s": 44.8605,
+          "final_damage": 3.0,
+          "peak_lap_damage": 3.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 63.19,
+          "mean_all_laps_s": 64.8256,
+          "warm_mean_s": 63.1905,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "oval/e-track-5",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 23.704,
+          "mean_all_laps_s": 24.6264,
+          "warm_mean_s": 23.7505,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 31.406,
+          "mean_all_laps_s": 32.629599999999996,
+          "warm_mean_s": 31.4565,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 34.726,
+          "mean_all_laps_s": 35.8332,
+          "warm_mean_s": 34.777,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 35.942,
+          "mean_all_laps_s": 37.146,
+          "warm_mean_s": 35.963499999999996,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "oval/f-speedway",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 40.238,
+          "mean_all_laps_s": 41.402,
+          "warm_mean_s": 40.244,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 44.288,
+          "mean_all_laps_s": 46.1928,
+          "warm_mean_s": 44.291,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 40.742,
+          "mean_all_laps_s": 42.7524,
+          "warm_mean_s": 40.756,
+          "final_damage": 3.0,
+          "peak_lap_damage": 3.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 57.15,
+          "mean_all_laps_s": 58.784,
+          "warm_mean_s": 57.1515,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "oval/g-speedway",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 32.368,
+          "mean_all_laps_s": 33.55,
+          "warm_mean_s": 32.3985,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 35.86,
+          "mean_all_laps_s": 37.748400000000004,
+          "warm_mean_s": 35.866,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 37.634,
+          "mean_all_laps_s": 39.1788,
+          "warm_mean_s": 37.694500000000005,
+          "final_damage": 3.0,
+          "peak_lap_damage": 3.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 45.974,
+          "mean_all_laps_s": 47.6188,
+          "warm_mean_s": 45.9755,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "oval/michigan",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 28.398,
+          "mean_all_laps_s": 29.5664,
+          "warm_mean_s": 28.433,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 36.32,
+          "mean_all_laps_s": 37.86,
+          "warm_mean_s": 36.362,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 38.382,
+          "mean_all_laps_s": 39.8348,
+          "warm_mean_s": 38.443,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 42.866,
+          "mean_all_laps_s": 44.398,
+          "warm_mean_s": 42.8865,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "road/aalborg",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 67.884,
+          "mean_all_laps_s": 68.8072,
+          "warm_mean_s": 67.971,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 76.266,
+          "mean_all_laps_s": 77.602,
+          "warm_mean_s": 76.44,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 77.94,
+          "mean_all_laps_s": 79.3868,
+          "warm_mean_s": 78.394,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 80.546,
+          "mean_all_laps_s": 81.8296,
+          "warm_mean_s": 80.63250000000001,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "road/alpine-1",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 110.054,
+          "mean_all_laps_s": 111.1988,
+          "warm_mean_s": 110.41,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 132.334,
+          "mean_all_laps_s": 133.4404,
+          "warm_mean_s": 132.48250000000002,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 142.094,
+          "mean_all_laps_s": 143.0668,
+          "warm_mean_s": 142.1655,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 148.904,
+          "mean_all_laps_s": 150.066,
+          "warm_mean_s": 149.10399999999998,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "road/alpine-2",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 86.92,
+          "mean_all_laps_s": 88.146,
+          "warm_mean_s": 87.0865,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 100.12,
+          "mean_all_laps_s": 101.6208,
+          "warm_mean_s": 100.3885,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 105.878,
+          "mean_all_laps_s": 107.126,
+          "warm_mean_s": 105.92750000000001,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 108.372,
+          "mean_all_laps_s": 109.8172,
+          "warm_mean_s": 108.5565,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "road/brondehach",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 65.322,
+          "mean_all_laps_s": 66.478,
+          "warm_mean_s": 65.468,
+          "final_damage": 95.0,
+          "peak_lap_damage": 95.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 80.748,
+          "mean_all_laps_s": 82.0888,
+          "warm_mean_s": 80.8065,
+          "final_damage": 3.0,
+          "peak_lap_damage": 3.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 85.158,
+          "mean_all_laps_s": 86.55799999999999,
+          "warm_mean_s": 85.41149999999999,
+          "final_damage": 60.0,
+          "peak_lap_damage": 60.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 92.954,
+          "mean_all_laps_s": 94.4044,
+          "warm_mean_s": 93.3505,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "road/corkscrew",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 70.89,
+          "mean_all_laps_s": 71.8012,
+          "warm_mean_s": 71.0525,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 83.772,
+          "mean_all_laps_s": 84.8512,
+          "warm_mean_s": 83.894,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 86.526,
+          "mean_all_laps_s": 87.50280000000001,
+          "warm_mean_s": 86.5845,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 91.714,
+          "mean_all_laps_s": 92.7836,
+          "warm_mean_s": 91.7835,
+          "final_damage": 13.0,
+          "peak_lap_damage": 13.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "road/e-track-1",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 57.578,
+          "mean_all_laps_s": 58.658,
+          "warm_mean_s": 57.7325,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 69.476,
+          "mean_all_laps_s": 70.8464,
+          "warm_mean_s": 69.6225,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 72.102,
+          "mean_all_laps_s": 73.3664,
+          "warm_mean_s": 72.2145,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 77.206,
+          "mean_all_laps_s": 78.6132,
+          "warm_mean_s": 77.306,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "road/e-track-2",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 100.426,
+          "mean_all_laps_s": 101.8276,
+          "warm_mean_s": 100.693,
+          "final_damage": 12.0,
+          "peak_lap_damage": 12.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 119.598,
+          "mean_all_laps_s": 121.1484,
+          "warm_mean_s": 119.7045,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 131.934,
+          "mean_all_laps_s": 133.4496,
+          "warm_mean_s": 132.04250000000002,
+          "final_damage": 5.0,
+          "peak_lap_damage": 5.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 139.856,
+          "mean_all_laps_s": 141.1728,
+          "warm_mean_s": 140.5755,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "road/e-track-3",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 71.602,
+          "mean_all_laps_s": 73.2276,
+          "warm_mean_s": 72.0615,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 90.252,
+          "mean_all_laps_s": 91.6444,
+          "warm_mean_s": 90.3685,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 96.022,
+          "mean_all_laps_s": 97.3756,
+          "warm_mean_s": 96.13300000000001,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 101.212,
+          "mean_all_laps_s": 102.7996,
+          "warm_mean_s": 101.394,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "road/e-track-4",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 85.114,
+          "mean_all_laps_s": 86.6196,
+          "warm_mean_s": 85.4205,
+          "final_damage": 152.0,
+          "peak_lap_damage": 152.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 106.244,
+          "mean_all_laps_s": 108.036,
+          "warm_mean_s": 106.452,
+          "final_damage": 55.0,
+          "peak_lap_damage": 55.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 113.8,
+          "mean_all_laps_s": 115.2728,
+          "warm_mean_s": 113.89099999999999,
+          "final_damage": 42.0,
+          "peak_lap_damage": 42.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 128.394,
+          "mean_all_laps_s": 130.0392,
+          "warm_mean_s": 128.465,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "road/e-track-6",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 73.032,
+          "mean_all_laps_s": 74.3484,
+          "warm_mean_s": 73.235,
+          "final_damage": 4.0,
+          "peak_lap_damage": 4.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 88.054,
+          "mean_all_laps_s": 89.4816,
+          "warm_mean_s": 88.1235,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 90.742,
+          "mean_all_laps_s": 92.1256,
+          "warm_mean_s": 90.785,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 98.496,
+          "mean_all_laps_s": 99.9892,
+          "warm_mean_s": 98.529,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "road/eroad",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 54.646,
+          "mean_all_laps_s": 55.8104,
+          "warm_mean_s": 54.7775,
+          "final_damage": 14.0,
+          "peak_lap_damage": 14.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 67.05,
+          "mean_all_laps_s": 68.4712,
+          "warm_mean_s": 67.088,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 71.4,
+          "mean_all_laps_s": 72.78960000000001,
+          "warm_mean_s": 71.4955,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 74.862,
+          "mean_all_laps_s": 76.47359999999999,
+          "warm_mean_s": 75.009,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "road/forza",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 75.694,
+          "mean_all_laps_s": 77.13080000000001,
+          "warm_mean_s": 75.931,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 90.782,
+          "mean_all_laps_s": 92.5968,
+          "warm_mean_s": 90.8905,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 90.878,
+          "mean_all_laps_s": 92.6304,
+          "warm_mean_s": 90.988,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 106.42,
+          "mean_all_laps_s": 108.1324,
+          "warm_mean_s": 106.5125,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "road/g-track-1",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 32.726,
+          "mean_all_laps_s": 33.7188,
+          "warm_mean_s": 32.7625,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 40.954,
+          "mean_all_laps_s": 42.169200000000004,
+          "warm_mean_s": 40.971000000000004,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 42.98,
+          "mean_all_laps_s": 44.2068,
+          "warm_mean_s": 43.057,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 46.092,
+          "mean_all_laps_s": 47.4472,
+          "warm_mean_s": 46.194,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "road/g-track-2",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 41.908,
+          "mean_all_laps_s": 43.0952,
+          "warm_mean_s": 42.06,
+          "final_damage": 6.0,
+          "peak_lap_damage": 6.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 53.532,
+          "mean_all_laps_s": 54.94,
+          "warm_mean_s": 53.554,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 58.202,
+          "mean_all_laps_s": 59.507600000000004,
+          "warm_mean_s": 58.2525,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 63.21,
+          "mean_all_laps_s": 64.6672,
+          "warm_mean_s": 63.2395,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "road/g-track-3",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 53.25,
+          "mean_all_laps_s": 54.2492,
+          "warm_mean_s": 53.37,
+          "final_damage": 53.0,
+          "peak_lap_damage": 53.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 64.568,
+          "mean_all_laps_s": 65.724,
+          "warm_mean_s": 64.627,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 68.484,
+          "mean_all_laps_s": 69.536,
+          "warm_mean_s": 68.55499999999999,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 70.986,
+          "mean_all_laps_s": 72.1688,
+          "warm_mean_s": 71.0425,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "road/ole-road-1",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 98.566,
+          "mean_all_laps_s": 100.2784,
+          "warm_mean_s": 99.259,
+          "final_damage": 172.0,
+          "peak_lap_damage": 172.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 116.61,
+          "mean_all_laps_s": 118.2848,
+          "warm_mean_s": 116.7135,
+          "final_damage": 162.0,
+          "peak_lap_damage": 162.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 119.644,
+          "mean_all_laps_s": 121.23360000000001,
+          "warm_mean_s": 119.76050000000001,
+          "final_damage": 286.0,
+          "peak_lap_damage": 286.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 133.182,
+          "mean_all_laps_s": 134.8408,
+          "warm_mean_s": 133.32,
+          "final_damage": 152.0,
+          "peak_lap_damage": 152.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "road/ruudskogen",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 52.128,
+          "mean_all_laps_s": 53.1832,
+          "warm_mean_s": 52.265,
+          "final_damage": 69.0,
+          "peak_lap_damage": 69.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 66.18,
+          "mean_all_laps_s": 67.3824,
+          "warm_mean_s": 66.229,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 69.484,
+          "mean_all_laps_s": 70.7128,
+          "warm_mean_s": 69.59299999999999,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 74.376,
+          "mean_all_laps_s": 75.68,
+          "warm_mean_s": 74.457,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "road/spring",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 368.352,
+          "mean_all_laps_s": 374.8308,
+          "warm_mean_s": 372.6865,
+          "final_damage": 128.0,
+          "peak_lap_damage": 128.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 443.372,
+          "mean_all_laps_s": 446.9952,
+          "warm_mean_s": 445.13149999999996,
+          "final_damage": 29.0,
+          "peak_lap_damage": 29.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 466.684,
+          "mean_all_laps_s": 475.4808,
+          "warm_mean_s": 475.894,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 504.474,
+          "mean_all_laps_s": 512.0452,
+          "warm_mean_s": 512.4245,
+          "final_damage": 149.0,
+          "peak_lap_damage": 166.0,
+          "damage_drop_detected": true
+        }
+      ]
+    },
+    {
+      "track": "road/street-1",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 67.472,
+          "mean_all_laps_s": 68.54639999999999,
+          "warm_mean_s": 67.5855,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 80.112,
+          "mean_all_laps_s": 81.41879999999999,
+          "warm_mean_s": 80.1845,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 82.684,
+          "mean_all_laps_s": 83.8912,
+          "warm_mean_s": 82.757,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 89.038,
+          "mean_all_laps_s": 90.35,
+          "warm_mean_s": 89.071,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "road/wheel-1",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 70.902,
+          "mean_all_laps_s": 72.232,
+          "warm_mean_s": 71.1865,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 88.04,
+          "mean_all_laps_s": 89.4616,
+          "warm_mean_s": 88.1805,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 93.678,
+          "mean_all_laps_s": 94.9588,
+          "warm_mean_s": 93.744,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 99.56,
+          "mean_all_laps_s": 101.648,
+          "warm_mean_s": 100.27199999999999,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    },
+    {
+      "track": "road/wheel-2",
+      "winner": "car1-ow1",
+      "cars": [
+        {
+          "car": "car1-ow1",
+          "completed": true,
+          "best_s": 93.496,
+          "mean_all_laps_s": 94.7764,
+          "warm_mean_s": 93.865,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-trb1",
+          "completed": true,
+          "best_s": 114.272,
+          "mean_all_laps_s": 115.6456,
+          "warm_mean_s": 114.4705,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "car1-stock1",
+          "completed": true,
+          "best_s": 119.652,
+          "mean_all_laps_s": 120.82560000000001,
+          "warm_mean_s": 119.75200000000001,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        },
+        {
+          "car": "pw-focuswrc",
+          "completed": true,
+          "best_s": 132.03,
+          "mean_all_laps_s": 133.3552,
+          "warm_mean_s": 132.1875,
+          "final_damage": 0.0,
+          "peak_lap_damage": 0.0,
+          "damage_drop_detected": false
+        }
+      ]
+    }
+  ]
+}
