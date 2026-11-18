@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 .DS_Store
 
-tutorial/csc Data Mining - Progress Update.pdf
+tutorial/*
 
 # C extensions
 *.so
@@ -222,6 +222,9 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 .vscode
+
+# Persisted expert experience (generated locally)
+datasets/expert/
 
 *.csv
 *.pt

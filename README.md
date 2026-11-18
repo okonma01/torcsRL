@@ -75,9 +75,7 @@ tracks were G-Track-2, Brondehach, and Alpine-2.
 
 <p align="center"><em>DDPG and TD3 learning curves.</em></p>
 
-These experiments have not been rerun with this fork's three-action interface
-and pinned teacher build. The quick-start launcher uses its own training
-defaults; it does not reproduce the settings below.
+These experiments have **not** been rerun with this fork's three-action interface and pinned teacher build. The quick-start launcher uses its own training defaults; it does not reproduce the settings below.
 
 ### Hyperparameters
 

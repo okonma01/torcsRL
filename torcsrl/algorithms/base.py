@@ -314,31 +314,33 @@ class OffPolicyAlgorithm(RLAlgorithm, ABC):
 
         return obs, info
 
-    def collect_expert_rollouts(self) -> tuple[np.ndarray, Dict[str, Any]]:
-        env = self.env  # NOTE: Training environment
+    def collect_expert_rollouts(self, dataset_path=None) -> tuple[np.ndarray, Dict[str, Any]]:
+        """Keep a separate expert buffer and optionally persist it to a new archive."""
+        from torcsrl.buffers.expert_replay_buffer import ExpertReplayBuffer
+        from torcsrl.expert import collect_expert_transitions
 
-        env.action_space.seed(self.seed)
-        obs, info = env.reset(seed=self.seed)
-
-        for _ in range(self.buffer_start_size):
-            # Use the teacher action for the current observation.
-            expert_action = info.get("action_tita")
-            if expert_action is None:
-                raise RuntimeError(
-                    "Expert collection requires a valid Tita teacher action. "
-                    "Use a simulator with teacher telemetry enabled."
-                )
-            action = np.asarray(expert_action, dtype=np.float32)
-            obs_next, reward, terminated, truncated, info = env.step(action)
-            
-            # Save in replay memory.
-            self.replay_buffer.push(obs, action, reward, obs_next, terminated)
-
-            obs = obs_next
-            if terminated or truncated:
-                print(f"|B| = {len(self.replay_buffer)}")
-                obs, info = env.reset()
-
+        if dataset_path is not None and os.path.exists(dataset_path):
+            raise FileExistsError(dataset_path)
+        self.expert_buffer = ExpertReplayBuffer(
+            self.obs_dim, self.action_dim, self.buffer_start_size,
+            self.batch_size, str(self.device),
+        )
+        try:
+            obs, info = collect_expert_transitions(
+                self.env, self.expert_buffer, self.buffer_start_size, self.seed,
+            )
+        finally:
+            # Preserve valid transitions even if collection is interrupted.
+            if dataset_path is not None and len(self.expert_buffer):
+                self.expert_buffer.save(dataset_path)
+        # Preserve the existing DDPG warmup behavior. Online inserts only mutate
+        # this circular copy; the expert buffer remains separate.
+        for i in range(len(self.expert_buffer)):
+            self.replay_buffer.push(
+                self.expert_buffer.obs[i], self.expert_buffer.actions[i],
+                self.expert_buffer.rewards[i], self.expert_buffer.obs_next[i],
+                self.expert_buffer.dones[i],
+            )
         return obs, info
 
 

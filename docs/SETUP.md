@@ -131,6 +131,49 @@ truncates an episode. See [gym_torcs/env.py](../gym_torcs/env.py) for exact rule
 
 ## Teacher actions and replay
 
+Collect a dataset without starting RL training (with the local gateway running):
+
+```bash
+.venv/bin/python -m scripts.collect_expert --steps 100000 \
+  --action-repeat 4 \
+  --track alpine-1 --category road \
+  --simulator-url http://127.0.0.1:8000 \
+  --output datasets/expert/alpine-1.npz
+```
+
+Collection and training commands default to `--action-repeat 4`; use `1` for
+the previous behavior. Each decision sums up to four underlying rewards and
+applies gamma once. Step budgets count decisions; environment episode limits
+still count underlying steps. Archives also retain `action_repeat`,
+`steps_executed`, and the reward convention. Direct environment users opt in
+with `ActionRepeatWrapper(env, action_repeat=4)` from `gym_torcs.wrappers`.
+
+The collector disables observation noise and requires valid enhanced teacher
+telemetry. The archive contains `obs`, `actions`, `rewards`, `obs_next`,
+`terminated`, and `truncated`. Final observations are stored before resetting.
+Timeout placeholders are rejected. On interruption or error, valid transitions
+collected so far are saved; check the reported count before treating a file as
+complete. Existing files are never overwritten.
+
+```python
+from torcsrl.buffers.expert_replay_buffer import ExpertReplayBuffer
+
+expert = ExpertReplayBuffer.load("datasets/expert/alpine-1.npz", batch_size=256)
+obs, action, reward, obs_next, terminated = expert.sample()
+```
+
+This buffer refuses inserts when full, keeping demonstrations separate from
+online replay. Samples retain the existing five-field critic interface;
+`expert.truncated[:len(expert)]` preserves episode boundaries. Keep `expert`
+separate from the agent's circular replay. Mixing expert samples into training
+batches requires a separate training change.
+
+`agent.collect_expert_rollouts(dataset_path="datasets/expert/warmup.npz")`
+also saves a dataset and retains `agent.expert_buffer`, while copying the
+transitions into online replay for the existing DDPG warmup. DDPG's default
+`train()` call retains the separate buffer in memory but does not choose a disk
+path automatically. The N-step launcher does not use this collector.
+
 The pinned simulator uses Tita's planner and adapted driving logic to compute
 `titaSteer`, `titaGas`, and `titaBrake` for the current car state. It sends them
 before receiving Python's next command. Python exposes them separately in

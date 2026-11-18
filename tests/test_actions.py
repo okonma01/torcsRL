@@ -106,3 +106,29 @@ def test_expert_collection_reports_missing_teacher(env):
     with pytest.raises(RuntimeError, match="valid Tita teacher action"):
         agent.collect_expert_rollouts()
     env.client.send.assert_not_called()
+
+
+def test_expert_collection_keeps_persisted_copy_after_online_overwrite(env, tmp_path):
+    from torcsrl.buffers.expert_replay_buffer import ExpertReplayBuffer
+
+    agent = DDPG(
+        env, env, lr_actor=1e-3, lr_critic=1e-3,
+        ac_kwargs=dict(h1_dim=8, h2_dim=8), buffer_size=2,
+        buffer_start_size=2, batch_size=2, verbose=False,
+    )
+    obs = np.zeros(45, dtype=np.float32)
+    action = np.array([0.1, 0.5, 0.0], dtype=np.float32)
+    env.reset = Mock(return_value=(obs, {"action_tita": action}))
+    env.step = Mock(side_effect=[
+        (obs + 1, 1.0, False, True, {"action_tita": action}),
+        (obs + 2, 2.0, True, False, {"action_tita": action}),
+    ])
+    archive = tmp_path / "warmup.npz"
+    agent.collect_expert_rollouts(dataset_path=archive)
+    np.testing.assert_array_equal(agent.replay_buffer.rewards, [1, 2])
+    for _ in range(3):
+        agent.replay_buffer.push(obs, action, -10, obs, False)
+    np.testing.assert_array_equal(agent.expert_buffer.rewards, [1, 2])
+    restored = ExpertReplayBuffer.load(archive, batch_size=2)
+    np.testing.assert_array_equal(restored.rewards, [1, 2])
+    np.testing.assert_array_equal(restored.truncated, [True, False])

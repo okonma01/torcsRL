@@ -3,6 +3,7 @@ import argparse
 
 import gymnasium as gym
 import gym_torcs
+from gym_torcs.wrappers import ActionRepeatWrapper
 import torch
 from torcsrl import NStepTD3
 
@@ -10,6 +11,7 @@ from torcsrl import NStepTD3
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--steps", type=int, default=10_000)
+    parser.add_argument("--action-repeat", type=int, default=4)
     parser.add_argument("--warmup", type=int, default=1_000)
     parser.add_argument("--buffer-size", type=int, default=100_000)
     parser.add_argument("--batch-size", type=int, default=256)
@@ -23,6 +25,8 @@ def main():
     args = parser.parse_args()
     if args.steps < 1 or args.batch_size < 1:
         parser.error("--steps and --batch-size must be positive")
+    if args.action_repeat < 1:
+        parser.error("--action-repeat must be positive")
     if args.warmup < args.batch_size + 3 or args.buffer_size < args.batch_size:
         parser.error("warmup must be >= batch-size + 3; buffer-size must be >= batch-size")
     if args.device == "mps" and not torch.backends.mps.is_available():
@@ -36,6 +40,8 @@ def main():
     val = gym.make("TorcsSCR-v0", port=3002, track_name=args.track,
                    track_category=args.category, client_connect_attempts=5,
                    telemetry_mode=args.telemetry_mode, simulator_url=args.simulator_url)
+    train = ActionRepeatWrapper(train, args.action_repeat)
+    val = ActionRepeatWrapper(val, args.action_repeat)
     try:
         agent = NStepTD3(train, val, ac_kwargs={}, device=args.device, seed=args.seed,
                          buffer_size=args.buffer_size, buffer_start_size=args.warmup,

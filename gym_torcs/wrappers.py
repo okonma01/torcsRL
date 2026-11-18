@@ -1,11 +1,43 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from numbers import Integral
 from typing import Any, Iterable, SupportsFloat
 
 import numpy as np
 import gymnasium as gym
 from gymnasium import spaces
+
+
+class ActionRepeatWrapper(gym.Wrapper):
+    def __init__(self, env: gym.Env, action_repeat: int = 4):
+        if isinstance(action_repeat, bool) or not isinstance(action_repeat, Integral) or action_repeat < 1:
+            raise ValueError("action_repeat must be a positive integer")
+        current = env
+        while isinstance(current, gym.Wrapper):
+            if isinstance(current, ActionRepeatWrapper):
+                raise ValueError("Action repeat is already enabled")
+            current = current.env
+        super().__init__(env)
+        self.action_repeat = int(action_repeat)
+
+    def reset(self, *, seed=None, options=None):
+        obs, info = self.env.reset(seed=seed, options=options)
+        return obs, dict(info, action_repeat=self.action_repeat)
+
+    def step(self, action):
+        action = np.array(action, copy=True)
+        total_reward = 0.0
+        for executed in range(1, self.action_repeat + 1):
+            obs, reward, terminated, truncated, info = self.env.step(action.copy())
+            if info.get("torcs_timeout"):
+                raise RuntimeError("Simulator timeout: no valid next observation; transition was not saved")
+            total_reward += float(reward)
+            if terminated or truncated:
+                break
+        return obs, total_reward, terminated, truncated, dict(
+            info, action_repeat=self.action_repeat, steps_executed=executed,
+        )
 
 
 @dataclass(frozen=True, slots=True)
